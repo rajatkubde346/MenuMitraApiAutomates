@@ -14563,3 +14563,425 @@ org.json.JSONException: JSONObject["user_id"] is not a string (class java.lang.I
 2025-06-08 23:22:52 INFO  ResponseUtil:60 - POST request completed successfully
 2025-06-08 23:22:52 INFO  Listener:60 - Test case passed: chefListViewTest
 2025-06-08 23:22:52 INFO  Listener:60 - Test Suite finished: Test
+2025-06-08 23:36:37 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Sun Jun 08 23:36:37 IST 2025) =====
+2025-06-08 23:36:37 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-08 23:36:37 INFO  APIBase:60 - Starting test suite setup
+2025-06-08 23:36:37 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-08 23:36:37 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-08 23:36:37 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-08 23:36:37 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-08 23:36:37 INFO  APIBase:60 - Properties file opened successfully
+2025-06-08 23:36:37 INFO  APIBase:60 - Properties object initialized
+2025-06-08 23:36:37 INFO  APIBase:60 - Properties loaded successfully
+2025-06-08 23:36:37 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-08 23:36:37 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-08 23:36:37 INFO  APIBase:60 - Setting QA environment...
+2025-06-08 23:36:37 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-08 23:36:37 INFO  Listener:60 - Test Suite started: Test
+2025-06-08 23:36:37 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-08 23:36:37 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-08 23:36:37 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-08 23:36:37 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-08 23:36:37 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:40 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:40 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-08 23:36:40 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-08 23:36:40 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-08 23:36:40 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:36:40 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-08 23:36:40 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:36:40 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:40 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:40 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-08 23:36:40 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-08 23:36:41 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:36:41 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:36:42 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:36:42 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:36:42 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:36:42 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:36:42 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:36:42 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:36:42 INFO  Listener:60 - verifyTableListView test case started!
+2025-06-08 23:36:42 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/table_listview
+2025-06-08 23:36:42 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:43 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:43 INFO  Listener:60 - Test case passed: verifyTableListView
+2025-06-08 23:36:43 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-08 23:36:43 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-08 23:36:43 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-08 23:36:43 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-08 23:36:43 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:43 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:43 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-08 23:36:43 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-08 23:36:43 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-08 23:36:43 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:36:43 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-08 23:36:43 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:36:43 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:43 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:43 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-08 23:36:43 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-08 23:36:43 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:36:43 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:36:43 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:36:43 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:36:43 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:36:43 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:36:43 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:36:43 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:36:43 INFO  Listener:60 - activityLogTest test case started!
+2025-06-08 23:36:43 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/activities_logs
+2025-06-08 23:36:43 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:44 INFO  Listener:60 - Test case passed: activityLogTest
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-08 23:36:44 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-08 23:36:44 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:36:44 INFO  Listener:60 - chefListViewTest test case started!
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_listview
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:44 INFO  Listener:60 - Test case passed: chefListViewTest
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-08 23:36:44 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:44 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:44 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-08 23:36:44 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:36:44 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:36:45 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:36:45 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:36:45 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:36:45 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:36:45 INFO  Listener:60 - chefViewTest test case started!
+2025-06-08 23:36:45 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_view
+2025-06-08 23:36:45 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:36:45 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:36:45 ERROR ChefViewTestScript:99 - [FAILURE] Status code mismatch - Expected: 200, Actual: 400
+2025-06-08 23:36:45 ERROR ChefViewTestScript:103 - [EXCEPTION] Error in chef view test: Status code mismatch - Expected: 200, Actual: 400: Status code mismatch - Expected: 200, Actual: 400
+com.menumitra.utilityclass.customException: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.ChefViewTestScript.chefViewTest(ChefViewTestScript.java:202)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-08 23:36:45 ERROR Listener:70 - Test case failed: chefViewTest
+2025-06-08 23:36:45 INFO  Listener:60 - Test Suite finished: Test
+2025-06-08 23:38:04 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Sun Jun 08 23:38:04 IST 2025) =====
+2025-06-08 23:38:04 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-08 23:38:04 INFO  APIBase:60 - Starting test suite setup
+2025-06-08 23:38:04 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-08 23:38:04 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-08 23:38:04 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-08 23:38:04 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-08 23:38:04 INFO  APIBase:60 - Properties file opened successfully
+2025-06-08 23:38:04 INFO  APIBase:60 - Properties object initialized
+2025-06-08 23:38:04 INFO  APIBase:60 - Properties loaded successfully
+2025-06-08 23:38:04 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-08 23:38:04 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-08 23:38:04 INFO  APIBase:60 - Setting QA environment...
+2025-06-08 23:38:04 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-08 23:38:04 INFO  Listener:60 - Test Suite started: Test
+2025-06-08 23:38:04 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-08 23:38:04 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-08 23:38:04 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-08 23:38:04 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-08 23:38:04 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:38:08 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:38:08 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-08 23:38:08 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-08 23:38:08 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-08 23:38:08 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:38:08 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-08 23:38:08 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:38:08 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:38:08 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:38:08 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-08 23:38:08 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-08 23:38:09 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:38:09 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:38:09 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:38:09 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:38:09 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:38:09 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:38:09 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:38:09 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:38:09 INFO  Listener:60 - chefViewTest test case started!
+2025-06-08 23:38:09 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_view
+2025-06-08 23:38:09 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:38:09 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:38:09 ERROR ChefViewTestScript:99 - [FAILURE] Status code mismatch - Expected: 200, Actual: 400
+2025-06-08 23:38:09 ERROR ChefViewTestScript:103 - [EXCEPTION] Error in chef view test: Status code mismatch - Expected: 200, Actual: 400: Status code mismatch - Expected: 200, Actual: 400
+com.menumitra.utilityclass.customException: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.ChefViewTestScript.chefViewTest(ChefViewTestScript.java:202)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-08 23:38:09 ERROR Listener:70 - Test case failed: chefViewTest
+2025-06-08 23:38:09 INFO  Listener:60 - Test Suite finished: Test
+2025-06-08 23:39:19 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Sun Jun 08 23:39:19 IST 2025) =====
+2025-06-08 23:39:19 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-08 23:39:19 INFO  APIBase:60 - Starting test suite setup
+2025-06-08 23:39:19 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-08 23:39:19 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-08 23:39:19 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-08 23:39:19 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-08 23:39:19 INFO  APIBase:60 - Properties file opened successfully
+2025-06-08 23:39:19 INFO  APIBase:60 - Properties object initialized
+2025-06-08 23:39:19 INFO  APIBase:60 - Properties loaded successfully
+2025-06-08 23:39:19 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-08 23:39:19 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-08 23:39:19 INFO  APIBase:60 - Setting QA environment...
+2025-06-08 23:39:19 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-08 23:39:19 INFO  Listener:60 - Test Suite started: Test
+2025-06-08 23:39:19 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-08 23:39:19 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-08 23:39:19 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-08 23:39:19 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-08 23:39:19 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:22 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:22 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-08 23:39:22 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-08 23:39:22 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-08 23:39:22 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:39:22 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-08 23:39:22 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:39:22 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:23 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:23 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-08 23:39:23 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-08 23:39:24 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:39:24 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:39:24 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:39:24 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:39:24 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:39:24 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:39:24 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:39:24 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:39:24 INFO  Listener:60 - chefViewTest test case started!
+2025-06-08 23:39:24 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_view
+2025-06-08 23:39:24 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:24 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:24 INFO  Listener:60 - Test case passed: chefViewTest
+2025-06-08 23:39:24 INFO  Listener:60 - Test Suite finished: Test
+2025-06-08 23:39:44 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Sun Jun 08 23:39:44 IST 2025) =====
+2025-06-08 23:39:44 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-08 23:39:44 INFO  APIBase:60 - Starting test suite setup
+2025-06-08 23:39:44 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-08 23:39:44 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-08 23:39:44 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-08 23:39:44 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-08 23:39:44 INFO  APIBase:60 - Properties file opened successfully
+2025-06-08 23:39:44 INFO  APIBase:60 - Properties object initialized
+2025-06-08 23:39:44 INFO  APIBase:60 - Properties loaded successfully
+2025-06-08 23:39:44 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-08 23:39:44 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-08 23:39:44 INFO  APIBase:60 - Setting QA environment...
+2025-06-08 23:39:44 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-08 23:39:44 INFO  Listener:60 - Test Suite started: Test
+2025-06-08 23:39:45 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-08 23:39:45 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-08 23:39:45 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-08 23:39:45 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-08 23:39:45 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:48 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:48 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-08 23:39:48 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-08 23:39:48 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-08 23:39:48 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:39:48 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-08 23:39:48 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:39:48 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:48 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:48 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-08 23:39:48 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-08 23:39:49 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:39:49 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:39:49 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:39:49 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:39:49 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:39:49 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:39:49 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:39:49 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:39:49 INFO  Listener:60 - verifyTableListView test case started!
+2025-06-08 23:39:49 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/table_listview
+2025-06-08 23:39:49 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:50 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:50 INFO  Listener:60 - Test case passed: verifyTableListView
+2025-06-08 23:39:50 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-08 23:39:50 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-08 23:39:50 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-08 23:39:50 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-08 23:39:50 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:50 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:50 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-08 23:39:50 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-08 23:39:50 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-08 23:39:50 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:39:50 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-08 23:39:50 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:39:50 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:50 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:50 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-08 23:39:50 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-08 23:39:50 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:39:50 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:39:50 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:39:50 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:39:51 INFO  Listener:60 - activityLogTest test case started!
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/activities_logs
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:51 INFO  Listener:60 - Test case passed: activityLogTest
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-08 23:39:51 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-08 23:39:51 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:39:51 INFO  Listener:60 - chefListViewTest test case started!
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_listview
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:51 INFO  Listener:60 - Test case passed: chefListViewTest
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-08 23:39:51 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:51 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:51 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-08 23:39:51 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:39:51 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:39:52 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-08 23:39:52 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-08 23:39:52 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-08 23:39:52 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-08 23:39:52 INFO  Listener:60 - chefViewTest test case started!
+2025-06-08 23:39:52 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_view
+2025-06-08 23:39:52 INFO  ResponseUtil:60 - Executing POST request
+2025-06-08 23:39:52 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-08 23:39:52 INFO  Listener:60 - Test case passed: chefViewTest
+2025-06-08 23:39:52 INFO  Listener:60 - Test Suite finished: Test

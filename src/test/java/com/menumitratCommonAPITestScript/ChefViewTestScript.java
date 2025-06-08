@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.menumitra.apiRequest.ChefRequest;
+import com.menumitra.apiRequest.ChefViewRequest;
 import com.menumitra.superclass.APIBase;
 import com.menumitra.utilityclass.ActionsMethods;
 import com.menumitra.utilityclass.DataDriven;
@@ -39,7 +39,7 @@ public class ChefViewTestScript extends APIBase
     private Response response;
     private String baseURI;
     private String accessToken;
-    private ChefRequest chefViewRequest;
+    private ChefViewRequest chefViewRequest;
     private URL url;
     private JSONObject actualJsonBody;
     private JSONObject expectedResponseJson;
@@ -80,7 +80,7 @@ public class ChefViewTestScript extends APIBase
                 throw new customException("Failed to get access token");
             }
             
-            chefViewRequest = new ChefRequest();
+            chefViewRequest = new ChefViewRequest();
             
         } catch (Exception e) {
             LogUtils.failure(logger, "Error in chef view setup: " + e.getMessage());
@@ -180,8 +180,10 @@ public class ChefViewTestScript extends APIBase
             if (apiName.equalsIgnoreCase("chefview")) {
                 requestBodyJson = new JSONObject(requestBody);
               
-                chefViewRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
-                chefViewRequest.setUser_id(requestBodyJson.getString("user_id"));
+                chefViewRequest.setOutlet_id(requestBodyJson.getInt("outlet_id"));
+                chefViewRequest.setUser_id(requestBodyJson.getInt("user_id"));
+                chefViewRequest.setApp_source(requestBodyJson.getString("app_source"));
+                chefViewRequest.setUpdate_user_id(requestBodyJson.getInt("update_user_id"));
                 
                 LogUtils.info("Request Body: " + requestBodyJson.toString());
                 ExtentReport.getTest().log(Status.INFO, "Request Body: " + requestBodyJson.toString());

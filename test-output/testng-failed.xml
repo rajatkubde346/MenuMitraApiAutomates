@@ -7,6 +7,7 @@
       <class name="com.menumitratCommonAPITestScript.TableListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ChefViewTestScript"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Failed suite [Suite] -->
