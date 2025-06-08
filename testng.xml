@@ -6,7 +6,8 @@
       <class name="com.menumitra.superclass.APIBase"/>
       <class name="com.menumitratCommonAPITestScript.TableListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
-      
+      <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
