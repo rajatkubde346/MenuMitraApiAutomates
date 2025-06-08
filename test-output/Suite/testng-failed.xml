@@ -13,10 +13,18 @@
       <class name="com.menumitratCommonAPITestScript.CaptainCreateTestScript"/>
       <class name="com.menumitratCommonAPITestScript.CaptainUpdateTestScript"/>
       <class name="com.menumitratCommonAPITestScript.CaptainListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainDeleteTestScript"/>
     </classes>
   </test> <!-- Test -->
   <test name="Test(failed)">
     <classes>
+      <class name="com.menumitratCommonAPITestScript.CaptainDeleteTestScript">
+        <methods>
+          <include name="deleteCaptain" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.CaptainDeleteTestScript -->
       <class name="com.menumitra.superclass.APIBase">
         <methods>
           <include name="setUp"/>
@@ -65,6 +73,11 @@
           <include name="chefListViewSetUp"/>
         </methods>
       </class> <!-- com.menumitratCommonAPITestScript.ChefListViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.CaptainViewTestScript">
+        <methods>
+          <include name="captainViewSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.CaptainViewTestScript -->
       <class name="com.menumitratCommonAPITestScript.CaptainUpdateTestScript">
         <methods>
           <include name="captainUpdateSetUp"/>

@@ -179,9 +179,10 @@ public class CaptainDeleteTestScript extends APIBase
             LogUtils.info("Preparing request body");
             requestBodyJson = new JSONObject(requestBodyPayload);
             
-            captainDeleteRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
-            captainDeleteRequest.setUser_id(requestBodyJson.getString("user_id"));
-            captainDeleteRequest.setUpdate_user_id(requestBodyJson.getString("update_user_id"));
+            captainDeleteRequest.setOutlet_id(String.valueOf(requestBodyJson.getInt("outlet_id")));
+            captainDeleteRequest.setUser_id(String.valueOf(requestBodyJson.getInt("user_id")));
+            captainDeleteRequest.setUpdate_user_id(String.valueOf(requestBodyJson.getInt("update_user_id")));
+            captainDeleteRequest.setApp_source(requestBodyJson.getString("app_source"));
            
             LogUtils.info("Request Body: " + requestBodyJson.toString());
             ExtentReport.getTest().log(Status.INFO, "Request Body: " + requestBodyJson.toString());
