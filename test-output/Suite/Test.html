@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 09 00:55:02 IST 2025</td>
+<td>Started on:</td><td>Mon Jun 09 01:27:52 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8135 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8253 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -93,8 +93,8 @@ function toggleAllBoxes() {
 }, 200</td>
 <td><div><pre>com.menumitra.utilityclass.customException: Error in captain create test: Status code mismatch - Expected: 200, Actual: 400
 	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:238)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace857811226", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace857811226'><pre>com.menumitra.utilityclass.customException: Error in captain create test: Status code mismatch - Expected: 200, Actual: 400
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace819323772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace819323772'><pre>com.menumitra.utilityclass.customException: Error in captain create test: Status code mismatch - Expected: 200, Actual: 400
 	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:238)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -120,7 +120,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.CaptainCreateTestScript@305b7c14</td></tr>
+<td>com.menumitratCommonAPITestScript.CaptainCreateTestScript@7d8704ef</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef()'><b>deleteChef</b><br>Test class: com.menumitratCommonAPITestScript.ChefDeleteTestScript<br>Parameters: chefdelete, chefdelete_001, positive, verify chef delete, delete, {
  "update_user_id":2,
@@ -133,8 +133,8 @@ function toggleAllBoxes() {
 }, 200</td>
 <td><div><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
 	at com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef(ChefDeleteTestScript.java:236)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1819028083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1819028083'><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace533392019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace533392019'><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
 	at com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef(ChefDeleteTestScript.java:236)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -160,7 +160,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.ChefDeleteTestScript@c0c2f8d</td></tr>
+<td>com.menumitratCommonAPITestScript.ChefDeleteTestScript@17f7cd29</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -205,7 +205,51 @@ function toggleAllBoxes() {
       },, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.ActivityLogTestScript@22fcf7ab</td></tr>
+<td>com.menumitratCommonAPITestScript.ActivityLogTestScript@6913c1fb</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.CaptainListViewTestScript.captainListViewTest()'><b>captainListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.CaptainListViewTestScript<br>Parameters: captainlistview, captainlistview_001, positive, verify captain list view, post, {
+    "user_id":2,
+ "outlet_id":1,
+ "app_source":"captain_app"
+}
+
+, {
+  "detail": "Successfully retrieved captains",
+  "data": [
+    {
+      "outlet_id": 1,
+      "user_id": 106,
+      "name": "ramucaptain",
+      "mobile": "8945678989",
+      "dob": "12 Jan 2023",
+      "email": "h@gmail.com",
+      "is_active": 1
+    }
+  ]
+}, null</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.CaptainListViewTestScript@158a8276</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.CaptainUpdateTestScript.captainUpdateTest()'><b>captainUpdateTest</b><br>Test class: com.menumitratCommonAPITestScript.CaptainUpdateTestScript<br>Parameters: captainupdate, captainupdate_001, positive, verify captain update, patch, {
+ "update_user_id":2,
+ "user_id":20,
+ "outlet_id":"1",
+ "name":"ramucaptain",
+ "mobile":"8898989898",
+ "address":"satara",
+ "aadhar_number":"343332322321",
+ "dob":"12 Jan 2023",
+ "email":"h@gmail.com",
+ "app_source":"captain_app",
+ "functionality_ids":[1,2,3,4,7]
+
+}, {
+  "detail": "Captain updated successfully"
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.CaptainUpdateTestScript@13b6aecc</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.ChefListViewTestScript.chefListViewTest()'><b>chefListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.ChefListViewTestScript<br>Parameters: cheflistview, cheflistview_001, positive, verify chef listview, post, {
     "user_id":2,
@@ -227,7 +271,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.ChefListViewTestScript@2de23121</td></tr>
+<td>com.menumitratCommonAPITestScript.ChefListViewTestScript@66d18979</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.ChefViewTestScript.chefViewTest()'><b>chefViewTest</b><br>Test class: com.menumitratCommonAPITestScript.ChefViewTestScript<br>Parameters: chefview, chefview_001, positive, verify chef view , post, {
     "update_user_id":2,
@@ -259,7 +303,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.ChefViewTestScript@63475ace</td></tr>
+<td>com.menumitratCommonAPITestScript.ChefViewTestScript@bccb269</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.ChefUpdateTestScript.updateChef()'><b>updateChef</b><br>Test class: com.menumitratCommonAPITestScript.ChefUpdateTestScript<br>Parameters: chefupdate, chefupdate_001, positive, verify chef update, patch, {  
     "update_user_id":"2",
@@ -279,7 +323,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.ChefUpdateTestScript@4988d8b8</td></tr>
+<td>com.menumitratCommonAPITestScript.ChefUpdateTestScript@609cd4d8</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.TableListViewTestScript.verifyTableListView()'><b>verifyTableListView</b><br>Test class: com.menumitratCommonAPITestScript.TableListViewTestScript<br>Parameters: tablelistview, tablelistview_001, positive, verify table list view, post, {  
     
@@ -317,7 +361,7 @@ function toggleAllBoxes() {
         }, 200</td>
 <td></td>
 <td>1</td>
-<td>com.menumitratCommonAPITestScript.TableListViewTestScript@587e5365</td></tr>
+<td>com.menumitratCommonAPITestScript.TableListViewTestScript@305b7c14</td></tr>
 </table><p>
 </body>
 </html>

@@ -11,6 +11,8 @@
       <class name="com.menumitratCommonAPITestScript.ChefUpdateTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefDeleteTestScript"/>
       <class name="com.menumitratCommonAPITestScript.CaptainCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainListViewTestScript"/>
     </classes>
   </test> <!-- Test -->
   <test name="Test(failed)">
@@ -48,6 +50,11 @@
           <include name="chefViewSetUp"/>
         </methods>
       </class> <!-- com.menumitratCommonAPITestScript.ChefViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.CaptainListViewTestScript">
+        <methods>
+          <include name="captainListViewSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.CaptainListViewTestScript -->
       <class name="com.menumitratCommonAPITestScript.TableListViewTestScript">
         <methods>
           <include name="setup"/>
@@ -58,6 +65,11 @@
           <include name="chefListViewSetUp"/>
         </methods>
       </class> <!-- com.menumitratCommonAPITestScript.ChefListViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.CaptainUpdateTestScript">
+        <methods>
+          <include name="captainUpdateSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.CaptainUpdateTestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

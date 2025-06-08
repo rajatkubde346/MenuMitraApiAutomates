@@ -13,6 +13,7 @@ public class CaptainRequest {
     private String email;
     private String app_source;
     private int[] functionality_ids;
+    
 
     public String getUpdate_user_id() {
         return update_user_id;

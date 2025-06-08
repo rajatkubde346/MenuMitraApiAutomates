@@ -11,6 +11,9 @@
       <class name="com.menumitratCommonAPITestScript.ChefUpdateTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefDeleteTestScript"/>
       <class name="com.menumitratCommonAPITestScript.CaptainCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainListViewTestScript"/>
+      
       
       
     </classes>
