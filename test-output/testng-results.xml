@@ -1,105 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="4" passed="4" failed="0" skipped="0">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-08T18:09:44Z" name="Suite" finished-at="2025-06-08T18:09:52Z" duration-ms="7312">
+  <suite started-at="2025-06-08T18:35:54Z" name="Suite" finished-at="2025-06-08T18:35:59Z" duration-ms="5157">
     <groups>
     </groups>
-    <test started-at="2025-06-08T18:09:44Z" name="Test" finished-at="2025-06-08T18:09:52Z" duration-ms="7312">
-      <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript">
-        <test-method is-config="true" signature="chefListViewSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.ChefListViewTestScript@69453e37]" started-at="2025-06-08T23:39:51Z" name="chefListViewSetUp" finished-at="2025-06-08T23:39:51Z" duration-ms="256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chefListViewSetUp -->
-        <test-method signature="chefListViewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ChefListViewTestScript@69453e37]" started-at="2025-06-08T23:39:51Z" name="chefListViewTest" data-provider="getChefListViewData" finished-at="2025-06-08T23:39:51Z" duration-ms="87" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[cheflistview]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[cheflistview_001]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[positive]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[verify chef listview]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[post]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{
-    "user_id":2,
-    "outlet_id": "1",
-    "app_source":"owner_app"
-}]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[{
-  "detail": [
-    {
-      "outlet_id": 1,
-      "user_id": 68,
-      "name": "etreeyeyty",
-      "mobile": "8435794357",
-      "dob": null,
-      "email": null,
-      "is_active": 1
-    }
-  ]
-}
-}]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[200]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chefListViewTest -->
-      </class> <!-- com.menumitratCommonAPITestScript.ChefListViewTestScript -->
-      <class name="com.menumitra.superclass.APIBase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@20d525]" started-at="2025-06-08T23:39:44Z" name="setUp" finished-at="2025-06-08T23:39:44Z" duration-ms="58" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@20d525]" started-at="2025-06-08T23:39:52Z" name="tearDown" finished-at="2025-06-08T23:39:52Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.menumitra.superclass.APIBase -->
-      <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.ActivityLogTestScript@2002fc1d]" started-at="2025-06-08T23:39:50Z" name="setup" finished-at="2025-06-08T23:39:50Z" duration-ms="290" status="PASS">
+    <test started-at="2025-06-08T18:35:54Z" name="Test" finished-at="2025-06-08T18:35:59Z" duration-ms="5157">
+      <class name="com.menumitratCommonAPITestScript.ChefUpdateTestScript">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.ChefUpdateTestScript@41a2befb]" started-at="2025-06-09T00:05:54Z" name="setup" finished-at="2025-06-09T00:05:58Z" duration-ms="4237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="activityLogTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ActivityLogTestScript@2002fc1d]" started-at="2025-06-08T23:39:51Z" name="activityLogTest" data-provider="getActivityLogData" finished-at="2025-06-08T23:39:51Z" duration-ms="190" status="PASS">
+        <test-method signature="updateChef(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ChefUpdateTestScript@41a2befb]" started-at="2025-06-09T00:05:58Z" name="updateChef" data-provider="getChefUpdateData" finished-at="2025-06-09T00:05:59Z" duration-ms="475" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[activitylog]]>
+                <![CDATA[chefupdate]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[activitylog_001]]>
+                <![CDATA[chefupdate_001]]>
               </value>
             </param>
             <param index="2">
@@ -109,218 +30,37 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[Verfiy Activity log]]>
+                <![CDATA[verify chef update]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[post]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{
-    "user_id": 2
-}]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[{
-  "detail": "Activity logs retrieved successfully",
-  "data": {
-    "activity_logs": [
-      {
-        "activity_log_id": 67387,
-        "role": "owner",
-        "module": "Authentication",
-        "sub_module": "OTP Verification",
-        "title": "Heenann logged in successfully",
-        "outlet_id": 0,
-        "created_on": "08 Jun 2025 07:30 PM"
-      },
-      {
-        "activity_log_id": 67386,
-        "role": "owner",
-        "module": "Authentication",
-        "sub_module": "OTP Verification",
-        "title": "Heenann logged in successfully",
-        "outlet_id": 0,
-        "created_on": "08 Jun 2025 07:30 PM"
-      },
-      {
-        "activity_log_id": 67385,
-        "role": "owner",
-        "module": "Authentication",
-        "sub_module": "OTP Verification",
-        "title": "Heenann logged in successfully",
-        "outlet_id": 0,
-        "created_on": "08 Jun 2025 07:29 PM"
-      },]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[200]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- activityLogTest -->
-      </class> <!-- com.menumitratCommonAPITestScript.ActivityLogTestScript -->
-      <class name="com.menumitratCommonAPITestScript.ChefViewTestScript">
-        <test-method is-config="true" signature="chefViewSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.ChefViewTestScript@6f4a47c7]" started-at="2025-06-08T23:39:51Z" name="chefViewSetUp" finished-at="2025-06-08T23:39:51Z" duration-ms="244" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chefViewSetUp -->
-        <test-method signature="chefViewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ChefViewTestScript@6f4a47c7]" started-at="2025-06-08T23:39:52Z" name="chefViewTest" data-provider="getChefViewData" finished-at="2025-06-08T23:39:52Z" duration-ms="106" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chefview]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chefview_001]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[positive]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[verify chef view ]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[post]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[{
-    "update_user_id":2,
-    "user_id":68,
-    "outlet_id": 1,
-    "app_source":"owner_app"
-}]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[{
-  "detail": {
-    "outlet_id": 1,
-    "user_id": 68,
-    "name": "etreeyeyty",
-    "mobile": "8435794357",
-    "aadhar_number": "435435987495",
-    "address": null,
-    "dob": null,
-    "email": null,
-    "is_active": 1,
-    "created_by": "owner",
-    "created_on": "29 May 2025 12:28:31 PM",
-    "updated_by": null,
-    "updated_on": null,
-    "functionalities": [
-      {
-        "functionality_id": 4,
-        "functionality_name": "manage_table"
-      }
-    ]
-  }
-}]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[200]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- chefViewTest -->
-      </class> <!-- com.menumitratCommonAPITestScript.ChefViewTestScript -->
-      <class name="com.menumitratCommonAPITestScript.TableListViewTestScript">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.TableListViewTestScript@6200f9cb]" started-at="2025-06-08T23:39:45Z" name="setup" finished-at="2025-06-08T23:39:49Z" duration-ms="4134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyTableListView(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.TableListViewTestScript@6200f9cb]" started-at="2025-06-08T23:39:49Z" name="verifyTableListView" data-provider="getTableListViewData" finished-at="2025-06-08T23:39:50Z" duration-ms="1157" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tablelistview]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[tablelistview_001]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[positive]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[verify table list view]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[post]]>
+                <![CDATA[patch]]>
               </value>
             </param>
             <param index="5">
               <value>
                 <![CDATA[{  
+    "update_user_id":"2",
+    "user_id":27,
+    "outlet_id": "1",
+    "name": "new test ",
+    "mobile":"9689075610",
+    "address" : "lean",
+    "aadhar_number": "123456789012",
+    "dob":"12 Jan 2023",
+    "app_source":"owner_app",
+    "email":"h4@gmail.com"  ,
+    "functionality_ids": [1,2,3,4]
     
-    "outlet_id": 1,
-    "user_id":2,
- "app_source":"owner_app"
 }]]>
               </value>
             </param>
             <param index="6">
               <value>
                 <![CDATA[{
-  "detail": [
-    {
-      "section_name": "Igig",
-      "section_id": 292,
-      "tables": [
-        {
-          "table_ids": [
-            211,
-            212
-          ],
-          "table_numbers": [
-            205,
-            206
-          ],
-          "outlet_id": 1,
-          "is_reserved": false,
-          "is_joined": true,
-          "total_capacity": 8,
-          "is_split": false,
-          "is_occupied": 1,
-          "occupied_time": "07 Jun 2025 01:36:56 PM",
-          "grand_total": 285.63,
-          "order_id": 3547,
-          "order_number": "3089",
-          "action": "has_save",
-          "order_payment_settle_type": "null",
-          "payment_method": null
-        }]]>
+  "detail": "Chef updated successfully"
+}]]>
               </value>
             </param>
             <param index="7">
@@ -331,8 +71,18 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTableListView -->
-      </class> <!-- com.menumitratCommonAPITestScript.TableListViewTestScript -->
+        </test-method> <!-- updateChef -->
+      </class> <!-- com.menumitratCommonAPITestScript.ChefUpdateTestScript -->
+      <class name="com.menumitra.superclass.APIBase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@77f1baf5]" started-at="2025-06-09T00:05:54Z" name="setUp" finished-at="2025-06-09T00:05:54Z" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@77f1baf5]" started-at="2025-06-09T00:05:59Z" name="tearDown" finished-at="2025-06-09T00:05:59Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.menumitra.superclass.APIBase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

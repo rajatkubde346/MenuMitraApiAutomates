@@ -8,6 +8,8 @@
       <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ChefUpdateTestScript"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
