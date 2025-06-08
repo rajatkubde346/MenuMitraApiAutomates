@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 09 00:05:54 IST 2025</td>
+<td>Started on:</td><td>Mon Jun 09 00:21:49 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5157 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10375 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -74,6 +74,110 @@ function toggleAllBoxes() {
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.ActivityLogTestScript.activityLogTest()'><b>activityLogTest</b><br>Test class: com.menumitratCommonAPITestScript.ActivityLogTestScript<br>Parameters: activitylog, activitylog_001, positive, Verfiy Activity log, post, {
+    "user_id": 2
+}, {
+  "detail": "Activity logs retrieved successfully",
+  "data": {
+    "activity_logs": [
+      {
+        "activity_log_id": 67387,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:30 PM"
+      },
+      {
+        "activity_log_id": 67386,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:30 PM"
+      },
+      {
+        "activity_log_id": 67385,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:29 PM"
+      },, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.ActivityLogTestScript@ae13544</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.ChefListViewTestScript.chefListViewTest()'><b>chefListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.ChefListViewTestScript<br>Parameters: cheflistview, cheflistview_001, positive, verify chef listview, post, {
+    "user_id":2,
+    "outlet_id": "1",
+    "app_source":"owner_app"
+}, {
+  "detail": [
+    {
+      "outlet_id": 1,
+      "user_id": 68,
+      "name": "etreeyeyty",
+      "mobile": "8435794357",
+      "dob": null,
+      "email": null,
+      "is_active": 1
+    }
+  ]
+}
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.ChefListViewTestScript@3d34d211</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.ChefViewTestScript.chefViewTest()'><b>chefViewTest</b><br>Test class: com.menumitratCommonAPITestScript.ChefViewTestScript<br>Parameters: chefview, chefview_001, positive, verify chef view , post, {
+    "update_user_id":2,
+    "user_id":68,
+    "outlet_id": 1,
+    "app_source":"owner_app"
+}, {
+  "detail": {
+    "outlet_id": 1,
+    "user_id": 68,
+    "name": "etreeyeyty",
+    "mobile": "8435794357",
+    "aadhar_number": "435435987495",
+    "address": null,
+    "dob": null,
+    "email": null,
+    "is_active": 1,
+    "created_by": "owner",
+    "created_on": "29 May 2025 12:28:31 PM",
+    "updated_by": null,
+    "updated_on": null,
+    "functionalities": [
+      {
+        "functionality_id": 4,
+        "functionality_name": "manage_table"
+      }
+    ]
+  }
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.ChefViewTestScript@7dc0f706</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef()'><b>deleteChef</b><br>Test class: com.menumitratCommonAPITestScript.ChefDeleteTestScript<br>Parameters: chefdelete, chefdelete_001, positive, verify chef delete, delete, {
+ "update_user_id":2,
+ "user_id":14,
+ "outlet_id":1,
+ "app_source":"owner_app"
+
+}, {
+  "detail": "Chef deleted successfully"
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.ChefDeleteTestScript@43c1b556</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.ChefUpdateTestScript.updateChef()'><b>updateChef</b><br>Test class: com.menumitratCommonAPITestScript.ChefUpdateTestScript<br>Parameters: chefupdate, chefupdate_001, positive, verify chef update, patch, {  
     "update_user_id":"2",
@@ -93,7 +197,45 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.ChefUpdateTestScript@41a2befb</td></tr>
+<td>com.menumitratCommonAPITestScript.ChefUpdateTestScript@4009e306</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.TableListViewTestScript.verifyTableListView()'><b>verifyTableListView</b><br>Test class: com.menumitratCommonAPITestScript.TableListViewTestScript<br>Parameters: tablelistview, tablelistview_001, positive, verify table list view, post, {  
+    
+    "outlet_id": 1,
+    "user_id":2,
+ "app_source":"owner_app"
+}, {
+  "detail": [
+    {
+      "section_name": "Igig",
+      "section_id": 292,
+      "tables": [
+        {
+          "table_ids": [
+            211,
+            212
+          ],
+          "table_numbers": [
+            205,
+            206
+          ],
+          "outlet_id": 1,
+          "is_reserved": false,
+          "is_joined": true,
+          "total_capacity": 8,
+          "is_split": false,
+          "is_occupied": 1,
+          "occupied_time": "07 Jun 2025 01:36:56 PM",
+          "grand_total": 285.63,
+          "order_id": 3547,
+          "order_number": "3089",
+          "action": "has_save",
+          "order_payment_settle_type": "null",
+          "payment_method": null
+        }, 200</td>
+<td></td>
+<td>1</td>
+<td>com.menumitratCommonAPITestScript.TableListViewTestScript@6f4a47c7</td></tr>
 </table><p>
 </body>
 </html>

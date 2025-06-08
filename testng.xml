@@ -9,6 +9,8 @@
       <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ChefDeleteTestScript"/>
+      
       
     </classes>
   </test> <!-- Test -->
