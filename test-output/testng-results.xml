@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="6" passed="6" failed="0" skipped="0">
+<testng-results total="7" passed="5" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-08T18:51:49Z" name="Suite" finished-at="2025-06-08T18:51:59Z" duration-ms="10375">
+  <suite started-at="2025-06-08T19:25:02Z" name="Suite" finished-at="2025-06-08T19:25:10Z" duration-ms="8135">
     <groups>
     </groups>
-    <test started-at="2025-06-08T18:51:49Z" name="Test" finished-at="2025-06-08T18:51:59Z" duration-ms="10375">
+    <test started-at="2025-06-08T19:25:02Z" name="Test" finished-at="2025-06-08T19:25:10Z" duration-ms="8135">
       <class name="com.menumitratCommonAPITestScript.ChefUpdateTestScript">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.ChefUpdateTestScript@4009e306]" started-at="2025-06-09T00:21:58Z" name="setup" finished-at="2025-06-09T00:21:59Z" duration-ms="235" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.ChefUpdateTestScript@4988d8b8]" started-at="2025-06-09T00:55:09Z" name="setup" finished-at="2025-06-09T00:55:09Z" duration-ms="264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="updateChef(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ChefUpdateTestScript@4009e306]" started-at="2025-06-09T00:21:59Z" name="updateChef" data-provider="getChefUpdateData" finished-at="2025-06-09T00:21:59Z" duration-ms="135" status="PASS">
+        <test-method signature="updateChef(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ChefUpdateTestScript@4988d8b8]" started-at="2025-06-09T00:55:09Z" name="updateChef" data-provider="getChefUpdateData" finished-at="2025-06-09T00:55:09Z" duration-ms="99" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,11 +74,11 @@
         </test-method> <!-- updateChef -->
       </class> <!-- com.menumitratCommonAPITestScript.ChefUpdateTestScript -->
       <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript">
-        <test-method is-config="true" signature="chefListViewSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.ChefListViewTestScript@3d34d211]" started-at="2025-06-09T00:21:57Z" name="chefListViewSetUp" finished-at="2025-06-09T00:21:58Z" duration-ms="615" status="PASS">
+        <test-method is-config="true" signature="chefListViewSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.ChefListViewTestScript@2de23121]" started-at="2025-06-09T00:55:07Z" name="chefListViewSetUp" finished-at="2025-06-09T00:55:08Z" duration-ms="307" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chefListViewSetUp -->
-        <test-method signature="chefListViewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ChefListViewTestScript@3d34d211]" started-at="2025-06-09T00:21:58Z" name="chefListViewTest" data-provider="getChefListViewData" finished-at="2025-06-09T00:21:58Z" duration-ms="87" status="PASS">
+        <test-method signature="chefListViewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ChefListViewTestScript@2de23121]" started-at="2025-06-09T00:55:08Z" name="chefListViewTest" data-provider="getChefListViewData" finished-at="2025-06-09T00:55:08Z" duration-ms="81" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -142,22 +142,121 @@
           </reporter-output>
         </test-method> <!-- chefListViewTest -->
       </class> <!-- com.menumitratCommonAPITestScript.ChefListViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.CaptainCreateTestScript">
+        <test-method is-config="true" signature="captainCreateSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.CaptainCreateTestScript@305b7c14]" started-at="2025-06-09T00:55:09Z" name="captainCreateSetUp" finished-at="2025-06-09T00:55:10Z" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captainCreateSetUp -->
+        <test-method signature="captainCreateTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.CaptainCreateTestScript@305b7c14]" started-at="2025-06-09T00:55:10Z" name="captainCreateTest" data-provider="getCaptainCreateData" finished-at="2025-06-09T00:55:10Z" duration-ms="57" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[captaincreate]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[captaincreate_001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[positive]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[verify captain create]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[post]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[{
+ 
+ "user_id":2,
+ "outlet_id":"1",
+ "name":"ramucaptain",
+ "mobile":"8945678989",
+ "address":"satara",
+ "aadhar_number":"343332322321",
+ "dob":"12 Jan 2023",
+ "email":"h@gmail.com",
+ "app_source":"captain_app",
+ "functionality_ids":[1,2,3,4]
+
+}]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[{
+  "detail": "Captain created successfully"
+}]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.menumitra.utilityclass.customException">
+            <message>
+              <![CDATA[Error in captain create test: Status code mismatch - Expected: 200, Actual: 400]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.menumitra.utilityclass.customException: Error in captain create test: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:238)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.menumitra.utilityclass.customException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- captainCreateTest -->
+      </class> <!-- com.menumitratCommonAPITestScript.CaptainCreateTestScript -->
       <class name="com.menumitra.superclass.APIBase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@69453e37]" started-at="2025-06-09T00:21:49Z" name="setUp" finished-at="2025-06-09T00:21:49Z" duration-ms="91" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@43c1b556]" started-at="2025-06-09T00:55:02Z" name="setUp" finished-at="2025-06-09T00:55:02Z" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@69453e37]" started-at="2025-06-09T00:22:00Z" name="tearDown" finished-at="2025-06-09T00:22:00Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@43c1b556]" started-at="2025-06-09T00:55:10Z" name="tearDown" finished-at="2025-06-09T00:55:10Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.menumitra.superclass.APIBase -->
       <class name="com.menumitratCommonAPITestScript.ChefDeleteTestScript">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.ChefDeleteTestScript@43c1b556]" started-at="2025-06-09T00:21:59Z" name="setup" finished-at="2025-06-09T00:21:59Z" duration-ms="312" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.ChefDeleteTestScript@c0c2f8d]" started-at="2025-06-09T00:55:09Z" name="setup" finished-at="2025-06-09T00:55:09Z" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="deleteChef(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ChefDeleteTestScript@43c1b556]" started-at="2025-06-09T00:21:59Z" name="deleteChef" data-provider="getChefDeleteData" finished-at="2025-06-09T00:21:59Z" duration-ms="107" status="PASS">
+        <test-method signature="deleteChef(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ChefDeleteTestScript@c0c2f8d]" started-at="2025-06-09T00:55:09Z" name="deleteChef" data-provider="getChefDeleteData" finished-at="2025-06-09T00:55:09Z" duration-ms="87" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -208,16 +307,48 @@
               </value>
             </param>
           </params>
+          <exception class="com.menumitra.utilityclass.customException">
+            <message>
+              <![CDATA[Test execution failed: Status code validation failed - Expected: 200, Actual: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+	at com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef(ChefDeleteTestScript.java:236)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.menumitra.utilityclass.customException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteChef -->
       </class> <!-- com.menumitratCommonAPITestScript.ChefDeleteTestScript -->
       <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.ActivityLogTestScript@ae13544]" started-at="2025-06-09T00:21:55Z" name="setup" finished-at="2025-06-09T00:21:57Z" duration-ms="1556" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.ActivityLogTestScript@22fcf7ab]" started-at="2025-06-09T00:55:07Z" name="setup" finished-at="2025-06-09T00:55:07Z" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="activityLogTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ActivityLogTestScript@ae13544]" started-at="2025-06-09T00:21:57Z" name="activityLogTest" data-provider="getActivityLogData" finished-at="2025-06-09T00:21:57Z" duration-ms="320" status="PASS">
+        <test-method signature="activityLogTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ActivityLogTestScript@22fcf7ab]" started-at="2025-06-09T00:55:07Z" name="activityLogTest" data-provider="getActivityLogData" finished-at="2025-06-09T00:55:07Z" duration-ms="246" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -297,11 +428,11 @@
         </test-method> <!-- activityLogTest -->
       </class> <!-- com.menumitratCommonAPITestScript.ActivityLogTestScript -->
       <class name="com.menumitratCommonAPITestScript.ChefViewTestScript">
-        <test-method is-config="true" signature="chefViewSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.ChefViewTestScript@7dc0f706]" started-at="2025-06-09T00:21:58Z" name="chefViewSetUp" finished-at="2025-06-09T00:21:58Z" duration-ms="258" status="PASS">
+        <test-method is-config="true" signature="chefViewSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.ChefViewTestScript@63475ace]" started-at="2025-06-09T00:55:08Z" name="chefViewSetUp" finished-at="2025-06-09T00:55:08Z" duration-ms="416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chefViewSetUp -->
-        <test-method signature="chefViewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ChefViewTestScript@7dc0f706]" started-at="2025-06-09T00:21:58Z" name="chefViewTest" data-provider="getChefViewData" finished-at="2025-06-09T00:21:58Z" duration-ms="82" status="PASS">
+        <test-method signature="chefViewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ChefViewTestScript@63475ace]" started-at="2025-06-09T00:55:08Z" name="chefViewTest" data-provider="getChefViewData" finished-at="2025-06-09T00:55:09Z" duration-ms="88" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -376,11 +507,11 @@
         </test-method> <!-- chefViewTest -->
       </class> <!-- com.menumitratCommonAPITestScript.ChefViewTestScript -->
       <class name="com.menumitratCommonAPITestScript.TableListViewTestScript">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.TableListViewTestScript@6f4a47c7]" started-at="2025-06-09T00:21:49Z" name="setup" finished-at="2025-06-09T00:21:53Z" duration-ms="4257" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.TableListViewTestScript@587e5365]" started-at="2025-06-09T00:55:02Z" name="setup" finished-at="2025-06-09T00:55:05Z" duration-ms="3571" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyTableListView(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.TableListViewTestScript@6f4a47c7]" started-at="2025-06-09T00:21:54Z" name="verifyTableListView" data-provider="getTableListViewData" finished-at="2025-06-09T00:21:55Z" duration-ms="1407" status="PASS">
+        <test-method signature="verifyTableListView(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.TableListViewTestScript@587e5365]" started-at="2025-06-09T00:55:06Z" name="verifyTableListView" data-provider="getTableListViewData" finished-at="2025-06-09T00:55:07Z" duration-ms="1011" status="PASS">
           <params>
             <param index="0">
               <value>

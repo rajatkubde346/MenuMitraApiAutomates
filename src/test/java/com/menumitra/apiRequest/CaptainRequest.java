@@ -11,6 +11,8 @@ public class CaptainRequest {
     private String aadhar_number;
     private String dob;
     private String email;
+    private String app_source;
+    private int[] functionality_ids;
 
     public String getUpdate_user_id() {
         return update_user_id;
@@ -90,5 +92,21 @@ public class CaptainRequest {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getApp_source() {
+        return app_source;
+    }
+
+    public void setApp_source(String app_source) {
+        this.app_source = app_source;
+    }
+
+    public int[] getFunctionality_ids() {
+        return functionality_ids;
+    }
+
+    public void setFunctionality_ids(int[] functionality_ids) {
+        this.functionality_ids = functionality_ids;
     }
 }

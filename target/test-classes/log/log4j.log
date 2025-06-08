@@ -16403,3 +16403,1638 @@ com.menumitra.utilityclass.customException: Error validating response: Error pro
 2025-06-09 00:21:59 INFO  ResponseUtil:60 - Delete Data Successfully
 2025-06-09 00:21:59 INFO  Listener:60 - Test case passed: deleteChef
 2025-06-09 00:21:59 INFO  Listener:60 - Test Suite finished: Test
+2025-06-09 00:32:08 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon Jun 09 00:32:08 IST 2025) =====
+2025-06-09 00:32:08 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-09 00:32:08 INFO  APIBase:60 - Starting test suite setup
+2025-06-09 00:32:08 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-09 00:32:08 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-09 00:32:08 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-09 00:32:08 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-09 00:32:08 INFO  APIBase:60 - Properties file opened successfully
+2025-06-09 00:32:08 INFO  APIBase:60 - Properties object initialized
+2025-06-09 00:32:08 INFO  APIBase:60 - Properties loaded successfully
+2025-06-09 00:32:08 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-09 00:32:08 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-09 00:32:08 INFO  APIBase:60 - Setting QA environment...
+2025-06-09 00:32:08 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-09 00:32:08 INFO  Listener:60 - Test Suite started: Test
+2025-06-09 00:32:09 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:32:09 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:09 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:32:09 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:09 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:12 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:12 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:32:12 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:32:12 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:32:12 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:12 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:32:12 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:12 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:12 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:12 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:32:12 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:32:13 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:13 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:13 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:13 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:13 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:13 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:13 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:13 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:13 INFO  Listener:60 - verifyTableListView test case started!
+2025-06-09 00:32:13 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/table_listview
+2025-06-09 00:32:13 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:14 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:15 INFO  Listener:60 - Test case passed: verifyTableListView
+2025-06-09 00:32:15 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:32:15 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:15 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:32:15 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:15 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:15 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:15 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:32:15 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:32:15 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:32:15 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:15 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:32:15 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:15 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:15 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:15 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:32:15 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:32:15 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:15 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:15 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:15 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:15 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:15 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:16 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:16 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:16 INFO  Listener:60 - activityLogTest test case started!
+2025-06-09 00:32:16 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/activities_logs
+2025-06-09 00:32:16 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:16 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:16 INFO  Listener:60 - Test case passed: activityLogTest
+2025-06-09 00:32:16 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:32:16 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:16 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:32:16 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:16 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:16 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:16 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:32:16 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:32:16 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:32:16 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:16 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:32:16 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:16 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:16 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:16 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:32:16 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:32:16 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:16 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:16 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:16 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:16 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:16 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:17 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:17 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:17 INFO  Listener:60 - chefListViewTest test case started!
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_listview
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:17 INFO  Listener:60 - Test case passed: chefListViewTest
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:32:17 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:32:17 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:32:17 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:17 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:17 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:17 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:17 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:17 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:17 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:17 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:17 INFO  Listener:60 - chefViewTest test case started!
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_view
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:17 INFO  Listener:60 - Test case passed: chefViewTest
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:32:17 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:17 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:17 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:32:17 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:18 INFO  Listener:60 - updateChef test case started!
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Making PATCH request to: https://men4u.xyz/v2/common/chef_update
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Executing PATCH request
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - PATCH request completed successfully
+2025-06-09 00:32:18 INFO  Listener:60 - Test case passed: updateChef
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:32:18 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:32:18 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:18 INFO  Listener:60 - deleteChef test case started!
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Making DELETE request to: https://men4u.xyz/v2/common/chef_delete
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - start delete data..
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Delete Data Successfully
+2025-06-09 00:32:18 ERROR ChefDeleteTestScript:99 - [FAILURE] Status code validation failed - Expected: 200, Actual: 404
+2025-06-09 00:32:18 ERROR ChefDeleteTestScript:70 - Failed Response Body:
+{
+    "detail": "User ID is incorrect or user is not a chef"
+}
+2025-06-09 00:32:18 ERROR ChefDeleteTestScript:70 - Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+2025-06-09 00:32:18 ERROR ChefDeleteTestScript:70 - Stack trace: [com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef(ChefDeleteTestScript.java:223), java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103), java.base/java.lang.reflect.Method.invoke(Method.java:580), org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86), org.testng.internal.Invoker.invokeMethod(Invoker.java:643), org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820), org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128), org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129), org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112), org.testng.TestRunner.privateRun(TestRunner.java:782), org.testng.TestRunner.run(TestRunner.java:632), org.testng.SuiteRunner.runTest(SuiteRunner.java:366), org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361), org.testng.SuiteRunner.privateRun(SuiteRunner.java:319), org.testng.SuiteRunner.run(SuiteRunner.java:268), org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52), org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86), org.testng.TestNG.runSuitesSequentially(TestNG.java:1244), org.testng.TestNG.runSuitesLocally(TestNG.java:1169), org.testng.TestNG.run(TestNG.java:1064), org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115), org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293), org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)]
+2025-06-09 00:32:18 ERROR ChefDeleteTestScript:70 - Failed Response Status Code: 404
+2025-06-09 00:32:18 ERROR ChefDeleteTestScript:70 - Failed Response Body:
+{
+    "detail": "User ID is incorrect or user is not a chef"
+}
+2025-06-09 00:32:18 ERROR Listener:70 - Test case failed: deleteChef
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:32:18 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:18 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:18 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:32:18 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:18 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:19 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:19 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:19 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:19 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:19 INFO  Listener:60 - captainCreateNegativeTest test case started!
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Code: 400
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Time: 56ms
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Line: HTTP/1.1 400 Bad Request
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Body: {"detail":"Please provide outlet_id"}
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Success response matched as expected
+2025-06-09 00:32:19 INFO  Listener:60 - Test case passed: captainCreateNegativeTest
+2025-06-09 00:32:19 INFO  Listener:60 - captainCreateNegativeTest test case started!
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Code: 400
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Time: 60ms
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Line: HTTP/1.1 400 Bad Request
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Body: {"detail":"Please provide user_id"}
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Success response matched as expected
+2025-06-09 00:32:19 INFO  Listener:60 - Test case passed: captainCreateNegativeTest
+2025-06-09 00:32:19 INFO  Listener:60 - captainCreateNegativeTest test case started!
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:99 - [FAILURE] Error message mismatch - Expected: Name is required, Actual: Please provide app_source
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Code: 400
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Time: 49ms
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Line: HTTP/1.1 400 Bad Request
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Body: {"detail":"Please provide app_source"}
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error validating response: Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create negative test: Error validating response: Error processing success response: Actual response does not match expected response: Error validating response: Error processing success response: Actual response does not match expected response
+com.menumitra.utilityclass.customException: Error validating response: Error processing success response: Actual response does not match expected response
+	at com.menumitra.utilityclass.validateResponseBody.handleResponseBody(validateResponseBody.java:128)
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateNegativeTest(CaptainCreateTestScript.java:403)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:32:19 ERROR Listener:70 - Test case failed: captainCreateNegativeTest
+2025-06-09 00:32:19 INFO  Listener:60 - captainCreateNegativeTest test case started!
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:99 - [FAILURE] Error message mismatch - Expected: Mobile is required, Actual: Please provide app_source
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Code: 400
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Time: 44ms
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Line: HTTP/1.1 400 Bad Request
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Body: {"detail":"Please provide app_source"}
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error validating response: Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create negative test: Error validating response: Error processing success response: Actual response does not match expected response: Error validating response: Error processing success response: Actual response does not match expected response
+com.menumitra.utilityclass.customException: Error validating response: Error processing success response: Actual response does not match expected response
+	at com.menumitra.utilityclass.validateResponseBody.handleResponseBody(validateResponseBody.java:128)
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateNegativeTest(CaptainCreateTestScript.java:403)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:32:19 ERROR Listener:70 - Test case failed: captainCreateNegativeTest
+2025-06-09 00:32:19 INFO  Listener:60 - captainCreateNegativeTest test case started!
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:99 - [FAILURE] Error message mismatch - Expected: Mobile number must be a 10 digits number, Actual: Please provide app_source
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Code: 400
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Time: 52ms
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Line: HTTP/1.1 400 Bad Request
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Body: {"detail":"Please provide app_source"}
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error validating response: Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create negative test: Error validating response: Error processing success response: Actual response does not match expected response: Error validating response: Error processing success response: Actual response does not match expected response
+com.menumitra.utilityclass.customException: Error validating response: Error processing success response: Actual response does not match expected response
+	at com.menumitra.utilityclass.validateResponseBody.handleResponseBody(validateResponseBody.java:128)
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateNegativeTest(CaptainCreateTestScript.java:403)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:32:19 ERROR Listener:70 - Test case failed: captainCreateNegativeTest
+2025-06-09 00:32:19 INFO  Listener:60 - captainCreateNegativeTest test case started!
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:99 - [FAILURE] Error message mismatch - Expected: Aadhar number is required, Actual: Please provide app_source
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Code: 400
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Time: 58ms
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Line: HTTP/1.1 400 Bad Request
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Body: {"detail":"Please provide app_source"}
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error validating response: Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create negative test: Error validating response: Error processing success response: Actual response does not match expected response: Error validating response: Error processing success response: Actual response does not match expected response
+com.menumitra.utilityclass.customException: Error validating response: Error processing success response: Actual response does not match expected response
+	at com.menumitra.utilityclass.validateResponseBody.handleResponseBody(validateResponseBody.java:128)
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateNegativeTest(CaptainCreateTestScript.java:403)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:32:19 ERROR Listener:70 - Test case failed: captainCreateNegativeTest
+2025-06-09 00:32:19 INFO  Listener:60 - captainCreateNegativeTest test case started!
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:99 - [FAILURE] Error message mismatch - Expected: The email format is incorrect., Actual: Please provide app_source
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Code: 400
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Time: 50ms
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Line: HTTP/1.1 400 Bad Request
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Body: {"detail":"Please provide app_source"}
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error validating response: Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create negative test: Error validating response: Error processing success response: Actual response does not match expected response: Error validating response: Error processing success response: Actual response does not match expected response
+com.menumitra.utilityclass.customException: Error validating response: Error processing success response: Actual response does not match expected response
+	at com.menumitra.utilityclass.validateResponseBody.handleResponseBody(validateResponseBody.java:128)
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateNegativeTest(CaptainCreateTestScript.java:403)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:32:19 ERROR Listener:70 - Test case failed: captainCreateNegativeTest
+2025-06-09 00:32:19 INFO  Listener:60 - captainCreateNegativeTest test case started!
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:32:19 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:99 - [FAILURE] Error message mismatch - Expected: Please provide user_id, Actual: Please provide outlet_id
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Code: 400
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Time: 46ms
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Status Line: HTTP/1.1 400 Bad Request
+2025-06-09 00:32:19 INFO  validateResponseBody:60 - Response Body: {"detail":"Please provide outlet_id"}
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR validateResponseBody:70 - Error validating response: Error processing success response: Actual response does not match expected response
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create negative test: Error validating response: Error processing success response: Actual response does not match expected response: Error validating response: Error processing success response: Actual response does not match expected response
+com.menumitra.utilityclass.customException: Error validating response: Error processing success response: Actual response does not match expected response
+	at com.menumitra.utilityclass.validateResponseBody.handleResponseBody(validateResponseBody.java:128)
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateNegativeTest(CaptainCreateTestScript.java:403)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:32:19 ERROR Listener:70 - Test case failed: captainCreateNegativeTest
+2025-06-09 00:32:19 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:32:19 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:32:19 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:32:19 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:32:19 INFO  Listener:60 - captainCreateTest test case started!
+2025-06-09 00:32:19 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create test: JSONObject["app_source"] not found.: JSONObject["app_source"] not found.
+org.json.JSONException: JSONObject["app_source"] not found.
+	at org.json.JSONObject.get(JSONObject.java:568)
+	at org.json.JSONObject.getString(JSONObject.java:855)
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:193)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:32:19 ERROR Listener:70 - Test case failed: captainCreateTest
+2025-06-09 00:32:19 INFO  Listener:60 - Test Suite finished: Test
+2025-06-09 00:36:18 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon Jun 09 00:36:20 IST 2025) =====
+2025-06-09 00:36:21 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-09 00:36:21 INFO  APIBase:60 - Starting test suite setup
+2025-06-09 00:36:21 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-09 00:36:21 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-09 00:36:21 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-09 00:36:22 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-09 00:36:22 INFO  APIBase:60 - Properties file opened successfully
+2025-06-09 00:36:22 INFO  APIBase:60 - Properties object initialized
+2025-06-09 00:36:22 INFO  APIBase:60 - Properties loaded successfully
+2025-06-09 00:36:22 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-09 00:36:22 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-09 00:36:22 INFO  APIBase:60 - Setting QA environment...
+2025-06-09 00:36:22 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-09 00:36:22 INFO  Listener:60 - Test Suite started: Test
+2025-06-09 00:36:23 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:36:23 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:23 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:36:23 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:23 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:26 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:26 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:36:26 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:36:26 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:36:26 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:26 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:36:26 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:26 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:27 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:27 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:36:27 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:36:28 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:28 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:28 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:28 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:28 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:28 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:28 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:28 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:28 INFO  Listener:60 - verifyTableListView test case started!
+2025-06-09 00:36:28 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/table_listview
+2025-06-09 00:36:28 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:29 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:29 INFO  Listener:60 - Test case passed: verifyTableListView
+2025-06-09 00:36:29 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:36:29 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:29 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:36:29 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:29 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:29 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:29 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:36:29 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:36:29 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:36:29 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:29 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:36:29 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:29 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:29 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:29 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:36:29 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:30 INFO  Listener:60 - activityLogTest test case started!
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/activities_logs
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:30 INFO  Listener:60 - Test case passed: activityLogTest
+2025-06-09 00:36:30 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:36:30 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:30 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:30 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:36:30 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:36:30 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:36:30 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:30 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:30 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:36:30 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:30 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:30 INFO  Listener:60 - chefListViewTest test case started!
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_listview
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:30 INFO  Listener:60 - Test case passed: chefListViewTest
+2025-06-09 00:36:30 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:36:30 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:30 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:30 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:36:31 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:36:31 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:31 INFO  Listener:60 - chefViewTest test case started!
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_view
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:31 INFO  Listener:60 - Test case passed: chefViewTest
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:36:31 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:31 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:36:31 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:31 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:31 INFO  Listener:60 - updateChef test case started!
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - Making PATCH request to: https://men4u.xyz/v2/common/chef_update
+2025-06-09 00:36:31 INFO  ResponseUtil:60 - Executing PATCH request
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - PATCH request completed successfully
+2025-06-09 00:36:32 INFO  Listener:60 - Test case passed: updateChef
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:36:32 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:36:32 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:32 INFO  Listener:60 - deleteChef test case started!
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - Making DELETE request to: https://men4u.xyz/v2/common/chef_delete
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - start delete data..
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - Delete Data Successfully
+2025-06-09 00:36:32 ERROR ChefDeleteTestScript:99 - [FAILURE] Status code validation failed - Expected: 200, Actual: 404
+2025-06-09 00:36:32 ERROR ChefDeleteTestScript:70 - Failed Response Body:
+{
+    "detail": "User ID is incorrect or user is not a chef"
+}
+2025-06-09 00:36:32 ERROR ChefDeleteTestScript:70 - Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+2025-06-09 00:36:32 ERROR ChefDeleteTestScript:70 - Stack trace: [com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef(ChefDeleteTestScript.java:223), java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103), java.base/java.lang.reflect.Method.invoke(Method.java:580), org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86), org.testng.internal.Invoker.invokeMethod(Invoker.java:643), org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820), org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128), org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129), org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112), org.testng.TestRunner.privateRun(TestRunner.java:782), org.testng.TestRunner.run(TestRunner.java:632), org.testng.SuiteRunner.runTest(SuiteRunner.java:366), org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361), org.testng.SuiteRunner.privateRun(SuiteRunner.java:319), org.testng.SuiteRunner.run(SuiteRunner.java:268), org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52), org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86), org.testng.TestNG.runSuitesSequentially(TestNG.java:1244), org.testng.TestNG.runSuitesLocally(TestNG.java:1169), org.testng.TestNG.run(TestNG.java:1064), org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115), org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293), org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)]
+2025-06-09 00:36:32 ERROR ChefDeleteTestScript:70 - Failed Response Status Code: 404
+2025-06-09 00:36:32 ERROR ChefDeleteTestScript:70 - Failed Response Body:
+{
+    "detail": "User ID is incorrect or user is not a chef"
+}
+2025-06-09 00:36:32 ERROR Listener:70 - Test case failed: deleteChef
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:36:32 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:36:32 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:36:32 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:36:32 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:36:32 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:36:32 INFO  Listener:60 - captainCreateTest test case started!
+2025-06-09 00:36:32 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create test: Missing value at 1 [character 2 line 1]: Missing value at 1 [character 2 line 1]
+org.json.JSONException: Missing value at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:503)
+	at org.json.JSONTokener.nextSimpleValue(JSONTokener.java:453)
+	at org.json.JSONObject.<init>(JSONObject.java:218)
+	at org.json.JSONObject.<init>(JSONObject.java:402)
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:183)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:36:32 ERROR Listener:70 - Test case failed: captainCreateTest
+2025-06-09 00:36:32 INFO  Listener:60 - Test Suite finished: Test
+2025-06-09 00:37:06 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon Jun 09 00:37:06 IST 2025) =====
+2025-06-09 00:37:06 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-09 00:37:06 INFO  APIBase:60 - Starting test suite setup
+2025-06-09 00:37:06 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-09 00:37:06 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-09 00:37:06 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-09 00:37:06 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-09 00:37:06 INFO  APIBase:60 - Properties file opened successfully
+2025-06-09 00:37:06 INFO  APIBase:60 - Properties object initialized
+2025-06-09 00:37:06 INFO  APIBase:60 - Properties loaded successfully
+2025-06-09 00:37:06 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-09 00:37:06 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-09 00:37:06 INFO  APIBase:60 - Setting QA environment...
+2025-06-09 00:37:06 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-09 00:37:06 INFO  Listener:60 - Test Suite started: Test
+2025-06-09 00:37:06 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:37:06 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:37:06 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:37:06 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:37:06 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:37:09 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:37:09 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:37:09 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:37:09 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:37:09 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:37:09 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:37:09 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:37:09 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:37:09 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:37:09 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:37:09 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:37:10 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:37:10 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:37:10 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:37:10 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:37:10 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:37:10 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:37:10 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:37:10 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:37:10 INFO  Listener:60 - captainCreateTest test case started!
+2025-06-09 00:37:10 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create test: Missing value at 1 [character 2 line 1]: Missing value at 1 [character 2 line 1]
+org.json.JSONException: Missing value at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:503)
+	at org.json.JSONTokener.nextSimpleValue(JSONTokener.java:453)
+	at org.json.JSONObject.<init>(JSONObject.java:218)
+	at org.json.JSONObject.<init>(JSONObject.java:402)
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:183)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:37:10 ERROR Listener:70 - Test case failed: captainCreateTest
+2025-06-09 00:37:10 INFO  Listener:60 - Test Suite finished: Test
+2025-06-09 00:39:33 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon Jun 09 00:39:33 IST 2025) =====
+2025-06-09 00:39:33 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-09 00:39:33 INFO  APIBase:60 - Starting test suite setup
+2025-06-09 00:39:33 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-09 00:39:33 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-09 00:39:33 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-09 00:39:33 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-09 00:39:33 INFO  APIBase:60 - Properties file opened successfully
+2025-06-09 00:39:33 INFO  APIBase:60 - Properties object initialized
+2025-06-09 00:39:33 INFO  APIBase:60 - Properties loaded successfully
+2025-06-09 00:39:33 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-09 00:39:33 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-09 00:39:33 INFO  APIBase:60 - Setting QA environment...
+2025-06-09 00:39:33 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-09 00:39:33 INFO  Listener:60 - Test Suite started: Test
+2025-06-09 00:39:33 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:39:33 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:39:33 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:39:33 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:39:33 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:39:35 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:39:35 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:39:35 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:39:35 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:39:35 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:39:35 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:39:35 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:39:35 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:39:35 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:39:35 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:39:35 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:39:36 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:39:36 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:39:36 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:39:36 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:39:36 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:39:36 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:39:36 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:39:36 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:39:36 INFO  Listener:60 - captainCreateTest test case started!
+2025-06-09 00:39:36 ERROR CaptainCreateTestScript:99 - [FAILURE] Invalid JSON format in request body: Missing value at 1 [character 2 line 1]
+2025-06-09 00:39:36 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create test: Invalid JSON format in request body: Missing value at 1 [character 2 line 1]: Invalid JSON format in request body: Missing value at 1 [character 2 line 1]
+com.menumitra.utilityclass.customException: Invalid JSON format in request body: Missing value at 1 [character 2 line 1]
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:206)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:39:36 ERROR Listener:70 - Test case failed: captainCreateTest
+2025-06-09 00:39:36 INFO  Listener:60 - Test Suite finished: Test
+2025-06-09 00:41:44 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon Jun 09 00:41:44 IST 2025) =====
+2025-06-09 00:41:44 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-09 00:41:44 INFO  APIBase:60 - Starting test suite setup
+2025-06-09 00:41:44 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-09 00:41:44 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-09 00:41:44 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-09 00:41:44 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-09 00:41:44 INFO  APIBase:60 - Properties file opened successfully
+2025-06-09 00:41:44 INFO  APIBase:60 - Properties object initialized
+2025-06-09 00:41:44 INFO  APIBase:60 - Properties loaded successfully
+2025-06-09 00:41:44 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-09 00:41:44 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-09 00:41:44 INFO  APIBase:60 - Setting QA environment...
+2025-06-09 00:41:44 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-09 00:41:44 INFO  Listener:60 - Test Suite started: Test
+2025-06-09 00:41:44 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:41:44 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:41:44 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:41:44 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:41:44 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:41:46 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:41:46 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:41:46 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:41:46 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:41:46 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:41:46 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:41:46 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:41:46 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:41:46 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:41:46 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:41:46 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:41:47 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:41:47 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:41:47 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:41:47 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:41:48 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:41:48 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:41:48 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:41:48 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:41:48 ERROR CaptainCreateTestScript:99 - [FAILURE] No valid captain create test data found after filtering
+2025-06-09 00:41:48 ERROR CaptainCreateTestScript:99 - [FAILURE] Error in getting captain create test data: No valid captain create test data found after filtering
+2025-06-09 00:41:48 WARN  Listener:65 - Test case skipped: captainCreateTest
+2025-06-09 00:41:48 INFO  Listener:60 - Test Suite finished: Test
+2025-06-09 00:42:29 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon Jun 09 00:42:29 IST 2025) =====
+2025-06-09 00:42:29 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-09 00:42:29 INFO  APIBase:60 - Starting test suite setup
+2025-06-09 00:42:29 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-09 00:42:29 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-09 00:42:29 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-09 00:42:29 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-09 00:42:29 INFO  APIBase:60 - Properties file opened successfully
+2025-06-09 00:42:29 INFO  APIBase:60 - Properties object initialized
+2025-06-09 00:42:29 INFO  APIBase:60 - Properties loaded successfully
+2025-06-09 00:42:29 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-09 00:42:29 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-09 00:42:29 INFO  APIBase:60 - Setting QA environment...
+2025-06-09 00:42:29 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-09 00:42:29 INFO  Listener:60 - Test Suite started: Test
+2025-06-09 00:42:29 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:42:29 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:42:29 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:42:29 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:42:29 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:42:31 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:42:31 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:42:31 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:42:31 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:42:31 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:42:31 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:42:31 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:42:31 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:42:31 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:42:31 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:42:31 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:42:32 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:42:32 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:42:32 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:42:32 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:42:33 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:42:33 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:42:33 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:42:33 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:42:33 INFO  Listener:60 - captainCreateTest test case started!
+2025-06-09 00:42:33 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create test: Missing value at 1 [character 2 line 1]: Missing value at 1 [character 2 line 1]
+org.json.JSONException: Missing value at 1 [character 2 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:503)
+	at org.json.JSONTokener.nextSimpleValue(JSONTokener.java:453)
+	at org.json.JSONObject.<init>(JSONObject.java:218)
+	at org.json.JSONObject.<init>(JSONObject.java:402)
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:183)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:42:33 ERROR Listener:70 - Test case failed: captainCreateTest
+2025-06-09 00:42:33 INFO  Listener:60 - Test Suite finished: Test
+2025-06-09 00:46:33 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon Jun 09 00:46:33 IST 2025) =====
+2025-06-09 00:46:33 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-09 00:46:33 INFO  APIBase:60 - Starting test suite setup
+2025-06-09 00:46:33 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-09 00:46:33 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-09 00:46:33 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-09 00:46:33 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-09 00:46:33 INFO  APIBase:60 - Properties file opened successfully
+2025-06-09 00:46:33 INFO  APIBase:60 - Properties object initialized
+2025-06-09 00:46:33 INFO  APIBase:60 - Properties loaded successfully
+2025-06-09 00:46:33 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-09 00:46:33 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-09 00:46:33 INFO  APIBase:60 - Setting QA environment...
+2025-06-09 00:46:33 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-09 00:46:33 INFO  Listener:60 - Test Suite started: Test
+2025-06-09 00:46:34 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:46:34 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:46:34 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:46:34 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:46:34 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:46:36 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:46:36 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:46:36 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:46:36 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:46:36 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:46:36 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:46:36 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:46:36 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:46:36 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:46:36 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:46:36 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:46:38 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:46:38 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:46:38 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:46:38 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:46:38 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:46:38 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:46:38 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:46:38 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:46:38 INFO  Listener:60 - captainCreateTest test case started!
+2025-06-09 00:46:38 ERROR CaptainCreateTestScript:99 - [FAILURE] Invalid JSON format in request body: Missing value at 1 [character 2 line 1]
+Raw request body: [{{
+ 
+ "user_id":2,
+ "outlet_id":"1",
+ "name":"ramucaptain",
+ "mobile":"6936343436",
+ "address":"satara",
+ "aadhar_number":"343332322321",
+ "dob":"12 Jan 2023",
+ "email":"h@gmail.com",
+ "app_source":"captain_app",
+ "functionality_ids":[1,2,3,4]
+
+}]
+2025-06-09 00:46:38 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create test: Invalid JSON format in request body: Missing value at 1 [character 2 line 1]
+Raw request body: [{{
+ 
+ "user_id":2,
+ "outlet_id":"1",
+ "name":"ramucaptain",
+ "mobile":"6936343436",
+ "address":"satara",
+ "aadhar_number":"343332322321",
+ "dob":"12 Jan 2023",
+ "email":"h@gmail.com",
+ "app_source":"captain_app",
+ "functionality_ids":[1,2,3,4]
+
+}]: Invalid JSON format in request body: Missing value at 1 [character 2 line 1]
+Raw request body: [{{
+ 
+ "user_id":2,
+ "outlet_id":"1",
+ "name":"ramucaptain",
+ "mobile":"6936343436",
+ "address":"satara",
+ "aadhar_number":"343332322321",
+ "dob":"12 Jan 2023",
+ "email":"h@gmail.com",
+ "app_source":"captain_app",
+ "functionality_ids":[1,2,3,4]
+
+}]
+com.menumitra.utilityclass.customException: Invalid JSON format in request body: Missing value at 1 [character 2 line 1]
+Raw request body: [{{
+ 
+ "user_id":2,
+ "outlet_id":"1",
+ "name":"ramucaptain",
+ "mobile":"6936343436",
+ "address":"satara",
+ "aadhar_number":"343332322321",
+ "dob":"12 Jan 2023",
+ "email":"h@gmail.com",
+ "app_source":"captain_app",
+ "functionality_ids":[1,2,3,4]
+
+}]
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:217)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:46:38 ERROR Listener:70 - Test case failed: captainCreateTest
+2025-06-09 00:46:38 INFO  Listener:60 - Test Suite finished: Test
+2025-06-09 00:50:49 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon Jun 09 00:50:49 IST 2025) =====
+2025-06-09 00:50:49 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-09 00:50:49 INFO  APIBase:60 - Starting test suite setup
+2025-06-09 00:50:49 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-09 00:50:49 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-09 00:50:49 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-09 00:50:49 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-09 00:50:49 INFO  APIBase:60 - Properties file opened successfully
+2025-06-09 00:50:49 INFO  APIBase:60 - Properties object initialized
+2025-06-09 00:50:49 INFO  APIBase:60 - Properties loaded successfully
+2025-06-09 00:50:49 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-09 00:50:49 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-09 00:50:49 INFO  APIBase:60 - Setting QA environment...
+2025-06-09 00:50:49 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-09 00:50:49 INFO  Listener:60 - Test Suite started: Test
+2025-06-09 00:50:49 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:50:49 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:50:49 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:50:49 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:50:49 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:50:57 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:50:57 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:50:57 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:50:57 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:50:57 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:50:57 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:50:57 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:50:57 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:50:57 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:50:57 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:50:57 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:50:58 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:50:58 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:50:58 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:50:58 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:50:59 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:50:59 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:50:59 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:50:59 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:50:59 INFO  Listener:60 - captainCreateTest test case started!
+2025-06-09 00:50:59 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:50:59 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:50:59 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:50:59 ERROR CaptainCreateTestScript:99 - [FAILURE] Status code mismatch - Expected: 200, Actual: 400
+2025-06-09 00:50:59 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create test: Status code mismatch - Expected: 200, Actual: 400: Status code mismatch - Expected: 200, Actual: 400
+com.menumitra.utilityclass.customException: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:218)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:50:59 ERROR Listener:70 - Test case failed: captainCreateTest
+2025-06-09 00:50:59 INFO  Listener:60 - Test Suite finished: Test
+2025-06-09 00:51:52 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon Jun 09 00:51:52 IST 2025) =====
+2025-06-09 00:51:52 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-09 00:51:52 INFO  APIBase:60 - Starting test suite setup
+2025-06-09 00:51:52 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-09 00:51:52 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-09 00:51:52 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-09 00:51:52 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-09 00:51:52 INFO  APIBase:60 - Properties file opened successfully
+2025-06-09 00:51:52 INFO  APIBase:60 - Properties object initialized
+2025-06-09 00:51:52 INFO  APIBase:60 - Properties loaded successfully
+2025-06-09 00:51:52 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-09 00:51:52 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-09 00:51:52 INFO  APIBase:60 - Setting QA environment...
+2025-06-09 00:51:52 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-09 00:51:52 INFO  Listener:60 - Test Suite started: Test
+2025-06-09 00:51:52 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:51:52 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:51:52 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:51:52 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:51:52 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:51:54 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:51:54 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:51:54 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:51:54 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:51:54 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:51:54 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:51:54 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:51:54 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:51:54 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:51:54 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:51:54 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:51:55 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:51:55 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:51:55 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:51:55 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:51:55 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:51:55 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:51:55 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:51:55 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:51:55 INFO  Listener:60 - captainCreateTest test case started!
+2025-06-09 00:51:55 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:51:55 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:51:56 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:51:56 ERROR CaptainCreateTestScript:99 - [FAILURE] Status code mismatch - Expected: 200, Actual: 400
+2025-06-09 00:51:56 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create test: Status code mismatch - Expected: 200, Actual: 400: Status code mismatch - Expected: 200, Actual: 400
+com.menumitra.utilityclass.customException: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:218)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:51:56 ERROR Listener:70 - Test case failed: captainCreateTest
+2025-06-09 00:51:56 INFO  Listener:60 - Test Suite finished: Test
+2025-06-09 00:54:15 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon Jun 09 00:54:15 IST 2025) =====
+2025-06-09 00:54:15 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-09 00:54:15 INFO  APIBase:60 - Starting test suite setup
+2025-06-09 00:54:15 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-09 00:54:15 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-09 00:54:15 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-09 00:54:15 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-09 00:54:15 INFO  APIBase:60 - Properties file opened successfully
+2025-06-09 00:54:15 INFO  APIBase:60 - Properties object initialized
+2025-06-09 00:54:15 INFO  APIBase:60 - Properties loaded successfully
+2025-06-09 00:54:15 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-09 00:54:15 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-09 00:54:15 INFO  APIBase:60 - Setting QA environment...
+2025-06-09 00:54:15 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-09 00:54:15 INFO  Listener:60 - Test Suite started: Test
+2025-06-09 00:54:16 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:54:16 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:54:16 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:54:16 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:54:16 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:54:18 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:54:18 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:54:18 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:54:18 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:54:18 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:54:18 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:54:18 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:54:18 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:54:18 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:54:18 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:54:18 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:54:19 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:54:19 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:54:19 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:54:19 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:54:19 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:54:19 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:54:20 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:54:20 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:54:20 INFO  Listener:60 - captainCreateTest test case started!
+2025-06-09 00:54:20 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:54:20 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:54:20 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:54:20 INFO  Listener:60 - Test case passed: captainCreateTest
+2025-06-09 00:54:20 INFO  Listener:60 - Test Suite finished: Test
+2025-06-09 00:55:01 INFO  LogUtils:20 - Log4j configured from static initializer
+
+
+
+===== MenuMitra Execution Start (Mon Jun 09 00:55:02 IST 2025) =====
+2025-06-09 00:55:02 INFO  LogUtils:40 - === Logger initialized with session markers ===
+2025-06-09 00:55:02 INFO  APIBase:60 - Starting test suite setup
+2025-06-09 00:55:02 INFO  APIBase:60 - Loading properties file from: src\test\resources\configFile\config.properties
+2025-06-09 00:55:02 INFO  ReadFile:60 - Attempting to read file from path: src\test\resources\configFile\config.properties
+2025-06-09 00:55:02 INFO  ReadFile:60 - Opening FileInputStream for file
+2025-06-09 00:55:02 INFO  ReadFile:60 - Successfully opened file stream
+2025-06-09 00:55:02 INFO  APIBase:60 - Properties file opened successfully
+2025-06-09 00:55:02 INFO  APIBase:60 - Properties object initialized
+2025-06-09 00:55:02 INFO  APIBase:60 - Properties loaded successfully
+2025-06-09 00:55:02 INFO  APIBase:60 - Properties file loaded successfully
+2025-06-09 00:55:02 INFO  EnviromentChanges:60 - Environment switched to: qa
+2025-06-09 00:55:02 INFO  APIBase:60 - Setting QA environment...
+2025-06-09 00:55:02 INFO  APIBase:60 - Setup completed. Log4j configured and properties loaded.
+2025-06-09 00:55:02 INFO  Listener:60 - Test Suite started: Test
+2025-06-09 00:55:02 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:55:02 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:02 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:55:02 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:02 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:04 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:04 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:55:04 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:55:04 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:55:04 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:04 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:55:04 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:04 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:05 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:05 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:55:05 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:55:05 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:05 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:05 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:05 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:06 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:06 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:06 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:06 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:06 INFO  Listener:60 - verifyTableListView test case started!
+2025-06-09 00:55:06 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/table_listview
+2025-06-09 00:55:06 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:06 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:07 INFO  Listener:60 - Test case passed: verifyTableListView
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:55:07 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:55:07 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:55:07 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:07 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:07 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:07 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:07 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:07 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:07 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:07 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:07 INFO  Listener:60 - activityLogTest test case started!
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/activities_logs
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:07 INFO  Listener:60 - Test case passed: activityLogTest
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:55:07 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:07 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:07 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:55:07 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:08 INFO  Listener:60 - chefListViewTest test case started!
+2025-06-09 00:55:08 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_listview
+2025-06-09 00:55:08 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:08 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:08 INFO  Listener:60 - Test case passed: chefListViewTest
+2025-06-09 00:55:08 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:55:08 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:08 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:55:08 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:08 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:08 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:08 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:55:08 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:55:08 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:55:08 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:08 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:55:08 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:08 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:08 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:08 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:55:08 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:08 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:08 INFO  Listener:60 - chefViewTest test case started!
+2025-06-09 00:55:08 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/chef_view
+2025-06-09 00:55:08 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:09 INFO  Listener:60 - Test case passed: chefViewTest
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:55:09 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:55:09 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:09 INFO  Listener:60 - updateChef test case started!
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Making PATCH request to: https://men4u.xyz/v2/common/chef_update
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Executing PATCH request
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - PATCH request completed successfully
+2025-06-09 00:55:09 INFO  Listener:60 - Test case passed: updateChef
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:55:09 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:55:09 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:09 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:09 INFO  Listener:60 - deleteChef test case started!
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Making DELETE request to: https://men4u.xyz/v2/common/chef_delete
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - start delete data..
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Delete Data Successfully
+2025-06-09 00:55:09 ERROR ChefDeleteTestScript:99 - [FAILURE] Status code validation failed - Expected: 200, Actual: 404
+2025-06-09 00:55:09 ERROR ChefDeleteTestScript:70 - Failed Response Body:
+{
+    "detail": "User ID is incorrect or user is not a chef"
+}
+2025-06-09 00:55:09 ERROR ChefDeleteTestScript:70 - Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+2025-06-09 00:55:09 ERROR ChefDeleteTestScript:70 - Stack trace: [com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef(ChefDeleteTestScript.java:223), java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103), java.base/java.lang.reflect.Method.invoke(Method.java:580), org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86), org.testng.internal.Invoker.invokeMethod(Invoker.java:643), org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820), org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128), org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129), org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112), org.testng.TestRunner.privateRun(TestRunner.java:782), org.testng.TestRunner.run(TestRunner.java:632), org.testng.SuiteRunner.runTest(SuiteRunner.java:366), org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361), org.testng.SuiteRunner.privateRun(SuiteRunner.java:319), org.testng.SuiteRunner.run(SuiteRunner.java:268), org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52), org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86), org.testng.TestNG.runSuitesSequentially(TestNG.java:1244), org.testng.TestNG.runSuitesLocally(TestNG.java:1169), org.testng.TestNG.run(TestNG.java:1064), org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115), org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293), org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)]
+2025-06-09 00:55:09 ERROR ChefDeleteTestScript:70 - Failed Response Status Code: 404
+2025-06-09 00:55:09 ERROR ChefDeleteTestScript:70 - Failed Response Body:
+{
+    "detail": "User ID is incorrect or user is not a chef"
+}
+2025-06-09 00:55:09 ERROR Listener:70 - Test case failed: deleteChef
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - ===== Starting Login API Execution =====
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Constructed Login Base URI: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Login payload prepared with mobile
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/login
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - POST request executed for login API
+2025-06-09 00:55:09 INFO  ActionsMethods:95 - [SUCCESS] Login API responded with status code 200
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - ===== Starting VerifyOTP API Execution =====
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Constructed Verify OTP Base URI: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:09 INFO  ActionsMethods:60 - Verify OTP payload prepared with mobile: 
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/verify_otp
+2025-06-09 00:55:09 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:10 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:10 INFO  ActionsMethods:60 - POST request executed for Verify OTP API
+2025-06-09 00:55:10 INFO  ActionsMethods:95 - [SUCCESS] verify OTP API responded with status code 200
+2025-06-09 00:55:10 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:10 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:10 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:10 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:10 INFO  DataDriven:60 - Excel sheet read successfully.
+2025-06-09 00:55:10 INFO  DataDriven:60 - Excel file closed successfully.
+2025-06-09 00:55:10 INFO  DataDriven:60 - Excel data read successfully.
+2025-06-09 00:55:10 INFO  DataDriven:60 - Excel workbook closed successfully.
+2025-06-09 00:55:10 INFO  Listener:60 - captainCreateTest test case started!
+2025-06-09 00:55:10 INFO  ResponseUtil:60 - Making POST request to: https://men4u.xyz/v2/common/captain_create
+2025-06-09 00:55:10 INFO  ResponseUtil:60 - Executing POST request
+2025-06-09 00:55:10 INFO  ResponseUtil:60 - POST request completed successfully
+2025-06-09 00:55:10 ERROR CaptainCreateTestScript:99 - [FAILURE] Status code mismatch - Expected: 200, Actual: 400
+2025-06-09 00:55:10 ERROR CaptainCreateTestScript:103 - [EXCEPTION] Error in captain create test: Status code mismatch - Expected: 200, Actual: 400: Status code mismatch - Expected: 200, Actual: 400
+com.menumitra.utilityclass.customException: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:218)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+2025-06-09 00:55:10 ERROR Listener:70 - Test case failed: captainCreateTest
+2025-06-09 00:55:10 INFO  Listener:60 - Test Suite finished: Test
