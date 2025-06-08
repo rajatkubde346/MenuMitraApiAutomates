@@ -1,0 +1,154 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 08 19:50:36 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>5 seconds (5323 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.ActivityLogTestScript.activityLogTest()'><b>activityLogTest</b><br>Test class: com.menumitratCommonAPITestScript.ActivityLogTestScript<br>Parameters: activitylog, activitylog_001, positive, Verfiy Activity log, post, {
+    "user_id": 2
+}, {
+  "detail": "Activity logs retrieved successfully",
+  "data": {
+    "activity_logs": [
+      {
+        "activity_log_id": 67387,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:30 PM"
+      },
+      {
+        "activity_log_id": 67386,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:30 PM"
+      },
+      {
+        "activity_log_id": 67385,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:29 PM"
+      },, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.ActivityLogTestScript@38afe297</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.TableListViewTestScript.verifyTableListView()'><b>verifyTableListView</b><br>Test class: com.menumitratCommonAPITestScript.TableListViewTestScript<br>Parameters: tablelistview, tablelistview_001, positive, verify table list view, post, {  
+    
+    "outlet_id": 1,
+    "user_id":2,
+ "app_source":"owner_app"
+}, {
+  "detail": [
+    {
+      "section_name": "Igig",
+      "section_id": 292,
+      "tables": [
+        {
+          "table_ids": [
+            211,
+            212
+          ],
+          "table_numbers": [
+            205,
+            206
+          ],
+          "outlet_id": 1,
+          "is_reserved": false,
+          "is_joined": true,
+          "total_capacity": 8,
+          "is_split": false,
+          "is_occupied": 1,
+          "occupied_time": "07 Jun 2025 01:36:56 PM",
+          "grand_total": 285.63,
+          "order_id": 3547,
+          "order_number": "3089",
+          "action": "has_save",
+          "order_payment_settle_type": "null",
+          "payment_method": null
+        }, 200</td>
+<td></td>
+<td>1</td>
+<td>com.menumitratCommonAPITestScript.TableListViewTestScript@55b0dcab</td></tr>
+</table><p>
+</body>
+</html>

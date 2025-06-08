@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-08T14:20:36Z" name="Suite" finished-at="2025-06-08T14:20:42Z" duration-ms="5323">
+    <groups>
+    </groups>
+    <test started-at="2025-06-08T14:20:36Z" name="Test" finished-at="2025-06-08T14:20:42Z" duration-ms="5323">
+      <class name="com.menumitra.superclass.APIBase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@131ef10]" started-at="2025-06-08T19:50:36Z" name="setUp" finished-at="2025-06-08T19:50:36Z" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@131ef10]" started-at="2025-06-08T19:50:42Z" name="tearDown" finished-at="2025-06-08T19:50:42Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.menumitra.superclass.APIBase -->
+      <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.ActivityLogTestScript@38afe297]" started-at="2025-06-08T19:50:41Z" name="setup" finished-at="2025-06-08T19:50:41Z" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="activityLogTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.ActivityLogTestScript@38afe297]" started-at="2025-06-08T19:50:41Z" name="activityLogTest" data-provider="getActivityLogData" finished-at="2025-06-08T19:50:42Z" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[activitylog]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[activitylog_001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[positive]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Verfiy Activity log]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[post]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[{
+    "user_id": 2
+}]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[{
+  "detail": "Activity logs retrieved successfully",
+  "data": {
+    "activity_logs": [
+      {
+        "activity_log_id": 67387,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:30 PM"
+      },
+      {
+        "activity_log_id": 67386,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:30 PM"
+      },
+      {
+        "activity_log_id": 67385,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:29 PM"
+      },]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activityLogTest -->
+      </class> <!-- com.menumitratCommonAPITestScript.ActivityLogTestScript -->
+      <class name="com.menumitratCommonAPITestScript.TableListViewTestScript">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.menumitratCommonAPITestScript.TableListViewTestScript@55b0dcab]" started-at="2025-06-08T19:50:36Z" name="setup" finished-at="2025-06-08T19:50:40Z" duration-ms="3288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyTableListView(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.TableListViewTestScript@55b0dcab]" started-at="2025-06-08T19:50:40Z" name="verifyTableListView" data-provider="getTableListViewData" finished-at="2025-06-08T19:50:41Z" duration-ms="1064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tablelistview]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tablelistview_001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[positive]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[verify table list view]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[post]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[{  
+    
+    "outlet_id": 1,
+    "user_id":2,
+ "app_source":"owner_app"
+}]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[{
+  "detail": [
+    {
+      "section_name": "Igig",
+      "section_id": 292,
+      "tables": [
+        {
+          "table_ids": [
+            211,
+            212
+          ],
+          "table_numbers": [
+            205,
+            206
+          ],
+          "outlet_id": 1,
+          "is_reserved": false,
+          "is_joined": true,
+          "total_capacity": 8,
+          "is_split": false,
+          "is_occupied": 1,
+          "occupied_time": "07 Jun 2025 01:36:56 PM",
+          "grand_total": 285.63,
+          "order_id": 3547,
+          "order_number": "3089",
+          "action": "has_save",
+          "order_payment_settle_type": "null",
+          "payment_method": null
+        }]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTableListView -->
+      </class> <!-- com.menumitratCommonAPITestScript.TableListViewTestScript -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
