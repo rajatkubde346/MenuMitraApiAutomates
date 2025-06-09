@@ -95,35 +95,6 @@ public class SectionDeleteTestScript extends APIBase
         }
     }
 
-    @DataProvider(name="getSectionDeleteNegativeInputData") 
-    private Object[][] getSectionDeleteNegativeInputData() throws customException {
-        try {
-            LogUtils.info("Reading negative test scenario data for section delete API");
-            Object[][] testData = DataDriven.readExcelData(excelSheetPathForGetApis, "CommonAPITestScenario");
-            
-            if (testData == null || testData.length == 0) {
-                LogUtils.failure(logger, "No section delete API negative test scenario data found in Excel sheet");
-                throw new customException("No section delete API negative test scenario data found in Excel sheet");
-            }
-            
-            List<Object[]> filteredData = new ArrayList<>();
-            
-            for (int i = 0; i < testData.length; i++) {
-                Object[] row = testData[i];
-                if (row != null && row.length >= 3 &&
-                    "sectiondelete".equalsIgnoreCase(Objects.toString(row[0], "")) &&
-                    "negative".equalsIgnoreCase(Objects.toString(row[2], ""))) {
-                    filteredData.add(row);
-                }
-            }
-
-            return filteredData.toArray(new Object[0][]);
-        } catch (Exception e) {
-            LogUtils.exception(logger, "Failed to read section delete API negative test scenario data", e);
-            throw new customException("Error reading section delete API negative test scenario data");
-        }
-    }
-
     @BeforeClass
     private void sectionDeleteSetup() throws customException {
         try {
@@ -177,9 +148,10 @@ public class SectionDeleteTestScript extends APIBase
                 requestBodyJson = new JSONObject(requestBody);
                 expectedJson = new JSONObject(expectedResponseBody);
                 
-                sectionrequest.setSection_id(requestBodyJson.getString("section_id"));
-                sectionrequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+                sectionrequest.setSection_id(String.valueOf(requestBodyJson.getInt("section_id")));
+                sectionrequest.setOutlet_id(String.valueOf(requestBodyJson.getInt("outlet_id")));
                 sectionrequest.setUser_id(String.valueOf(userId));
+                sectionrequest.setApp_source(requestBodyJson.getString("app_source"));
                 
                 LogUtils.info("Section delete payload prepared");
                 ExtentReport.getTest().log(Status.INFO, "Section delete payload prepared");
@@ -210,58 +182,15 @@ public class SectionDeleteTestScript extends APIBase
         }
     }
 
-   // @Test(dataProvider = "getSectionDeleteNegativeInputData", priority = 2)
-    private void verifySectionDeleteUsingInvalidData(String apiName, String testCaseId,
-            String testType, String description, String httpsMethod,
-            String requestBody, String expectedResponseBody, String statusCode) throws customException {
+    @AfterClass
+    private void tearDown() {
         try {
-            LogUtils.info("Start section delete API using invalid input data");
-            ExtentReport.createTest("Verify Section Delete API with Invalid Data: " + description);
-            ExtentReport.getTest().log(Status.INFO, "====Start section delete using negative input data====");
-            ExtentReport.getTest().log(Status.INFO, "Constructed Base URI: " + baseUri);
-
-            if (apiName.contains("sectiondelete") && testType.contains("negative")) {
-                requestBodyJson = new JSONObject(requestBody);
-                expectedJson = new JSONObject(expectedResponseBody);
-                
-                sectionrequest.setSection_id(requestBodyJson.getString("section_id"));
-                sectionrequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
-                
-                LogUtils.info("Section delete payload prepared for negative test");
-                ExtentReport.getTest().log(Status.INFO, "Section delete payload prepared for negative test");
-
-                response = ResponseUtil.getResponseWithAuth(baseUri, sectionrequest, httpsMethod, accessToken);
-                LogUtils.info("Section delete API negative test response: " + response.getBody().asString());
-                ExtentReport.getTest().log(Status.INFO, "Section delete API negative test response: " + response.getBody().asString());
-
-                validateResponseBody.handleResponseBody(response, expectedJson);
-                LogUtils.success(logger, "Successfully validated section delete API negative test");
-                ExtentReport.getTest().log(Status.PASS, "Successfully validated section delete API negative test");
-            }
+            LogUtils.info("===Test environment tear down successfully===");
+            ExtentReport.getTest().log(Status.PASS, MarkupHelper.createLabel("Test environment tear down successfully", ExtentColor.GREEN));
+            TokenManagers.clearTokens();
         } catch (Exception e) {
-            LogUtils.exception(logger, "Error during section delete negative test: " + e.getMessage(), e);
-            ExtentReport.getTest().log(Status.FAIL, "Error during section delete negative test: " + e.getMessage());
-            throw new customException("Error during section delete negative test");
+            LogUtils.exception(logger, "Error during test environment tear down", e);
+            ExtentReport.getTest().log(Status.FAIL, "Error during test environment tear down: " + e.getMessage());
         }
     }
-
-//@AfterClass
-private void tearDown()
-{
-    try 
-    {
-        LogUtils.info("===Test environment tear down successfully===");
-       
-        ExtentReport.getTest().log(Status.PASS, MarkupHelper.createLabel("Test environment tear down successfully", ExtentColor.GREEN));
-        
-        // ActionsMethods.logout();
-        TokenManagers.clearTokens();
-        
-    } 
-    catch (Exception e) 
-    {
-        LogUtils.exception(logger, "Error during test environment tear down", e);
-        ExtentReport.getTest().log(Status.FAIL, "Error during test environment tear down: " + e.getMessage());
-    }
-}
 }
