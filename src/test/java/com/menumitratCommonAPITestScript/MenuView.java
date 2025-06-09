@@ -186,7 +186,7 @@ public class MenuView extends APIBase
                 requestBodyJson = new JSONObject(requestBody);
                 
                 // Only set outlet_id and menu_id as required
-                menuViewRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+                menuViewRequest.setOutlet_id(Integer.parseInt(requestBodyJson.getString("outlet_id")));
                 menuViewRequest.setMenu_id(requestBodyJson.getString("menu_id"));
 
                 LogUtils.info("Request Body: " + requestBodyJson.toString());
@@ -317,7 +317,7 @@ public class MenuView extends APIBase
             
             // Set payload for menu view request
             if (requestBodyJson.has("outlet_id")) {
-            	 menuViewRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+            	 menuViewRequest.setOutlet_id(Integer.parseInt(requestBodyJson.getString("outlet_id")));
                 
             }
             

@@ -4,7 +4,7 @@ import java.util.List;
 
 public class MenuRequest 
 {
-    private String outlet_id;
+    private Integer outlet_id;
     private String user_id;
     private String menu_id;
     private String menu_cat_id;
@@ -67,11 +67,11 @@ public class MenuRequest
         }
     }
     
-    public String getOutlet_id() {
+    public Integer getOutlet_id() {
         return outlet_id;
     }
     
-    public void setOutlet_id(String outlet_id) {
+    public void setOutlet_id(Integer outlet_id) {
         this.outlet_id = outlet_id;
     }
     

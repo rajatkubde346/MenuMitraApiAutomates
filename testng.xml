@@ -32,7 +32,9 @@
        <class name="com.menumitratCommonAPITestScript.SectionViewTestScript"/>
        <class name="com.menumitratCommonAPITestScript.SectionDeleteTestScript"/>
        <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
-       <class name="com.menumitratCommonAPITestScript.AddMenusToOrder"/>
+       <class name="com.menumitratCommonAPITestScript.GetMenuList"/>
+       
+       
        
        
        

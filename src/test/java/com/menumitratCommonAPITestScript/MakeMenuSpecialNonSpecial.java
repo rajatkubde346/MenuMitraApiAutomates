@@ -186,7 +186,7 @@ public class MakeMenuSpecialNonSpecial extends APIBase
             {
                 requestBodyJson = new JSONObject(requestBody);
 
-                menuRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+                menuRequest.setOutlet_id(Integer.parseInt(requestBodyJson.getString("outlet_id")));
                 menuRequest.setMenu_id(requestBodyJson.getString("menu_id"));
                 menuRequest.setUser_id(String.valueOf(userId));
                 
@@ -352,7 +352,7 @@ public class MakeMenuSpecialNonSpecial extends APIBase
             ExtentReport.getTest().log(Status.INFO, "Request Body: " + requestBodyJson.toString());
             
             // Set request parameters from JSON
-            menuRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+            menuRequest.setOutlet_id(Integer.parseInt(requestBodyJson.getString("outlet_id")));
             menuRequest.setMenu_id(requestBodyJson.getString("menu_id"));
             menuRequest.setUser_id(String.valueOf(userId));
             

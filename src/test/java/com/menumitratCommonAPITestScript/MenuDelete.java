@@ -180,7 +180,7 @@ public class MenuDelete extends APIBase
             LogUtils.info("Preparing request body");
             requestBodyJson = new JSONObject(requestBodyPayload);
             
-            menuDeleteRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+            menuDeleteRequest.setOutlet_id(Integer.parseInt(requestBodyJson.getString("outlet_id")));
             menuDeleteRequest.setUser_id(String.valueOf(user_id));
             
             // Set menu_id which is required for deletion
@@ -331,7 +331,7 @@ public class MenuDelete extends APIBase
                     menuDeleteRequest.setMenu_id(requestBodyJson.getString("menu_id"));
                 }
                 if (requestBodyJson.has("outlet_id")) {
-                    menuDeleteRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+                    menuDeleteRequest.setOutlet_id(Integer.parseInt(requestBodyJson.getString("outlet_id")));
                 }
                 menuDeleteRequest.setUser_id(requestBodyJson.getString("user_id"));
                 response = ResponseUtil.getResponseWithAuth(baseURI, menuDeleteRequest, httpsmethod, accessToken);

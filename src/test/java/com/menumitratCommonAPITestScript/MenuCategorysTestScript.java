@@ -201,7 +201,8 @@ public class MenuCategorysTestScript extends APIBase
                 requestBodyJson = new JSONObject(requestBody);
 
                 // Set only outlet_id in the request
-                menuRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+                String outletIdStr = requestBodyJson.getString("outlet_id");
+                menuRequest.setOutlet_id(Integer.parseInt(outletIdStr));
                 
                 LogUtils.info("Constructed menu categorys request"); 
                 LogUtils.info("Request Body: " + requestBodyJson.toString());
@@ -329,7 +330,8 @@ public class MenuCategorysTestScript extends APIBase
 
             // Set request parameters
             if (requestBodyJson.has("outlet_id")) {
-                menuRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+                String outletIdStr = requestBodyJson.getString("outlet_id");
+                menuRequest.setOutlet_id(Integer.parseInt(outletIdStr));
             }
 
             LogUtils.info("Request Body: " + requestBodyJson.toString());

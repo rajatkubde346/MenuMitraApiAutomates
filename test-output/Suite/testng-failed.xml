@@ -26,7 +26,7 @@
       <class name="com.menumitratCommonAPITestScript.SectionViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.SectionDeleteTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
-      <class name="com.menumitratCommonAPITestScript.AddMenusToOrder"/>
+      <class name="com.menumitratCommonAPITestScript.GetMenuList"/>
     </classes>
   </test> <!-- Test -->
   <test name="Test(failed)">
@@ -148,13 +148,11 @@
           <include name="chefListViewSetUp"/>
         </methods>
       </class> <!-- com.menumitratCommonAPITestScript.ChefListViewTestScript -->
-      <class name="com.menumitratCommonAPITestScript.AddMenusToOrder">
+      <class name="com.menumitratCommonAPITestScript.GetMenuList">
         <methods>
-          <include name="addMenusToOrderNegativeTest" invocation-numbers="0 1"/>
-          <include name="verifyAddMenusToOrder" invocation-numbers="0"/>
-          <include name="addMenusToOrderSetUp"/>
+          <include name="menuListSetUp"/>
         </methods>
-      </class> <!-- com.menumitratCommonAPITestScript.AddMenusToOrder -->
+      </class> <!-- com.menumitratCommonAPITestScript.GetMenuList -->
       <class name="com.menumitratCommonAPITestScript.CaptainUpdateTestScript">
         <methods>
           <include name="captainUpdateSetUp"/>

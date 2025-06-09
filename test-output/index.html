@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">24 methods, 9 failed,   15 passed</span>
+                    <span class="method-stats">22 methods, 6 failed,   16 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,16 +100,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.menumitratCommonAPITestScript.AddMenusToOrder" class="method navigator-link" hash-for-method="addMenusToOrderNegativeTest(addmenustoorder, addmenustoorder_002, negative, Verify Add Menus to Order when menu_id is missing, p...)">addMenusToOrderNegativeTest(addmenustoorder, addmenustoorder_002, negative, Verify Add Menus to Order when menu_id is missing, p...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.menumitratCommonAPITestScript.AddMenusToOrder" class="method navigator-link" hash-for-method="addMenusToOrderNegativeTest(addmenustoorder, addmenustoorder_003, negative, Verify Add Menus to Order with invalid order_id, pos...)">addMenusToOrderNegativeTest(addmenustoorder, addmenustoorder_003, negative, Verify Add Menus to Order with invalid order_id, pos...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.menumitratCommonAPITestScript.CaptainCreateTestScript" class="method navigator-link" hash-for-method="captainCreateTest(captaincreate, captaincreate_001, positive, verify captain create, post, {
@@ -153,13 +143,6 @@
     &quot;outl...)">testStaffDelete(staffdelete, staffdelete_001, positive, verify staff delete, delete, {
     "staff_id": 31,
     "outl...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.menumitratCommonAPITestScript.AddMenusToOrder" class="method navigator-link" hash-for-method="verifyAddMenusToOrder(addmenustoorder, addmenustoorder_001, positive, verify Add Menus to order, post, {
-    &quot;order_id&quot;: &quot;...)">verifyAddMenusToOrder(addmenustoorder, addmenustoorder_001, positive, verify Add Menus to order, post, {
-    "order_id": "...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -257,6 +240,17 @@
                         <a href="#" panel-name="suite-Suite" title="com.menumitratCommonAPITestScript.StaffUpdateTestScript" class="method navigator-link" hash-for-method="updateStaff(staffupdate, staffupdate_001, positive, verify update staff using valid input, post, {
          &quot;use...)">updateStaff(staffupdate, staffupdate_001, positive, verify update staff using valid input, post, {
          "use...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.menumitratCommonAPITestScript.GetMenuList" class="method navigator-link" hash-for-method="verifyMenuList(getmenulist, getmenu_list_001, positive, verify Get Menu List, post, {
+  
+  &quot;outlet_id&quot;: 1,
+ &quot;app_so...)">verifyMenuList(getmenulist, getmenu_list_001, positive, verify Get Menu List, post, {
+  
+  "outlet_id": 1,
+ "app_so...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -487,117 +481,6 @@
 }, 200)</span>
                   <div class="stack-trace">com.menumitra.utilityclass.customException: Error during staff creation test execution: JSONObject[&quot;app_source&quot;] not found.
 	at com.menumitratCommonAPITestScript.StaffCreateTestScript.createStaff(StaffCreateTestScript.java:259)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.menumitratCommonAPITestScript.AddMenusToOrder</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addMenusToOrderNegativeTest(addmenustoorder, addmenustoorder_002, negative, Verify Add Menus to Order when menu_id is missing, p...)">
-                  </a> <!-- addMenusToOrderNegativeTest(addmenustoorder, addmenustoorder_002, negative, Verify Add Menus to Order when menu_id is missing, p...) -->
-                  <span class="method-name">addMenusToOrderNegativeTest</span>
-                  <span class="parameters">(addmenustoorder, addmenustoorder_002, negative, Verify Add Menus to Order when menu_id is missing, post, { "order_id": "5", "outlet_id": "1", "order_items": [ { "quantity": "10", "portion_name": "Full", "comment": "add spice" } ] }, {"detail":"Please provide order_items"}, 400)</span>
-                  <div class="stack-trace">com.menumitra.utilityclass.customException: Error in add menus to order negative test: JSONObject[&quot;detail&quot;] is not a string (class org.json.JSONObject).
-	at com.menumitratCommonAPITestScript.AddMenusToOrder.addMenusToOrderNegativeTest(AddMenusToOrder.java:446)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addMenusToOrderNegativeTest(addmenustoorder, addmenustoorder_003, negative, Verify Add Menus to Order with invalid order_id, pos...)">
-                  </a> <!-- addMenusToOrderNegativeTest(addmenustoorder, addmenustoorder_003, negative, Verify Add Menus to Order with invalid order_id, pos...) -->
-                  <span class="method-name">addMenusToOrderNegativeTest</span>
-                  <span class="parameters">(addmenustoorder, addmenustoorder_003, negative, Verify Add Menus to Order with invalid order_id, post, { "order_id": "999", "outlet_id": "1","order_items":[
-        {
-            "menu_id":"13",
-            "quantity":"10",
-            "portion_name": "Full",
-            "comment":"add spice"
-
-        }
-    ] }, {"detail":"Please provide order_items"}, 400)</span>
-                  <div class="stack-trace">com.menumitra.utilityclass.customException: Error in add menus to order negative test: JSONObject[&quot;detail&quot;] is not a string (class org.json.JSONObject).
-	at com.menumitratCommonAPITestScript.AddMenusToOrder.addMenusToOrderNegativeTest(AddMenusToOrder.java:446)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyAddMenusToOrder(addmenustoorder, addmenustoorder_001, positive, verify Add Menus to order, post, {
-    &quot;order_id&quot;: &quot;...)">
-                  </a> <!-- verifyAddMenusToOrder(addmenustoorder, addmenustoorder_001, positive, verify Add Menus to order, post, {
-    "order_id": "...) -->
-                  <span class="method-name">verifyAddMenusToOrder</span>
-                  <span class="parameters">(addmenustoorder, addmenustoorder_001, positive, verify Add Menus to order, post, {
-    "order_id": "5",
-    "outlet_id":"1",
-    "order_items":[
-        {
-            "menu_id":"13",
-            "quantity":"10",
-            "portion_name": "Full",
-            "comment":"add spice"
-
-        }
-    ]
- 
-}, {
-    "order_details": {
-        "order_id": 5,
-        "order_number": "5",
-        "table_number": [
-            "77"
-        ],
-        "order_status": "cooking",
-        "menu_count": 2,
-        "total_bill_amount": 6300.0,
-        "total_bill_with_discount": 6300.0,
-        "service_charges_percent": 1.0,
-        "service_charges_amount": 63.0,
-        "gst_percent": 1.0,
-        "gst_amount": 63.0,
-        "discount_percent": 0.0,
-        "discount_amount": 0.0,
-        "grand_total": 6426.0,
-        "datetime": "03-May-2025 04:15:00 PM"
-    },
-    "menu_details": [
-        {
-            "menu_id": 13,
-            "menu_name": "Jeera Rice",
-            "price": 180.0,
-            "quantity": 25,
-            "offer": 0,
-            "comment": "Extra spicy please",
-            "menu_sub_total": 4500.0,
-            "portion_name": "Full",
-            "unit": "500g"
-        },
-        {
-            "menu_id": 13,
-            "menu_name": "Jeera Rice",
-            "price": 180.0,
-            "quantity": 10,
-            "offer": 0,
-            "comment": "add spice",
-            "menu_sub_total": 1800.0,
-            "portion_name": "Full",
-            "unit": "500g"
-        }
-    ]
-}, 200)</span>
-                  <div class="stack-trace">com.menumitra.utilityclass.customException: Error in add menus to order test: Status code mismatch - Expected: 200, Actual: 400
-	at com.menumitratCommonAPITestScript.AddMenusToOrder.verifyAddMenusToOrder(AddMenusToOrder.java:276)
 ... Removed 22 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -964,6 +847,34 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.menumitratCommonAPITestScript.sectionUpdateTestScript</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySectionUpdateUsingValidInputData(sectionupdate, sectionupdate_001, positive, Valid section update, patch, {
+    &quot;outlet_id&quot;: 1,
+    &quot;...)">
+                  </a> <!-- verifySectionUpdateUsingValidInputData(sectionupdate, sectionupdate_001, positive, Valid section update, patch, {
+    "outlet_id": 1,
+    "...) -->
+                  <span class="method-name">verifySectionUpdateUsingValidInputData</span>
+                  <span class="parameters">(sectionupdate, sectionupdate_001, positive, Valid section update, patch, {
+    "outlet_id": 1,
+    "section_id":17,
+    "user_id":2,
+    "section_name": "Family",
+  "app_source":"owner_app"
+}, {
+  "detail": "Outlet Section updated successfully"
+}, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.menumitratCommonAPITestScript.StaffViewTestScript</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -999,34 +910,6 @@
     "updated_by": null,
     "updated_on": null
   }
-}, 200)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.menumitratCommonAPITestScript.sectionUpdateTestScript</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySectionUpdateUsingValidInputData(sectionupdate, sectionupdate_001, positive, Valid section update, patch, {
-    &quot;outlet_id&quot;: 1,
-    &quot;...)">
-                  </a> <!-- verifySectionUpdateUsingValidInputData(sectionupdate, sectionupdate_001, positive, Valid section update, patch, {
-    "outlet_id": 1,
-    "...) -->
-                  <span class="method-name">verifySectionUpdateUsingValidInputData</span>
-                  <span class="parameters">(sectionupdate, sectionupdate_001, positive, Valid section update, patch, {
-    "outlet_id": 1,
-    "section_id":17,
-    "user_id":2,
-    "section_name": "Family",
-  "app_source":"owner_app"
-}, {
-  "detail": "Outlet Section updated successfully"
 }, 200)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -1200,6 +1083,54 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">com.menumitratCommonAPITestScript.GetMenuList</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMenuList(getmenulist, getmenu_list_001, positive, verify Get Menu List, post, {
+  
+  &quot;outlet_id&quot;: 1,
+ &quot;app_so...)">
+                  </a> <!-- verifyMenuList(getmenulist, getmenu_list_001, positive, verify Get Menu List, post, {
+  
+  "outlet_id": 1,
+ "app_so...) -->
+                  <span class="method-name">verifyMenuList</span>
+                  <span class="parameters">(getmenulist, getmenu_list_001, positive, verify Get Menu List, post, {
+  
+  "outlet_id": 1,
+ "app_source":"owner_app"
+
+}, {
+  "menu_list": {
+    "Lemon Ricee": 14,
+    "Fried Rice": 12,
+    "Jeera Rice": 386,
+    "Chicken biryani": 17,
+    "testing menu": 51,
+    "Chicken tandoor": 380,
+    "CCVC": 105,
+    "online ": 113,
+    "chiken testing": 128,
+    "testing": 333,
+    "bgff": 341,
+    "Test vtwo": 373,
+    "White Sauce past with extra cheese": 381,
+    "vfffdf": 383,
+    "Momos": 390,
+    "Pulav": 391,
+    "Gddh": 392,
+    "Pizza": 393
+  }
+}, 200)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">com.menumitratCommonAPITestScript.CaptainUpdateTestScript</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -1267,7 +1198,7 @@
       &lt;class name=&quot;com.menumitratCommonAPITestScript.SectionViewTestScript&quot;/&gt;
       &lt;class name=&quot;com.menumitratCommonAPITestScript.SectionDeleteTestScript&quot;/&gt;
       &lt;class name=&quot;com.menumitratCommonAPITestScript.ActivityLogTestScript&quot;/&gt;
-      &lt;class name=&quot;com.menumitratCommonAPITestScript.AddMenusToOrder&quot;/&gt;
+      &lt;class name=&quot;com.menumitratCommonAPITestScript.GetMenuList&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -1307,108 +1238,100 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(24);
+data.addRows(22);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyTableListView')
 data.setCell(0, 2, 'com.menumitratCommonAPITestScript.TableListViewTestScript')
-data.setCell(0, 3, 3645);
+data.setCell(0, 3, 1809);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifySectionListViewUsingValidInputData')
 data.setCell(1, 2, 'com.menumitratCommonAPITestScript.sectionListViewTestScript')
-data.setCell(1, 3, 856);
+data.setCell(1, 3, 1050);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'activityLogTest')
 data.setCell(2, 2, 'com.menumitratCommonAPITestScript.ActivityLogTestScript')
-data.setCell(2, 3, 391);
+data.setCell(2, 3, 233);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'updateChef')
-data.setCell(3, 2, 'com.menumitratCommonAPITestScript.ChefUpdateTestScript')
-data.setCell(3, 3, 189);
+data.setCell(3, 1, 'updateStaff')
+data.setCell(3, 2, 'com.menumitratCommonAPITestScript.StaffUpdateTestScript')
+data.setCell(3, 3, 163);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'updateStaff')
-data.setCell(4, 2, 'com.menumitratCommonAPITestScript.StaffUpdateTestScript')
-data.setCell(4, 3, 177);
+data.setCell(4, 1, 'captainUpdateTest')
+data.setCell(4, 2, 'com.menumitratCommonAPITestScript.CaptainUpdateTestScript')
+data.setCell(4, 3, 151);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'chefViewTest')
-data.setCell(5, 2, 'com.menumitratCommonAPITestScript.ChefViewTestScript')
-data.setCell(5, 3, 175);
+data.setCell(5, 1, 'verifyMenuList')
+data.setCell(5, 2, 'com.menumitratCommonAPITestScript.GetMenuList')
+data.setCell(5, 3, 144);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifySectionUsingValidInputData')
-data.setCell(6, 2, 'com.menumitratCommonAPITestScript.sectionCreateTestScript')
-data.setCell(6, 3, 139);
+data.setCell(6, 1, 'updateChef')
+data.setCell(6, 2, 'com.menumitratCommonAPITestScript.ChefUpdateTestScript')
+data.setCell(6, 3, 125);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'chefListViewTest')
-data.setCell(7, 2, 'com.menumitratCommonAPITestScript.ChefListViewTestScript')
-data.setCell(7, 3, 126);
+data.setCell(7, 1, 'verifySectionUsingValidInputData')
+data.setCell(7, 2, 'com.menumitratCommonAPITestScript.sectionCreateTestScript')
+data.setCell(7, 3, 112);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'addMenusToOrderNegativeTest')
-data.setCell(8, 2, 'com.menumitratCommonAPITestScript.AddMenusToOrder')
-data.setCell(8, 3, 113);
+data.setCell(8, 1, 'chefViewTest')
+data.setCell(8, 2, 'com.menumitratCommonAPITestScript.ChefViewTestScript')
+data.setCell(8, 3, 109);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'deleteCaptain')
-data.setCell(9, 2, 'com.menumitratCommonAPITestScript.CaptainDeleteTestScript')
-data.setCell(9, 3, 110);
+data.setCell(9, 1, 'captainCreateTest')
+data.setCell(9, 2, 'com.menumitratCommonAPITestScript.CaptainCreateTestScript')
+data.setCell(9, 3, 102);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifySectionViewUsingValidInputData')
-data.setCell(10, 2, 'com.menumitratCommonAPITestScript.SectionViewTestScript')
-data.setCell(10, 3, 97);
+data.setCell(10, 1, 'chefListViewTest')
+data.setCell(10, 2, 'com.menumitratCommonAPITestScript.ChefListViewTestScript')
+data.setCell(10, 3, 99);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifySectionUpdateUsingValidInputData')
-data.setCell(11, 2, 'com.menumitratCommonAPITestScript.sectionUpdateTestScript')
-data.setCell(11, 3, 96);
+data.setCell(11, 1, 'verifyStaffView')
+data.setCell(11, 2, 'com.menumitratCommonAPITestScript.StaffViewTestScript')
+data.setCell(11, 3, 97);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'staffListViewTest')
-data.setCell(12, 2, 'com.menumitratCommonAPITestScript.StaffListViewTestScript')
-data.setCell(12, 3, 94);
+data.setCell(12, 1, 'deleteChef')
+data.setCell(12, 2, 'com.menumitratCommonAPITestScript.ChefDeleteTestScript')
+data.setCell(12, 3, 95);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'captainListViewTest')
-data.setCell(13, 2, 'com.menumitratCommonAPITestScript.CaptainListViewTestScript')
-data.setCell(13, 3, 91);
+data.setCell(13, 1, 'staffListViewTest')
+data.setCell(13, 2, 'com.menumitratCommonAPITestScript.StaffListViewTestScript')
+data.setCell(13, 3, 93);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'captainUpdateTest')
-data.setCell(14, 2, 'com.menumitratCommonAPITestScript.CaptainUpdateTestScript')
+data.setCell(14, 1, 'verifySectionUpdateUsingValidInputData')
+data.setCell(14, 2, 'com.menumitratCommonAPITestScript.sectionUpdateTestScript')
 data.setCell(14, 3, 91);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'addMenusToOrderNegativeTest')
-data.setCell(15, 2, 'com.menumitratCommonAPITestScript.AddMenusToOrder')
-data.setCell(15, 3, 88);
+data.setCell(15, 1, 'captainListViewTest')
+data.setCell(15, 2, 'com.menumitratCommonAPITestScript.CaptainListViewTestScript')
+data.setCell(15, 3, 89);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'deleteChef')
-data.setCell(16, 2, 'com.menumitratCommonAPITestScript.ChefDeleteTestScript')
-data.setCell(16, 3, 86);
+data.setCell(16, 1, 'verifySectionViewUsingValidInputData')
+data.setCell(16, 2, 'com.menumitratCommonAPITestScript.SectionViewTestScript')
+data.setCell(16, 3, 88);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'captainCreateTest')
-data.setCell(17, 2, 'com.menumitratCommonAPITestScript.CaptainCreateTestScript')
-data.setCell(17, 3, 86);
+data.setCell(17, 1, 'deleteCaptain')
+data.setCell(17, 2, 'com.menumitratCommonAPITestScript.CaptainDeleteTestScript')
+data.setCell(17, 3, 82);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'verifyStaffView')
-data.setCell(18, 2, 'com.menumitratCommonAPITestScript.StaffViewTestScript')
-data.setCell(18, 3, 85);
+data.setCell(18, 1, 'captainViewTest')
+data.setCell(18, 2, 'com.menumitratCommonAPITestScript.CaptainViewTestScript')
+data.setCell(18, 3, 81);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'captainViewTest')
-data.setCell(19, 2, 'com.menumitratCommonAPITestScript.CaptainViewTestScript')
-data.setCell(19, 3, 74);
+data.setCell(19, 1, 'testStaffDelete')
+data.setCell(19, 2, 'com.menumitratCommonAPITestScript.StaffDeleteTestScript')
+data.setCell(19, 3, 81);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'verifySectionDeleteUsingValidInputData')
 data.setCell(20, 2, 'com.menumitratCommonAPITestScript.SectionDeleteTestScript')
-data.setCell(20, 3, 74);
+data.setCell(20, 3, 62);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'verifyAddMenusToOrder')
-data.setCell(21, 2, 'com.menumitratCommonAPITestScript.AddMenusToOrder')
-data.setCell(21, 3, 70);
-data.setCell(22, 0, 22)
-data.setCell(22, 1, 'testStaffDelete')
-data.setCell(22, 2, 'com.menumitratCommonAPITestScript.StaffDeleteTestScript')
-data.setCell(22, 3, 59);
-data.setCell(23, 0, 23)
-data.setCell(23, 1, 'createStaff')
-data.setCell(23, 2, 'com.menumitratCommonAPITestScript.StaffCreateTestScript')
-data.setCell(23, 3, 34);
+data.setCell(21, 1, 'createStaff')
+data.setCell(21, 2, 'com.menumitratCommonAPITestScript.StaffCreateTestScript')
+data.setCell(21, 3, 18);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -1448,14 +1371,14 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.menumitratCommonAPITestScript.ActivityLogTestScript</span>
+              <span class="ignored-class-name">com.menumitratCommonAPITestScript.ChefDeleteTestScript</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.menumitratCommonAPITestScript.ChefDeleteTestScript</span>
+              <span class="ignored-class-name">com.menumitratCommonAPITestScript.ActivityLogTestScript</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
@@ -1539,14 +1462,14 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.menumitratCommonAPITestScript.StaffUpdateTestScript</span>
+              <span class="ignored-class-name">com.menumitratCommonAPITestScript.CaptainListViewTestScript</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.menumitratCommonAPITestScript.CaptainListViewTestScript</span>
+              <span class="ignored-class-name">com.menumitratCommonAPITestScript.StaffUpdateTestScript</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
@@ -1567,7 +1490,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.menumitratCommonAPITestScript.AddMenusToOrder</span>
+              <span class="ignored-class-name">com.menumitratCommonAPITestScript.GetMenuList</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUp</span>
                 <br/>
@@ -1598,73 +1521,73 @@ return data;
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.TableListViewTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">285 ms</span>
+                <span class="method-start">259 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyTableListView(tablelistview, tablelistview_001, positive, verify table list view, post, {  
     
     "outlet_id": ...)</span>
-                <span class="method-start">4817 ms</span>
+                <span class="method-start">4473 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.ActivityLogTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">8469 ms</span>
+                <span class="method-start">6288 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">activityLogTest(activitylog, activitylog_001, positive, Verfiy Activity log, post, {
     "user_id": 2
 }, {
   "detail...)</span>
-                <span class="method-start">9094 ms</span>
+                <span class="method-start">6832 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.ChefListViewTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">chefListViewSetUp</span>
-                <span class="method-start">9495 ms</span>
+                <span class="method-start">7067 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">chefListViewTest(cheflistview, cheflistview_001, positive, verify chef listview, post, {
     "user_id":2,
     "outlet...)</span>
-                <span class="method-start">9887 ms</span>
+                <span class="method-start">7476 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.ChefViewTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">chefViewSetUp</span>
-                <span class="method-start">10015 ms</span>
+                <span class="method-start">7577 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">chefViewTest(chefview, chefview_001, positive, verify chef view , post, {
     "update_user_id":2,
     "user_id":6...)</span>
-                <span class="method-start">10642 ms</span>
+                <span class="method-start">7942 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.ChefUpdateTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">10820 ms</span>
+                <span class="method-start">8053 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">updateChef(chefupdate, chefupdate_001, positive, verify chef update, patch, {  
     "update_user_id":"2",
     "...)</span>
-                <span class="method-start">11285 ms</span>
+                <span class="method-start">8439 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.ChefDeleteTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">11476 ms</span>
+                <span class="method-start">8566 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
@@ -1672,14 +1595,14 @@ return data;
                 <span class="method-name">deleteChef(chefdelete, chefdelete_001, positive, verify chef delete, delete, {
  "update_user_id":2,
  "user_id":...)</span>
-                <span class="method-start">11932 ms</span>
+                <span class="method-start">8920 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.CaptainCreateTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">captainCreateSetUp</span>
-                <span class="method-start">12030 ms</span>
+                <span class="method-start">9026 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
@@ -1688,53 +1611,53 @@ return data;
  
  "user_id":2,
  "outlet_...)</span>
-                <span class="method-start">12401 ms</span>
+                <span class="method-start">9419 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.CaptainUpdateTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">captainUpdateSetUp</span>
-                <span class="method-start">12491 ms</span>
+                <span class="method-start">9525 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">captainUpdateTest(captainupdate, captainupdate_001, positive, verify captain update, patch, {
  "update_user_id":2,
  "u...)</span>
-                <span class="method-start">12849 ms</span>
+                <span class="method-start">9995 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.CaptainListViewTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">captainListViewSetUp</span>
-                <span class="method-start">12943 ms</span>
+                <span class="method-start">10152 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">captainListViewTest(captainlistview, captainlistview_001, positive, verify captain list view, post, {
     "user_id":2,
  ...)</span>
-                <span class="method-start">13299 ms</span>
+                <span class="method-start">10489 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.CaptainViewTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">captainViewSetUp</span>
-                <span class="method-start">13392 ms</span>
+                <span class="method-start">10579 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">captainViewTest(captainview, captainview_001, positive, verify captain view, post, {
   "update_user_id":2,
  "user_id...)</span>
-                <span class="method-start">14033 ms</span>
+                <span class="method-start">10933 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.CaptainDeleteTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">14109 ms</span>
+                <span class="method-start">11016 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
@@ -1742,74 +1665,74 @@ return data;
                 <span class="method-name">deleteCaptain(captaindelete, captaindelete_001, positive, verify captain delete, delete, {
  "update_user_id":2,
  "...)</span>
-                <span class="method-start">14573 ms</span>
+                <span class="method-start">11434 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.StaffCreateTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">14691 ms</span>
+                <span class="method-start">11518 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">createStaff(staffcreate, staffcreate_001, positive, Valid staff creation with all correct fields, post, {
    "us...)</span>
-                <span class="method-start">15131 ms</span>
+                <span class="method-start">11919 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15170 ms</span>
+                <span class="method-start">11938 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.StaffUpdateTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">15234 ms</span>
+                <span class="method-start">11971 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">updateStaff(staffupdate, staffupdate_001, positive, verify update staff using valid input, post, {
          "use...)</span>
-                <span class="method-start">15606 ms</span>
+                <span class="method-start">12389 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15785 ms</span>
+                <span class="method-start">12553 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.StaffListViewTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">staffListViewSetUp</span>
-                <span class="method-start">15787 ms</span>
+                <span class="method-start">12554 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">staffListViewTest(stafflistview, stafflistview_001, positive, verify staff list view using valid input, post, {
    
   ...)</span>
-                <span class="method-start">16234 ms</span>
+                <span class="method-start">12868 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.StaffViewTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">staffviewsetUp</span>
-                <span class="method-start">16329 ms</span>
+                <span class="method-start">12963 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyStaffView(staffview, staffview_001, positive, verify staff view using valid data, post, {
     "staff_id": 27,
 ...)</span>
-                <span class="method-start">16684 ms</span>
+                <span class="method-start">13291 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.StaffDeleteTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">staffDeleteSetUp</span>
-                <span class="method-start">16771 ms</span>
+                <span class="method-start">13398 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
@@ -1817,118 +1740,106 @@ return data;
                 <span class="method-name">testStaffDelete(staffdelete, staffdelete_001, positive, verify staff delete, delete, {
     "staff_id": 31,
     "outl...)</span>
-                <span class="method-start">17152 ms</span>
+                <span class="method-start">13865 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.sectionCreateTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">sectionCreateSetup</span>
-                <span class="method-start">17213 ms</span>
+                <span class="method-start">13948 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifySectionUsingValidInputData(sectioncreate, section_001, positive, verify section create, post, {
     "outlet_id": 1,
     "user_i...)</span>
-                <span class="method-start">17576 ms</span>
+                <span class="method-start">14400 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17718 ms</span>
+                <span class="method-start">14515 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.sectionUpdateTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">sectionUpdateSetup</span>
-                <span class="method-start">17720 ms</span>
+                <span class="method-start">14516 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifySectionUpdateUsingValidInputData(sectionupdate, sectionupdate_001, positive, Valid section update, patch, {
     "outlet_id": 1,
     "...)</span>
-                <span class="method-start">18110 ms</span>
+                <span class="method-start">14847 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.sectionListViewTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">sectionListViewSetup</span>
-                <span class="method-start">18208 ms</span>
+                <span class="method-start">14940 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifySectionListViewUsingValidInputData(sectionlistview, section_001, positive, Valid section list view, post, {
     "outlet_id":1,
     "use...)</span>
-                <span class="method-start">18490 ms</span>
+                <span class="method-start">15358 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">19348 ms</span>
+                <span class="method-start">16411 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.SectionViewTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">sectionViewSetup</span>
-                <span class="method-start">19350 ms</span>
+                <span class="method-start">16413 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifySectionViewUsingValidInputData(sectionview, sectionview_001, positive, Verify section view, post, {
     "outlet_id":1,
     "user_id...)</span>
-                <span class="method-start">19714 ms</span>
+                <span class="method-start">16731 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitratCommonAPITestScript.SectionDeleteTestScript</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">sectionDeleteSetup</span>
-                <span class="method-start">19815 ms</span>
+                <span class="method-start">16821 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifySectionDeleteUsingValidInputData(sectiondelete, sectiondelete_001, positive, Valid user_id, outlet_id, and section_id, delete, {
     ...)</span>
-                <span class="method-start">20280 ms</span>
+                <span class="method-start">17173 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20358 ms</span>
+                <span class="method-start">17238 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.menumitratCommonAPITestScript.AddMenusToOrder</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.menumitratCommonAPITestScript.GetMenuList</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">addMenusToOrderSetUp</span>
-                <span class="method-start">20359 ms</span>
+                <span class="method-name">menuListSetUp</span>
+                <span class="method-start">17239 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">addMenusToOrderNegativeTest(addmenustoorder, addmenustoorder_002, negative, Verify Add Menus to Order when menu_id is missing, p...)</span>
-                <span class="method-start">20705 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">addMenusToOrderNegativeTest(addmenustoorder, addmenustoorder_003, negative, Verify Add Menus to Order with invalid order_id, pos...)</span>
-                <span class="method-start">20820 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyAddMenusToOrder(addmenustoorder, addmenustoorder_001, positive, verify Add Menus to order, post, {
-    "order_id": "...)</span>
-                <span class="method-start">20990 ms</span>
+                <span class="method-name">verifyMenuList(getmenulist, getmenu_list_001, positive, verify Get Menu List, post, {
+  
+  "outlet_id": 1,
+ "app_so...)</span>
+                <span class="method-start">17572 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.menumitra.superclass.APIBase</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21550 ms</span>
+                <span class="method-start">18449 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

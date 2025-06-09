@@ -204,7 +204,7 @@ public class GetAllMenuListByCategory extends APIBase {
             requestBodyJson = new JSONObject(requestBodyPayload);
             
             // Only outlet_id is required
-            menuRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+            menuRequest.setOutlet_id(Integer.parseInt(requestBodyJson.getString("outlet_id")));
             
             LogUtils.info("Request Body: " + requestBodyJson.toString());
             ExtentReport.getTest().log(Status.INFO, "Request Body: " + requestBodyJson.toString());
@@ -318,7 +318,7 @@ public class GetAllMenuListByCategory extends APIBase {
                 
                 // Set payload for getAllMenuListByCategory request
                 if (requestBodyJson.has("outlet_id")) {
-                    menuRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+                    menuRequest.setOutlet_id(Integer.parseInt(requestBodyJson.getString("outlet_id")));
                 }
                
                 
