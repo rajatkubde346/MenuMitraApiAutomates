@@ -9,12 +9,20 @@
       <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefUpdateTestScript"/>
+      
       <class name="com.menumitratCommonAPITestScript.ChefDeleteTestScript"/>
       <class name="com.menumitratCommonAPITestScript.CaptainCreateTestScript"/>
       <class name="com.menumitratCommonAPITestScript.CaptainUpdateTestScript"/>
+      
       <class name="com.menumitratCommonAPITestScript.CaptainListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.CaptainViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.CaptainDeleteTestScript"/>
+      
+      <class name="com.menumitratCommonAPITestScript.StaffCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffDeleteTestScript"/>
       
       
       

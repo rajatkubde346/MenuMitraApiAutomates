@@ -6,6 +6,7 @@ public class staffRequest
 	private int outlet_id;
 	private int user_id;
 	private String staff_role;
+	private String app_source;
 	
 	
 	public String getStaff_id() {
@@ -39,6 +40,13 @@ public class staffRequest
 	public void setStaff_role(String staff_role) {
 		this.staff_role = staff_role;
 	}
-	
+
+	public String getApp_source() {
+		return app_source;
+	}
+
+	public void setApp_source(String app_source) {
+		this.app_source = app_source;
+	}
 	
 }
