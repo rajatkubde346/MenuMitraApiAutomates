@@ -3,18 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test name="Test">
     <classes>
-      <class name="com.menumitratCommonAPITestScript.StaffDeleteTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.sectionCreateTestScript"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Test(failed)">
-    <classes>
-      <class name="com.menumitratCommonAPITestScript.StaffDeleteTestScript">
-        <methods>
-          <include name="setUp"/>
-          <include name="testStaffDelete" invocation-numbers="0"/>
-          <include name="staffDeleteSetUp"/>
-        </methods>
-      </class> <!-- com.menumitratCommonAPITestScript.StaffDeleteTestScript -->
-    </classes>
-  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

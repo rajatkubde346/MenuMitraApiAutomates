@@ -6,6 +6,7 @@ public class sectionRequest
 	private String user_id;
 	private String section_name;
 	private String section_id;
+	private String app_source;
 	
 	public String getOutlet_id() {
 		return outlet_id;
@@ -30,6 +31,12 @@ public class sectionRequest
 	}
 	public void setSection_id(String section_id) {
 		this.section_id = section_id;
+	}
+	public String getApp_source() {
+		return app_source;
+	}
+	public void setApp_source(String app_source) {
+		this.app_source = app_source;
 	}
 	
 	
