@@ -77,60 +77,78 @@ public class DataDriven
      */
     public static Object[][] readExcelData(String excelPath, String sheetName) throws customException {
         sheet = readExcelSheet(excelPath, sheetName);
-
-        int lastRow = sheet.getLastRowNum(); // Get the last row index
-        int lastCell = sheet.getRow(0).getLastCellNum(); // Get the number of columns
-        int count=0;
-        for(int i=0;i<lastRow;i++)
-        {
-            if(!sheet.getRow(i).getCell(0).getStringCellValue().isEmpty())
-            {
-                count++;
-            }
-            
+        if (sheet == null) {
+            throw new customException("Sheet '" + sheetName + "' not found in Excel file: " + excelPath);
         }
-        
-        int no = (int)IntStream.rangeClosed(0, sheet.getLastRowNum())
-        	    .mapToObj(sheet::getRow)
-        	    .filter(Objects::nonNull)
-        	    .map(row -> row.getCell(0))
-        	    .filter(cell -> cell != null && cell.getCellTypeEnum() ==CellType.STRING  && !cell.getStringCellValue().trim().isEmpty())
-        	    .count();
-        
+
+        // Get the last row with data
+        int lastRow = sheet.getLastRowNum();
+        if (lastRow < 0) {
+            throw new customException("Excel sheet is empty: " + sheetName);
+        }
+
+        // Get the first row to determine column count
+        Row firstRow = sheet.getRow(0);
+        if (firstRow == null) {
+            throw new customException("First row is empty in sheet: " + sheetName);
+        }
+
+        int lastCell = firstRow.getLastCellNum();
+        if (lastCell < 0) {
+            throw new customException("No columns found in first row of sheet: " + sheetName);
+        }
+
         Object[][] data = new Object[lastRow + 1][lastCell];
+        LogUtils.info("Processing Excel data: " + (lastRow + 1) + " rows, " + lastCell + " columns");
 
         try {
             // Iterate over each row
             for (int i = 0; i <= lastRow; i++) {
                 row = sheet.getRow(i);
+                if (row == null) {
+                    // Skip null rows but log them
+                    LogUtils.warn("Null row found at index: " + i);
+                    continue;
+                }
 
                 // Iterate over each cell in the row
                 for (int j = 0; j < lastCell; j++) {
                     cell = row.getCell(j);
+                    if (cell == null) {
+                        // Handle null cells by setting empty string
+                        data[i][j] = "";
+                        continue;
+                    }
 
                     // Handle cell data based on its type
-                    if (cell != null) {
-                        switch (cell.getCellTypeEnum()) // Updated to getCellType()
-                        {
+                    try {
+                        switch (cell.getCellTypeEnum()) {
                             case STRING:
                                 data[i][j] = cell.getStringCellValue();
                                 break;
                             case NUMERIC:
                                 data[i][j] = String.valueOf((long) cell.getNumericCellValue());
                                 break;
+                            case BOOLEAN:
+                                data[i][j] = String.valueOf(cell.getBooleanCellValue());
+                                break;
+                            case BLANK:
+                                data[i][j] = "";
+                                break;
                             default:
-                                data[i][j] = null; // Handle other types, if needed
+                                data[i][j] = ""; // Handle other types as empty string
                                 break;
                         }
-                    } else {
-                        data[i][j] = null; // In case the cell is empty
+                    } catch (Exception e) {
+                        LogUtils.warn("Error reading cell at row " + i + ", column " + j + ": " + e.getMessage());
+                        data[i][j] = ""; // Set empty string on error
                     }
                 }
             }
             LogUtils.info("Excel data read successfully.");
         } catch (Exception e) {
-            LogUtils.error("Unexpected error occured while reading excel sheet " + e.getMessage());
-            throw new customException("Unexpected error occured while reading excel sheet " + e.getMessage());
+            LogUtils.error("Unexpected error occurred while reading excel sheet: " + e.getMessage());
+            throw new customException("Unexpected error occurred while reading excel sheet: " + e.getMessage());
         } finally {
             try {
                 if (workbook != null) {
@@ -138,8 +156,8 @@ public class DataDriven
                     LogUtils.info("Excel workbook closed successfully.");
                 }
             } catch (IOException e) {
-                LogUtils.error("Error closing excel workbook. " + e.getMessage());
-                throw new customException("Error closing excel workbook. " + e.getMessage());
+                LogUtils.error("Error closing excel workbook: " + e.getMessage());
+                throw new customException("Error closing excel workbook: " + e.getMessage());
             }
         }
         return data;

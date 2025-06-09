@@ -1,17 +1,368 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">45,542</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.WareHouseCreateTestScript</td><td><a href="#m0">wareHouseCreateTest</a></td><td rowspan="1">1749469250179</td><td rowspan="1">211</td></tr></tbody></table><h2>Test</h2><h3 id="m0">com.menumitratCommonAPITestScript.WareHouseCreateTestScript#wareHouseCreateTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>warehousecreate</td><td>warehousecreate_001</td><td>positive</td><td>WareHouse Created Successfully</td><td>post</td><td>{
-  &quot;user_id&quot;: 2,
-  &quot;app_source&quot;: &quot;captain_app&quot;,
-  &quot;location&quot;: &quot;Katraj&quot;,
-  &quot;address&quot;: &quot;Ground Floor, East Wing, Hotel Plaza, MG Road, Mumbai&quot;,
-  &quot;manager_name&quot;: &quot;Priya Sharma&quot;,
-  &quot;manager_mobile&quot;: &quot;9876543210&quot;,
-  &quot;manager_alternate_mobile&quot;: &quot;9123456780&quot;,
-  &quot;warehouse_type&quot;: &quot;Kitchen Supplies&quot;,
-  &quot;capacity_unit&quot;: &quot;kg&quot;,
-  &quot;capacity_value&quot;: 2000,
- &quot;is_active&quot;:1
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test</a></td><td class="num">15</td><td class="num">0</td><td class="num attn">6</td><td class="num">18,928</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.menumitratCommonAPITestScript.CaptainCreateTestScript</td><td><a href="#m0">captainCreateTest</a></td><td rowspan="1">1749476315404</td><td rowspan="1">97</td></tr><tr class="failedodd"><td rowspan="1">com.menumitratCommonAPITestScript.CaptainDeleteTestScript</td><td><a href="#m1">deleteCaptain</a></td><td rowspan="1">1749476317578</td><td rowspan="1">73</td></tr><tr class="failedeven"><td rowspan="1">com.menumitratCommonAPITestScript.ChefDeleteTestScript</td><td><a href="#m2">deleteChef</a></td><td rowspan="1">1749476314906</td><td rowspan="1">90</td></tr><tr class="failedodd"><td rowspan="1">com.menumitratCommonAPITestScript.SectionDeleteTestScript</td><td><a href="#m3">verifySectionDeleteUsingValidInputData</a></td><td rowspan="1">1749476322950</td><td rowspan="1">84</td></tr><tr class="failedeven"><td rowspan="1">com.menumitratCommonAPITestScript.StaffCreateTestScript</td><td><a href="#m4">createStaff</a></td><td rowspan="1">1749476317981</td><td rowspan="1">16</td></tr><tr class="failedodd"><td rowspan="1">com.menumitratCommonAPITestScript.StaffDeleteTestScript</td><td><a href="#m5">testStaffDelete</a></td><td rowspan="1">1749476319774</td><td rowspan="1">68</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.ActivityLogTestScript</td><td><a href="#m6">activityLogTest</a></td><td rowspan="1">1749476311901</td><td rowspan="1">202</td></tr><tr class="passedodd"><td rowspan="1">com.menumitratCommonAPITestScript.CaptainListViewTestScript</td><td><a href="#m7">captainListViewTest</a></td><td rowspan="1">1749476316358</td><td rowspan="1">105</td></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.CaptainUpdateTestScript</td><td><a href="#m8">captainUpdateTest</a></td><td rowspan="1">1749476315925</td><td rowspan="1">108</td></tr><tr class="passedodd"><td rowspan="1">com.menumitratCommonAPITestScript.CaptainViewTestScript</td><td><a href="#m9">captainViewTest</a></td><td rowspan="1">1749476316969</td><td rowspan="1">97</td></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.ChefListViewTestScript</td><td><a href="#m10">chefListViewTest</a></td><td rowspan="1">1749476312683</td><td rowspan="1">225</td></tr><tr class="passedodd"><td rowspan="1">com.menumitratCommonAPITestScript.ChefUpdateTestScript</td><td><a href="#m11">updateChef</a></td><td rowspan="1">1749476314437</td><td rowspan="1">140</td></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.ChefViewTestScript</td><td><a href="#m12">chefViewTest</a></td><td rowspan="1">1749476313892</td><td rowspan="1">108</td></tr><tr class="passedodd"><td rowspan="1">com.menumitratCommonAPITestScript.SectionViewTestScript</td><td><a href="#m13">verifySectionViewUsingValidInputData</a></td><td rowspan="1">1749476322240</td><td rowspan="1">105</td></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.StaffListViewTestScript</td><td><a href="#m14">staffListViewTest</a></td><td rowspan="1">1749476318904</td><td rowspan="1">109</td></tr><tr class="passedodd"><td rowspan="1">com.menumitratCommonAPITestScript.StaffUpdateTestScript</td><td><a href="#m15">updateStaff</a></td><td rowspan="1">1749476318417</td><td rowspan="1">184</td></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.StaffViewTestScript</td><td><a href="#m16">verifyStaffView</a></td><td rowspan="1">1749476319323</td><td rowspan="1">76</td></tr><tr class="passedodd"><td rowspan="1">com.menumitratCommonAPITestScript.TableListViewTestScript</td><td><a href="#m17">verifyTableListView</a></td><td rowspan="1">1749476308844</td><td rowspan="1">1529</td></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.sectionCreateTestScript</td><td><a href="#m18">verifySectionUsingValidInputData</a></td><td rowspan="1">1749476320178</td><td rowspan="1">114</td></tr><tr class="passedodd"><td rowspan="1">com.menumitratCommonAPITestScript.sectionListViewTestScript</td><td><a href="#m19">verifySectionListViewUsingValidInputData</a></td><td rowspan="1">1749476320984</td><td rowspan="1">996</td></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.sectionUpdateTestScript</td><td><a href="#m20">verifySectionUpdateUsingValidInputData</a></td><td rowspan="1">1749476320628</td><td rowspan="1">56</td></tr></tbody></table><h2>Test</h2><h3 id="m0">com.menumitratCommonAPITestScript.CaptainCreateTestScript#captainCreateTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>captaincreate</td><td>captaincreate_001</td><td>positive</td><td>verify captain create</td><td>post</td><td>{
+ 
+ &quot;user_id&quot;:2,
+ &quot;outlet_id&quot;:&quot;1&quot;,
+ &quot;name&quot;:&quot;ramucaptain&quot;,
+ &quot;mobile&quot;:&quot;8945678989&quot;,
+ &quot;address&quot;:&quot;satara&quot;,
+ &quot;aadhar_number&quot;:&quot;343332322321&quot;,
+ &quot;dob&quot;:&quot;12 Jan 2023&quot;,
+ &quot;email&quot;:&quot;h@gmail.com&quot;,
+ &quot;app_source&quot;:&quot;captain_app&quot;,
+ &quot;functionality_ids&quot;:[1,2,3,4]
+
+}</td><td>{
+  &quot;detail&quot;: &quot;Captain created successfully&quot;
+}</td><td>200</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">com.menumitra.utilityclass.customException: Error in captain create test: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:238)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.menumitratCommonAPITestScript.CaptainDeleteTestScript#deleteCaptain</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>captaindelete</td><td>captaindelete_001</td><td>positive</td><td>verify captain delete</td><td>delete</td><td>{
+ &quot;update_user_id&quot;:2,
+ &quot;user_id&quot;:103,
+ &quot;outlet_id&quot;:1,
+ &quot;app_source&quot;:&quot;captain_app&quot;
+
+}</td><td>{
+  &quot;detail&quot;: &quot;Captain deleted successfully&quot;
+}</td><td>200</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+	at com.menumitratCommonAPITestScript.CaptainDeleteTestScript.deleteCaptain(CaptainDeleteTestScript.java:235)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.menumitratCommonAPITestScript.ChefDeleteTestScript#deleteChef</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>chefdelete</td><td>chefdelete_001</td><td>positive</td><td>verify chef delete</td><td>delete</td><td>{
+ &quot;update_user_id&quot;:2,
+ &quot;user_id&quot;:14,
+ &quot;outlet_id&quot;:1,
+ &quot;app_source&quot;:&quot;owner_app&quot;
+
+}</td><td>{
+  &quot;detail&quot;: &quot;Chef deleted successfully&quot;
+}</td><td>200</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+	at com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef(ChefDeleteTestScript.java:236)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.menumitratCommonAPITestScript.SectionDeleteTestScript#verifySectionDeleteUsingValidInputData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>sectiondelete</td><td>sectiondelete_001</td><td>positive</td><td>Valid user_id, outlet_id, and section_id</td><td>delete</td><td>{
+    &quot;user_id&quot;:2,
+    &quot;outlet_id&quot;: 1,
+    &quot;section_id&quot;:69,
+  &quot;app_source&quot;:&quot;owner_app&quot;
+}</td><td>{
+  &quot;detail&quot;: &quot;Outlet Section and associated tables deleted successfully&quot;
+}</td><td>200</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">com.menumitra.utilityclass.customException: Error during section delete verification
+	at com.menumitratCommonAPITestScript.SectionDeleteTestScript.verifySectionDeleteUsingValidInputData(SectionDeleteTestScript.java:181)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.menumitratCommonAPITestScript.StaffCreateTestScript#createStaff</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>staffcreate</td><td>staffcreate_001</td><td>positive</td><td>Valid staff creation with all correct fields</td><td>post</td><td>{
+   &quot;user_id&quot;:&quot;2&quot;,
+    &quot;name&quot;:&quot;Ravan&quot;, &quot;mobile&quot;:&quot;9797454589&quot;,
+    &quot;dob&quot;:&quot;06 Dec 2014&quot;,
+    &quot;address&quot;:&quot;Katraj Pune&quot;,
+    &quot;role&quot;:&quot;cleaner&quot;,
+    &quot;aadhar_number&quot;: &quot;523456789091&quot;,
+    &quot;outlet_id&quot;:&quot;1&quot;,                                                                                                                                                                                                                                                                                                                                                                          &quot;image&quot;: &quot;C:\Users\hp\Downloads\menus\medu vada.jpg&quot;
+} </td><td>{
+    &quot;staff_id&quot;: 9
+}</td><td>200</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">com.menumitra.utilityclass.customException: Error during staff creation test execution: JSONObject[&quot;app_source&quot;] not found.
+	at com.menumitratCommonAPITestScript.StaffCreateTestScript.createStaff(StaffCreateTestScript.java:259)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.menumitratCommonAPITestScript.StaffDeleteTestScript#testStaffDelete</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>staffdelete</td><td>staffdelete_001</td><td>positive</td><td>verify staff delete</td><td>delete</td><td>{
+    &quot;staff_id&quot;: 31,
+    &quot;outlet_id&quot;: 1,
+    &quot;user_id&quot;:2,
+    &quot;app_source&quot;:&quot;owner_app&quot;
+}</td><td>{
+    &quot;detail&quot;: &quot;Staff deleted successfully&quot;
+}</td><td>200</td></tr><tr><th colspan="8">Exception</th></tr><tr><td colspan="8"><div class="stacktrace">com.menumitra.utilityclass.customException: Error during staff deletion test execution: Status code mismatch - Expected: 200, Actual: 404
+	at com.menumitratCommonAPITestScript.StaffDeleteTestScript.testStaffDelete(StaffDeleteTestScript.java:215)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.menumitratCommonAPITestScript.ActivityLogTestScript#activityLogTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>activitylog</td><td>activitylog_001</td><td>positive</td><td>Verfiy Activity log</td><td>post</td><td>{
+    &quot;user_id&quot;: 2
+}</td><td>{
+  &quot;detail&quot;: &quot;Activity logs retrieved successfully&quot;,
+  &quot;data&quot;: {
+    &quot;activity_logs&quot;: [
+      {
+        &quot;activity_log_id&quot;: 67387,
+        &quot;role&quot;: &quot;owner&quot;,
+        &quot;module&quot;: &quot;Authentication&quot;,
+        &quot;sub_module&quot;: &quot;OTP Verification&quot;,
+        &quot;title&quot;: &quot;Heenann logged in successfully&quot;,
+        &quot;outlet_id&quot;: 0,
+        &quot;created_on&quot;: &quot;08 Jun 2025 07:30 PM&quot;
+      },
+      {
+        &quot;activity_log_id&quot;: 67386,
+        &quot;role&quot;: &quot;owner&quot;,
+        &quot;module&quot;: &quot;Authentication&quot;,
+        &quot;sub_module&quot;: &quot;OTP Verification&quot;,
+        &quot;title&quot;: &quot;Heenann logged in successfully&quot;,
+        &quot;outlet_id&quot;: 0,
+        &quot;created_on&quot;: &quot;08 Jun 2025 07:30 PM&quot;
+      },
+      {
+        &quot;activity_log_id&quot;: 67385,
+        &quot;role&quot;: &quot;owner&quot;,
+        &quot;module&quot;: &quot;Authentication&quot;,
+        &quot;sub_module&quot;: &quot;OTP Verification&quot;,
+        &quot;title&quot;: &quot;Heenann logged in successfully&quot;,
+        &quot;outlet_id&quot;: 0,
+        &quot;created_on&quot;: &quot;08 Jun 2025 07:29 PM&quot;
+      },</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.menumitratCommonAPITestScript.CaptainListViewTestScript#captainListViewTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>captainlistview</td><td>captainlistview_001</td><td>positive</td><td>verify captain list view</td><td>post</td><td>{
+    &quot;user_id&quot;:2,
+ &quot;outlet_id&quot;:1,
+ &quot;app_source&quot;:&quot;captain_app&quot;
+}
+
+</td><td>{
+  &quot;detail&quot;: &quot;Successfully retrieved captains&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;outlet_id&quot;: 1,
+      &quot;user_id&quot;: 106,
+      &quot;name&quot;: &quot;ramucaptain&quot;,
+      &quot;mobile&quot;: &quot;8945678989&quot;,
+      &quot;dob&quot;: &quot;12 Jan 2023&quot;,
+      &quot;email&quot;: &quot;h@gmail.com&quot;,
+      &quot;is_active&quot;: 1
+    }
+  ]
+}</td><td></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">com.menumitratCommonAPITestScript.CaptainUpdateTestScript#captainUpdateTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>captainupdate</td><td>captainupdate_001</td><td>positive</td><td>verify captain update</td><td>patch</td><td>{
+ &quot;update_user_id&quot;:2,
+ &quot;user_id&quot;:20,
+ &quot;outlet_id&quot;:&quot;1&quot;,
+ &quot;name&quot;:&quot;ramucaptain&quot;,
+ &quot;mobile&quot;:&quot;8898989898&quot;,
+ &quot;address&quot;:&quot;satara&quot;,
+ &quot;aadhar_number&quot;:&quot;343332322321&quot;,
+ &quot;dob&quot;:&quot;12 Jan 2023&quot;,
+ &quot;email&quot;:&quot;h@gmail.com&quot;,
+ &quot;app_source&quot;:&quot;captain_app&quot;,
+ &quot;functionality_ids&quot;:[1,2,3,4,7]
+
+}</td><td>{
+  &quot;detail&quot;: &quot;Captain updated successfully&quot;
+}</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m9">com.menumitratCommonAPITestScript.CaptainViewTestScript#captainViewTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>captainview</td><td>captainview_001</td><td>positive</td><td>verify captain view</td><td>post</td><td>{
+  &quot;update_user_id&quot;:2,
+ &quot;user_id&quot;:20,
+ &quot;outlet_id&quot;:1,
+ &quot;app_source&quot;:&quot;captain_app&quot;
 }
 </td><td>{
-  &quot;detail&quot;: &quot;Warehouse created successfully&quot;
+  &quot;detail&quot;: &quot;Successfully retrieved captain details&quot;,
+  &quot;data&quot;: {
+    &quot;outlet_id&quot;: 1,
+    &quot;user_id&quot;: 20,
+    &quot;name&quot;: &quot;ramucaptain&quot;,
+    &quot;mobile&quot;: &quot;8898989898&quot;,
+    &quot;aadhar_number&quot;: &quot;343332322321&quot;,
+    &quot;address&quot;: &quot;satara&quot;,
+    &quot;dob&quot;: &quot;12 Jan 2023&quot;,
+    &quot;email&quot;: &quot;h@gmail.com&quot;,
+    &quot;is_active&quot;: 1,
+    &quot;created_by&quot;: &quot;owner&quot;,
+    &quot;updated_by&quot;: &quot;owner&quot;,
+    &quot;created_on&quot;: &quot;05 May 2025 12:21:02 PM&quot;,
+    &quot;updated_on&quot;: &quot;09 Jun 2025 01:30:06 AM&quot;,
+    &quot;functionalities&quot;: [
+      {
+        &quot;functionality_id&quot;: 1,
+        &quot;functionality_name&quot;: &quot;manage_menu&quot;
+      },
+      {
+        &quot;functionality_id&quot;: 2,
+        &quot;functionality_name&quot;: &quot;manage_menu_category&quot;
+      },
+      {
+        &quot;functionality_id&quot;: 3,
+        &quot;functionality_name&quot;: &quot;manage_section&quot;
+      },
+      {
+        &quot;functionality_id&quot;: 4,
+        &quot;functionality_name&quot;: &quot;manage_table&quot;
+      },
+      {
+        &quot;functionality_id&quot;: 7,
+        &quot;functionality_name&quot;: &quot;manage_staff&quot;
+      }
+    ]
+  }
+}</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m10">com.menumitratCommonAPITestScript.ChefListViewTestScript#chefListViewTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>cheflistview</td><td>cheflistview_001</td><td>positive</td><td>verify chef listview</td><td>post</td><td>{
+    &quot;user_id&quot;:2,
+    &quot;outlet_id&quot;: &quot;1&quot;,
+    &quot;app_source&quot;:&quot;owner_app&quot;
+}</td><td>{
+  &quot;detail&quot;: [
+    {
+      &quot;outlet_id&quot;: 1,
+      &quot;user_id&quot;: 68,
+      &quot;name&quot;: &quot;etreeyeyty&quot;,
+      &quot;mobile&quot;: &quot;8435794357&quot;,
+      &quot;dob&quot;: null,
+      &quot;email&quot;: null,
+      &quot;is_active&quot;: 1
+    }
+  ]
+}
+}</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m11">com.menumitratCommonAPITestScript.ChefUpdateTestScript#updateChef</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>chefupdate</td><td>chefupdate_001</td><td>positive</td><td>verify chef update</td><td>patch</td><td>{  
+    &quot;update_user_id&quot;:&quot;2&quot;,
+    &quot;user_id&quot;:27,
+    &quot;outlet_id&quot;: &quot;1&quot;,
+    &quot;name&quot;: &quot;new test &quot;,
+    &quot;mobile&quot;:&quot;9689075610&quot;,
+    &quot;address&quot; : &quot;lean&quot;,
+    &quot;aadhar_number&quot;: &quot;123456789012&quot;,
+    &quot;dob&quot;:&quot;12 Jan 2023&quot;,
+    &quot;app_source&quot;:&quot;owner_app&quot;,
+    &quot;email&quot;:&quot;h4@gmail.com&quot;  ,
+    &quot;functionality_ids&quot;: [1,2,3,4]
+    
+}</td><td>{
+  &quot;detail&quot;: &quot;Chef updated successfully&quot;
+}</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m12">com.menumitratCommonAPITestScript.ChefViewTestScript#chefViewTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>chefview</td><td>chefview_001</td><td>positive</td><td>verify chef view </td><td>post</td><td>{
+    &quot;update_user_id&quot;:2,
+    &quot;user_id&quot;:68,
+    &quot;outlet_id&quot;: 1,
+    &quot;app_source&quot;:&quot;owner_app&quot;
+}</td><td>{
+  &quot;detail&quot;: {
+    &quot;outlet_id&quot;: 1,
+    &quot;user_id&quot;: 68,
+    &quot;name&quot;: &quot;etreeyeyty&quot;,
+    &quot;mobile&quot;: &quot;8435794357&quot;,
+    &quot;aadhar_number&quot;: &quot;435435987495&quot;,
+    &quot;address&quot;: null,
+    &quot;dob&quot;: null,
+    &quot;email&quot;: null,
+    &quot;is_active&quot;: 1,
+    &quot;created_by&quot;: &quot;owner&quot;,
+    &quot;created_on&quot;: &quot;29 May 2025 12:28:31 PM&quot;,
+    &quot;updated_by&quot;: null,
+    &quot;updated_on&quot;: null,
+    &quot;functionalities&quot;: [
+      {
+        &quot;functionality_id&quot;: 4,
+        &quot;functionality_name&quot;: &quot;manage_table&quot;
+      }
+    ]
+  }
+}</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m13">com.menumitratCommonAPITestScript.SectionViewTestScript#verifySectionViewUsingValidInputData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>sectionview</td><td>sectionview_001</td><td>positive</td><td>Verify section view</td><td>post</td><td>{
+    &quot;outlet_id&quot;:1,
+    &quot;user_id&quot;:2,
+    &quot;section_id&quot;:17,
+  &quot;app_source&quot;:&quot;owner_app&quot;
+}</td><td>{
+  &quot;data&quot;: {
+    &quot;section_id&quot;: 17,
+    &quot;section_name&quot;: &quot;Family&quot;,
+    &quot;outlet_id&quot;: 1
+  }
+}</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m14">com.menumitratCommonAPITestScript.StaffListViewTestScript#staffListViewTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>stafflistview</td><td>stafflistview_001</td><td>positive</td><td>verify staff list view using valid input</td><td>post</td><td>{
+   
+    &quot;outlet_id&quot;: 1,
+    &quot;user_id&quot;:2,
+    &quot;app_source&quot;:&quot;owner_app&quot;
+}</td><td>{
+  &quot;total_count&quot;: 5,
+  &quot;lists&quot;: [
+    {
+      &quot;staff_id&quot;: 27,
+      &quot;name&quot;: &quot;Gggf&quot;,
+      &quot;mobile&quot;: &quot;8886868686&quot;,
+      &quot;address&quot;: &quot;null&quot;,
+      &quot;role&quot;: &quot;receptionist&quot;,
+      &quot;dob&quot;: &quot;04 May 2025&quot;,
+      &quot;aadhar_number&quot;: &quot;677777555555&quot;,
+      &quot;outlet_id&quot;: 1,
+      &quot;photo&quot;: null
+    }
+  ]
+}</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m15">com.menumitratCommonAPITestScript.StaffUpdateTestScript#updateStaff</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>staffupdate</td><td>staffupdate_001</td><td>positive</td><td>verify update staff using valid input</td><td>post</td><td>{
+         &quot;user_id&quot;:2,
+         &quot;staff_id&quot;: 1,
+        &quot;outlet_id&quot;: 1,
+        &quot;name&quot;: &quot;stafff one&quot;,
+        &quot;mobile&quot;:&quot;7918232897&quot;,
+        &quot;address&quot;: &quot;dfddd&quot;,
+        &quot;role&quot;: &quot;receptionist&quot;,
+        &quot;dob&quot;: &quot;2 Jul 2003&quot;,
+        &quot;aadhar_number&quot;: &quot;321291198274&quot;,
+        &quot;photo&quot;: &quot;C:\Users\hp\Downloads\menus\coca.jpg&quot;
+}             </td><td>{
+    &quot;detail&quot;: &quot;Staff updated successfully&quot;
+}</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m16">com.menumitratCommonAPITestScript.StaffViewTestScript#verifyStaffView</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>staffview</td><td>staffview_001</td><td>positive</td><td>verify staff view using valid data</td><td>post</td><td>{
+    &quot;staff_id&quot;: 27,
+    &quot;outlet_id&quot;: 1,
+    &quot;user_id&quot;:2,
+&quot;app_source&quot;:&quot;owner_app&quot;                     
+  
+}</td><td>{
+  &quot;detail&quot;: &quot;Staff details retrieved successfully&quot;,
+  &quot;data&quot;: {
+    &quot;staff_id&quot;: 27,
+    &quot;outlet_id&quot;: 1,
+    &quot;name&quot;: &quot;gggf&quot;,
+    &quot;mobile&quot;: &quot;8886868686&quot;,
+    &quot;address&quot;: &quot;null&quot;,
+    &quot;role&quot;: &quot;receptionist&quot;,
+    &quot;dob&quot;: &quot;04 May 2025&quot;,
+    &quot;aadhar_number&quot;: &quot;677777555555&quot;,
+    &quot;photo&quot;: null,
+    &quot;created_by&quot;: &quot;owner&quot;,
+    &quot;created_on&quot;: &quot;21 May 2025 07:36:29 PM&quot;,
+    &quot;updated_by&quot;: null,
+    &quot;updated_on&quot;: null
+  }
+}</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m17">com.menumitratCommonAPITestScript.TableListViewTestScript#verifyTableListView</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>tablelistview</td><td>tablelistview_001</td><td>positive</td><td>verify table list view</td><td>post</td><td>{  
+    
+    &quot;outlet_id&quot;: 1,
+    &quot;user_id&quot;:2,
+ &quot;app_source&quot;:&quot;owner_app&quot;
+}</td><td>{
+  &quot;detail&quot;: [
+    {
+      &quot;section_name&quot;: &quot;Igig&quot;,
+      &quot;section_id&quot;: 292,
+      &quot;tables&quot;: [
+        {
+          &quot;table_ids&quot;: [
+            211,
+            212
+          ],
+          &quot;table_numbers&quot;: [
+            205,
+            206
+          ],
+          &quot;outlet_id&quot;: 1,
+          &quot;is_reserved&quot;: false,
+          &quot;is_joined&quot;: true,
+          &quot;total_capacity&quot;: 8,
+          &quot;is_split&quot;: false,
+          &quot;is_occupied&quot;: 1,
+          &quot;occupied_time&quot;: &quot;07 Jun 2025 01:36:56 PM&quot;,
+          &quot;grand_total&quot;: 285.63,
+          &quot;order_id&quot;: 3547,
+          &quot;order_number&quot;: &quot;3089&quot;,
+          &quot;action&quot;: &quot;has_save&quot;,
+          &quot;order_payment_settle_type&quot;: &quot;null&quot;,
+          &quot;payment_method&quot;: null
+        }</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m18">com.menumitratCommonAPITestScript.sectionCreateTestScript#verifySectionUsingValidInputData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>sectioncreate</td><td>section_001</td><td>positive</td><td>verify section create</td><td>post</td><td>{
+    &quot;outlet_id&quot;: 1,
+    &quot;user_id&quot;:2,
+    &quot;section_name&quot;: &quot;Family&quot;,
+  &quot;app_source&quot;:&quot;owner_app&quot;
+}</td><td>{
+  &quot;detail&quot;: &quot;Outlet Section and 5 tables created successfully&quot;
+}</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m19">com.menumitratCommonAPITestScript.sectionListViewTestScript#verifySectionListViewUsingValidInputData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>sectionlistview</td><td>section_001</td><td>positive</td><td>Valid section list view</td><td>post</td><td>{
+    &quot;outlet_id&quot;:1,
+    &quot;user_id&quot;:1,
+  &quot;app_source&quot;:&quot;owner_app&quot;
+}</td><td>{
+  &quot;data&quot;: [
+    {
+      &quot;section_id&quot;: 17,
+      &quot;section_n+G39ame&quot;: &quot;Top&quot;,
+      &quot;table_count&quot;: 19,
+      &quot;occupied_table_count&quot;: 2,
+      &quot;remaining_table_count&quot;: 17
+    }
+  ]
+}</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m20">com.menumitratCommonAPITestScript.sectionUpdateTestScript#verifySectionUpdateUsingValidInputData</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>sectionupdate</td><td>sectionupdate_001</td><td>positive</td><td>Valid section update</td><td>patch</td><td>{
+    &quot;outlet_id&quot;: 1,
+    &quot;section_id&quot;:17,
+    &quot;user_id&quot;:2,
+    &quot;section_name&quot;: &quot;Family&quot;,
+  &quot;app_source&quot;:&quot;owner_app&quot;
+}</td><td>{
+  &quot;detail&quot;: &quot;Outlet Section updated successfully&quot;
 }</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

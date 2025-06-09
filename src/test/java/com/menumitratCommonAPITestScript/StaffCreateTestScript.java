@@ -229,6 +229,7 @@ public class StaffCreateTestScript extends APIBase {
                 request.multiPart("aadhar_number", requestjsonBody.getString("aadhar_number"));
                 request.multiPart("address", requestjsonBody.getString("address"));
                 request.multiPart("role", requestjsonBody.getString("role"));
+                request.multiPart("app_source", requestjsonBody.getString("app_source"));
                 
                 LogUtils.info("Sending POST request to " + baseUri);
                 ExtentReport.getTest().log(Status.INFO, "Sending POST request to create staff member");
