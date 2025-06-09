@@ -2,24 +2,20 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-09T07:52:30Z" name="Suite" finished-at="2025-06-09T07:52:34Z" duration-ms="4199">
+  <suite started-at="2025-06-09T08:08:22Z" name="Suite" finished-at="2025-06-09T08:08:28Z" duration-ms="6360">
     <groups>
     </groups>
-    <test started-at="2025-06-09T07:52:30Z" name="Test" finished-at="2025-06-09T07:52:34Z" duration-ms="4199">
-      <class name="com.menumitratCommonAPITestScript.sectionCreateTestScript">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitratCommonAPITestScript.sectionCreateTestScript@7d20d0b]" started-at="2025-06-09T13:22:30Z" name="setUp" finished-at="2025-06-09T13:22:30Z" duration-ms="70" status="PASS">
+    <test started-at="2025-06-09T08:08:22Z" name="Test" finished-at="2025-06-09T08:08:28Z" duration-ms="6360">
+      <class name="com.menumitratCommonAPITestScript.sectionListViewTestScript">
+        <test-method is-config="true" signature="sectionListViewSetup()[pri:0, instance:com.menumitratCommonAPITestScript.sectionListViewTestScript@41a2befb]" started-at="2025-06-09T13:38:22Z" name="sectionListViewSetup" finished-at="2025-06-09T13:38:27Z" duration-ms="5008" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="sectionCreateSetup()[pri:0, instance:com.menumitratCommonAPITestScript.sectionCreateTestScript@7d20d0b]" started-at="2025-06-09T13:22:30Z" name="sectionCreateSetup" finished-at="2025-06-09T13:22:33Z" duration-ms="3699" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sectionCreateSetup -->
-        <test-method signature="verifySectionUsingValidInputData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.menumitratCommonAPITestScript.sectionCreateTestScript@7d20d0b]" started-at="2025-06-09T13:22:34Z" name="verifySectionUsingValidInputData" data-provider="getSectionCreatePositiveInputData" finished-at="2025-06-09T13:22:34Z" duration-ms="132" status="PASS">
+        </test-method> <!-- sectionListViewSetup -->
+        <test-method signature="verifySectionListViewUsingValidInputData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.menumitratCommonAPITestScript.sectionListViewTestScript@41a2befb]" started-at="2025-06-09T13:38:27Z" name="verifySectionListViewUsingValidInputData" data-provider="getSectionListViewPositiveInputData" finished-at="2025-06-09T13:38:28Z" duration-ms="856" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[sectioncreate]]>
+                <![CDATA[sectionlistview]]>
               </value>
             </param>
             <param index="1">
@@ -34,7 +30,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[verify section create]]>
+                <![CDATA[Valid section list view]]>
               </value>
             </param>
             <param index="4">
@@ -45,9 +41,8 @@
             <param index="5">
               <value>
                 <![CDATA[{
-    "outlet_id": 1,
-    "user_id":2,
-    "section_name": "Family",
+    "outlet_id":1,
+    "user_id":1,
   "app_source":"owner_app"
 }]]>
               </value>
@@ -55,7 +50,15 @@
             <param index="6">
               <value>
                 <![CDATA[{
-  "detail": "Outlet Section and 5 tables created successfully"
+  "data": [
+    {
+      "section_id": 17,
+      "section_n+G39ame": "Top",
+      "table_count": 19,
+      "occupied_table_count": 2,
+      "remaining_table_count": 17
+    }
+  ]
 }]]>
               </value>
             </param>
@@ -67,12 +70,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySectionUsingValidInputData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitratCommonAPITestScript.sectionCreateTestScript@7d20d0b]" started-at="2025-06-09T13:22:34Z" name="tearDown" finished-at="2025-06-09T13:22:34Z" duration-ms="4" status="PASS">
+        </test-method> <!-- verifySectionListViewUsingValidInputData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitratCommonAPITestScript.sectionListViewTestScript@41a2befb]" started-at="2025-06-09T13:38:28Z" name="tearDown" finished-at="2025-06-09T13:38:28Z" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.menumitratCommonAPITestScript.sectionCreateTestScript -->
+      </class> <!-- com.menumitratCommonAPITestScript.sectionListViewTestScript -->
+      <class name="com.menumitra.superclass.APIBase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@77f1baf5]" started-at="2025-06-09T13:38:21Z" name="setUp" finished-at="2025-06-09T13:38:22Z" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@77f1baf5]" started-at="2025-06-09T13:38:31Z" name="tearDown" finished-at="2025-06-09T13:38:31Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.menumitra.superclass.APIBase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

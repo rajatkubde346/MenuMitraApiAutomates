@@ -3,7 +3,8 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test name="Test">
     <classes>
-      <class name="com.menumitratCommonAPITestScript.sectionCreateTestScript"/>
+      <class name="com.menumitra.superclass.APIBase"/>
+      <class name="com.menumitratCommonAPITestScript.sectionListViewTestScript"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Failed suite [Suite] -->

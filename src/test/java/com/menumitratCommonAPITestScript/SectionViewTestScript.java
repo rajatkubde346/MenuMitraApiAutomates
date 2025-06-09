@@ -391,7 +391,7 @@ private void tearDown()
        
         ExtentReport.getTest().log(Status.PASS, MarkupHelper.createLabel("Test environment tear down successfully", ExtentColor.GREEN));
         
-        ActionsMethods.logout();
+        // ActionsMethods.logout();
         TokenManagers.clearTokens();
         
     } 

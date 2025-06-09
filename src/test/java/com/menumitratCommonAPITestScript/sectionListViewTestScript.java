@@ -169,13 +169,13 @@ private void verifySectionListViewUsingValidInputData(String apiName, String tes
         if (apiName.contains("sectionlistview") && testType.contains("positive")) {
             requestBodyJson = new JSONObject(requestBody);
             expectedJsonBody = new JSONObject(expectedResponseBody);
-            sectionrequest.setOutlet_id(requestBodyJson.getString("outlet_id")); 
-            sectionrequest.setUser_id(String.valueOf(userId));
+            sectionrequest.setOutlet_id(String.valueOf(requestBodyJson.getInt("outlet_id"))); 
+            sectionrequest.setUser_id(String.valueOf(requestBodyJson.getInt("user_id")));
             sectionrequest.setApp_source(requestBodyJson.getString("app_source"));
             
             LogUtils.info("Verify section list view payload prepared");
-            ExtentReport.getTest().log(Status.INFO, "Verify section list view payload prepared with outlet_id: " + requestBodyJson.getString("outlet_id"));
-            response = ResponseUtil.getResponseWithAuth(baseUri, sectionListViewRequest, httpsMethod, accessToken);
+                         ExtentReport.getTest().log(Status.INFO, "Verify section list view payload prepared with outlet_id: " + requestBodyJson.getInt("outlet_id"));
+                         response = ResponseUtil.getResponseWithAuth(baseUri, sectionrequest, httpsMethod, accessToken);
             LogUtils.info("Section list view API response");
             ExtentReport.getTest().log(Status.INFO, "Section list view API response: " + response.getBody().asString());
             System.out.println(response.getStatusCode());
@@ -235,7 +235,7 @@ private void tearDown()
        
         ExtentReport.getTest().log(Status.PASS, MarkupHelper.createLabel("Test environment tear down successfully", ExtentColor.GREEN));
         
-        ActionsMethods.logout();
+        // ActionsMethods.logout();
         TokenManagers.clearTokens();
         
     } 
