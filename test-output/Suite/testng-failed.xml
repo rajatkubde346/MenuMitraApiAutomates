@@ -4,7 +4,7 @@
   <test name="Test">
     <classes>
       <class name="com.menumitra.superclass.APIBase"/>
-      <class name="com.menumitratCommonAPITestScript.SectionDeleteTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.WareHouseCreateTestScript"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Failed suite [Suite] -->

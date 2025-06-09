@@ -23,6 +23,7 @@
       <class name="com.menumitratCommonAPITestScript.StaffListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.StaffViewTestScript"/>
       
+      
       <class name="com.menumitratCommonAPITestScript.StaffDeleteTestScript"/>
       
        <class name="com.menumitratCommonAPITestScript.sectionCreateTestScript"/>
@@ -30,7 +31,11 @@
        <class name="com.menumitratCommonAPITestScript.sectionListViewTestScript"/>
        <class name="com.menumitratCommonAPITestScript.SectionViewTestScript"/>
        <class name="com.menumitratCommonAPITestScript.SectionDeleteTestScript"/>
-
+       
+       
+       <class name="com.menumitratCommonAPITestScript.WareHouseCreateTestScript"/>
+       
+      
       
       
       
