@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/9/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 09 19:08:24 IST 2025</td>
+<td>Started on:</td><td>Mon Jun 09 20:02:08 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18928 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21005 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -74,6 +74,78 @@ function toggleAllBoxes() {
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.AddMenusToOrder.addMenusToOrderNegativeTest()'><b>addMenusToOrderNegativeTest</b><br>Test class: com.menumitratCommonAPITestScript.AddMenusToOrder<br>Parameters: addmenustoorder, addmenustoorder_002, negative, Verify Add Menus to Order when menu_id is missing, post, { "order_id": "5", "outlet_id": "1", "order_items": [ { "quantity": "10", "portion_name": "Full", "comment": "add spice" } ] }, {"detail":"Please provide order_items"}, 400</td>
+<td><div><pre>com.menumitra.utilityclass.customException: Error in add menus to order negative test: JSONObject[&quot;detail&quot;] is not a string (class org.json.JSONObject).
+	at com.menumitratCommonAPITestScript.AddMenusToOrder.addMenusToOrderNegativeTest(AddMenusToOrder.java:446)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1972289220", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1972289220'><pre>com.menumitra.utilityclass.customException: Error in add menus to order negative test: JSONObject[&quot;detail&quot;] is not a string (class org.json.JSONObject).
+	at com.menumitratCommonAPITestScript.AddMenusToOrder.addMenusToOrderNegativeTest(AddMenusToOrder.java:446)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.AddMenusToOrder@38102d01</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.AddMenusToOrder.addMenusToOrderNegativeTest()'><b>addMenusToOrderNegativeTest</b><br>Test class: com.menumitratCommonAPITestScript.AddMenusToOrder<br>Parameters: addmenustoorder, addmenustoorder_003, negative, Verify Add Menus to Order with invalid order_id, post, { "order_id": "999", "outlet_id": "1","order_items":[
+        {
+            "menu_id":"13",
+            "quantity":"10",
+            "portion_name": "Full",
+            "comment":"add spice"
+
+        }
+    ] }, {"detail":"Please provide order_items"}, 400</td>
+<td><div><pre>com.menumitra.utilityclass.customException: Error in add menus to order negative test: JSONObject[&quot;detail&quot;] is not a string (class org.json.JSONObject).
+	at com.menumitratCommonAPITestScript.AddMenusToOrder.addMenusToOrderNegativeTest(AddMenusToOrder.java:446)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1486040328", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1486040328'><pre>com.menumitra.utilityclass.customException: Error in add menus to order negative test: JSONObject[&quot;detail&quot;] is not a string (class org.json.JSONObject).
+	at com.menumitratCommonAPITestScript.AddMenusToOrder.addMenusToOrderNegativeTest(AddMenusToOrder.java:446)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.AddMenusToOrder@38102d01</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest()'><b>captainCreateTest</b><br>Test class: com.menumitratCommonAPITestScript.CaptainCreateTestScript<br>Parameters: captaincreate, captaincreate_001, positive, verify captain create, post, {
  
@@ -93,8 +165,8 @@ function toggleAllBoxes() {
 }, 200</td>
 <td><div><pre>com.menumitra.utilityclass.customException: Error in captain create test: Status code mismatch - Expected: 200, Actual: 400
 	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:238)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace731584462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace731584462'><pre>com.menumitra.utilityclass.customException: Error in captain create test: Status code mismatch - Expected: 200, Actual: 400
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace700523674", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace700523674'><pre>com.menumitra.utilityclass.customException: Error in captain create test: Status code mismatch - Expected: 200, Actual: 400
 	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:238)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -120,7 +192,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.CaptainCreateTestScript@7ee8290b</td></tr>
+<td>com.menumitratCommonAPITestScript.CaptainCreateTestScript@2e377400</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.StaffCreateTestScript.createStaff()'><b>createStaff</b><br>Test class: com.menumitratCommonAPITestScript.StaffCreateTestScript<br>Parameters: staffcreate, staffcreate_001, positive, Valid staff creation with all correct fields, post, {
    "user_id":"2",
@@ -135,8 +207,8 @@ function toggleAllBoxes() {
 }, 200</td>
 <td><div><pre>com.menumitra.utilityclass.customException: Error during staff creation test execution: JSONObject[&quot;app_source&quot;] not found.
 	at com.menumitratCommonAPITestScript.StaffCreateTestScript.createStaff(StaffCreateTestScript.java:259)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2099044017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2099044017'><pre>com.menumitra.utilityclass.customException: Error during staff creation test execution: JSONObject[&quot;app_source&quot;] not found.
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace519650817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace519650817'><pre>com.menumitra.utilityclass.customException: Error during staff creation test execution: JSONObject[&quot;app_source&quot;] not found.
 	at com.menumitratCommonAPITestScript.StaffCreateTestScript.createStaff(StaffCreateTestScript.java:259)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -162,7 +234,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.StaffCreateTestScript@7494f96a</td></tr>
+<td>com.menumitratCommonAPITestScript.StaffCreateTestScript@757277dc</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.CaptainDeleteTestScript.deleteCaptain()'><b>deleteCaptain</b><br>Test class: com.menumitratCommonAPITestScript.CaptainDeleteTestScript<br>Parameters: captaindelete, captaindelete_001, positive, verify captain delete, delete, {
  "update_user_id":2,
@@ -175,8 +247,8 @@ function toggleAllBoxes() {
 }, 200</td>
 <td><div><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
 	at com.menumitratCommonAPITestScript.CaptainDeleteTestScript.deleteCaptain(CaptainDeleteTestScript.java:235)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1175368310", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1175368310'><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1920846948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1920846948'><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
 	at com.menumitratCommonAPITestScript.CaptainDeleteTestScript.deleteCaptain(CaptainDeleteTestScript.java:235)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -202,7 +274,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.CaptainDeleteTestScript@26b3fd41</td></tr>
+<td>com.menumitratCommonAPITestScript.CaptainDeleteTestScript@5c671d7f</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef()'><b>deleteChef</b><br>Test class: com.menumitratCommonAPITestScript.ChefDeleteTestScript<br>Parameters: chefdelete, chefdelete_001, positive, verify chef delete, delete, {
  "update_user_id":2,
@@ -215,8 +287,8 @@ function toggleAllBoxes() {
 }, 200</td>
 <td><div><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
 	at com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef(ChefDeleteTestScript.java:236)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace431966204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace431966204'><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace188729048", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace188729048'><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
 	at com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef(ChefDeleteTestScript.java:236)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -242,7 +314,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.ChefDeleteTestScript@f79e</td></tr>
+<td>com.menumitratCommonAPITestScript.ChefDeleteTestScript@561b6512</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.StaffDeleteTestScript.testStaffDelete()'><b>testStaffDelete</b><br>Test class: com.menumitratCommonAPITestScript.StaffDeleteTestScript<br>Parameters: staffdelete, staffdelete_001, positive, verify staff delete, delete, {
     "staff_id": 31,
@@ -254,8 +326,8 @@ function toggleAllBoxes() {
 }, 200</td>
 <td><div><pre>com.menumitra.utilityclass.customException: Error during staff deletion test execution: Status code mismatch - Expected: 200, Actual: 404
 	at com.menumitratCommonAPITestScript.StaffDeleteTestScript.testStaffDelete(StaffDeleteTestScript.java:215)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1515704208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1515704208'><pre>com.menumitra.utilityclass.customException: Error during staff deletion test execution: Status code mismatch - Expected: 200, Actual: 404
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1055951310", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1055951310'><pre>com.menumitra.utilityclass.customException: Error during staff deletion test execution: Status code mismatch - Expected: 200, Actual: 404
 	at com.menumitratCommonAPITestScript.StaffDeleteTestScript.testStaffDelete(StaffDeleteTestScript.java:215)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -281,7 +353,96 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.StaffDeleteTestScript@445b295b</td></tr>
+<td>com.menumitratCommonAPITestScript.StaffDeleteTestScript@c86b9e3</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.AddMenusToOrder.verifyAddMenusToOrder()'><b>verifyAddMenusToOrder</b><br>Test class: com.menumitratCommonAPITestScript.AddMenusToOrder<br>Parameters: addmenustoorder, addmenustoorder_001, positive, verify Add Menus to order, post, {
+    "order_id": "5",
+    "outlet_id":"1",
+    "order_items":[
+        {
+            "menu_id":"13",
+            "quantity":"10",
+            "portion_name": "Full",
+            "comment":"add spice"
+
+        }
+    ]
+ 
+}, {
+    "order_details": {
+        "order_id": 5,
+        "order_number": "5",
+        "table_number": [
+            "77"
+        ],
+        "order_status": "cooking",
+        "menu_count": 2,
+        "total_bill_amount": 6300.0,
+        "total_bill_with_discount": 6300.0,
+        "service_charges_percent": 1.0,
+        "service_charges_amount": 63.0,
+        "gst_percent": 1.0,
+        "gst_amount": 63.0,
+        "discount_percent": 0.0,
+        "discount_amount": 0.0,
+        "grand_total": 6426.0,
+        "datetime": "03-May-2025 04:15:00 PM"
+    },
+    "menu_details": [
+        {
+            "menu_id": 13,
+            "menu_name": "Jeera Rice",
+            "price": 180.0,
+            "quantity": 25,
+            "offer": 0,
+            "comment": "Extra spicy please",
+            "menu_sub_total": 4500.0,
+            "portion_name": "Full",
+            "unit": "500g"
+        },
+        {
+            "menu_id": 13,
+            "menu_name": "Jeera Rice",
+            "price": 180.0,
+            "quantity": 10,
+            "offer": 0,
+            "comment": "add spice",
+            "menu_sub_total": 1800.0,
+            "portion_name": "Full",
+            "unit": "500g"
+        }
+    ]
+}, 200</td>
+<td><div><pre>com.menumitra.utilityclass.customException: Error in add menus to order test: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.AddMenusToOrder.verifyAddMenusToOrder(AddMenusToOrder.java:276)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1074813753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1074813753'><pre>com.menumitra.utilityclass.customException: Error in add menus to order test: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.AddMenusToOrder.verifyAddMenusToOrder(AddMenusToOrder.java:276)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.AddMenusToOrder@38102d01</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.SectionDeleteTestScript.verifySectionDeleteUsingValidInputData()'><b>verifySectionDeleteUsingValidInputData</b><br>Test class: com.menumitratCommonAPITestScript.SectionDeleteTestScript<br>Parameters: sectiondelete, sectiondelete_001, positive, Valid user_id, outlet_id, and section_id, delete, {
     "user_id":2,
@@ -293,8 +454,8 @@ function toggleAllBoxes() {
 }, 200</td>
 <td><div><pre>com.menumitra.utilityclass.customException: Error during section delete verification
 	at com.menumitratCommonAPITestScript.SectionDeleteTestScript.verifySectionDeleteUsingValidInputData(SectionDeleteTestScript.java:181)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1502810283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1502810283'><pre>com.menumitra.utilityclass.customException: Error during section delete verification
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1195752646", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1195752646'><pre>com.menumitra.utilityclass.customException: Error during section delete verification
 	at com.menumitratCommonAPITestScript.SectionDeleteTestScript.verifySectionDeleteUsingValidInputData(SectionDeleteTestScript.java:181)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -320,7 +481,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.SectionDeleteTestScript@e4487af</td></tr>
+<td>com.menumitratCommonAPITestScript.SectionDeleteTestScript@4c309d4d</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -365,7 +526,7 @@ function toggleAllBoxes() {
       },, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.ActivityLogTestScript@385e9564</td></tr>
+<td>com.menumitratCommonAPITestScript.ActivityLogTestScript@1e178745</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.CaptainListViewTestScript.captainListViewTest()'><b>captainListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.CaptainListViewTestScript<br>Parameters: captainlistview, captainlistview_001, positive, verify captain list view, post, {
     "user_id":2,
@@ -389,7 +550,7 @@ function toggleAllBoxes() {
 }, </td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.CaptainListViewTestScript@1e178745</td></tr>
+<td>com.menumitratCommonAPITestScript.CaptainListViewTestScript@445b295b</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.CaptainUpdateTestScript.captainUpdateTest()'><b>captainUpdateTest</b><br>Test class: com.menumitratCommonAPITestScript.CaptainUpdateTestScript<br>Parameters: captainupdate, captainupdate_001, positive, verify captain update, patch, {
  "update_user_id":2,
@@ -409,7 +570,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.CaptainUpdateTestScript@1f59a598</td></tr>
+<td>com.menumitratCommonAPITestScript.CaptainUpdateTestScript@1757cd72</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.CaptainViewTestScript.captainViewTest()'><b>captainViewTest</b><br>Test class: com.menumitratCommonAPITestScript.CaptainViewTestScript<br>Parameters: captainview, captainview_001, positive, verify captain view, post, {
   "update_user_id":2,
@@ -459,7 +620,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.CaptainViewTestScript@192c3f1e</td></tr>
+<td>com.menumitratCommonAPITestScript.CaptainViewTestScript@49e5f737</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.ChefListViewTestScript.chefListViewTest()'><b>chefListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.ChefListViewTestScript<br>Parameters: cheflistview, cheflistview_001, positive, verify chef listview, post, {
     "user_id":2,
@@ -481,7 +642,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.ChefListViewTestScript@5b94b04d</td></tr>
+<td>com.menumitratCommonAPITestScript.ChefListViewTestScript@192c3f1e</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.ChefViewTestScript.chefViewTest()'><b>chefViewTest</b><br>Test class: com.menumitratCommonAPITestScript.ChefViewTestScript<br>Parameters: chefview, chefview_001, positive, verify chef view , post, {
     "update_user_id":2,
@@ -513,7 +674,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.ChefViewTestScript@8c3b9d</td></tr>
+<td>com.menumitratCommonAPITestScript.ChefViewTestScript@26b3fd41</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.StaffListViewTestScript.staffListViewTest()'><b>staffListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.StaffListViewTestScript<br>Parameters: stafflistview, stafflistview_001, positive, verify staff list view using valid input, post, {
    
@@ -538,7 +699,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.StaffListViewTestScript@2e377400</td></tr>
+<td>com.menumitratCommonAPITestScript.StaffListViewTestScript@e4487af</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.ChefUpdateTestScript.updateChef()'><b>updateChef</b><br>Test class: com.menumitratCommonAPITestScript.ChefUpdateTestScript<br>Parameters: chefupdate, chefupdate_001, positive, verify chef update, patch, {  
     "update_user_id":"2",
@@ -558,7 +719,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.ChefUpdateTestScript@4c39bec8</td></tr>
+<td>com.menumitratCommonAPITestScript.ChefUpdateTestScript@7494f96a</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.StaffUpdateTestScript.updateStaff()'><b>updateStaff</b><br>Test class: com.menumitratCommonAPITestScript.StaffUpdateTestScript<br>Parameters: staffupdate, staffupdate_001, positive, verify update staff using valid input, post, {
          "user_id":2,
@@ -576,7 +737,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.StaffUpdateTestScript@561b6512</td></tr>
+<td>com.menumitratCommonAPITestScript.StaffUpdateTestScript@687e99d8</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.sectionListViewTestScript.verifySectionListViewUsingValidInputData()'><b>verifySectionListViewUsingValidInputData</b><br>Test class: com.menumitratCommonAPITestScript.sectionListViewTestScript<br>Parameters: sectionlistview, section_001, positive, Valid section list view, post, {
     "outlet_id":1,
@@ -595,7 +756,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.sectionListViewTestScript@757277dc</td></tr>
+<td>com.menumitratCommonAPITestScript.sectionListViewTestScript@37271612</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.sectionUpdateTestScript.verifySectionUpdateUsingValidInputData()'><b>verifySectionUpdateUsingValidInputData</b><br>Test class: com.menumitratCommonAPITestScript.sectionUpdateTestScript<br>Parameters: sectionupdate, sectionupdate_001, positive, Valid section update, patch, {
     "outlet_id": 1,
@@ -608,7 +769,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.sectionUpdateTestScript@5c671d7f</td></tr>
+<td>com.menumitratCommonAPITestScript.sectionUpdateTestScript@3af9c5b7</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.sectionCreateTestScript.verifySectionUsingValidInputData()'><b>verifySectionUsingValidInputData</b><br>Test class: com.menumitratCommonAPITestScript.sectionCreateTestScript<br>Parameters: sectioncreate, section_001, positive, verify section create, post, {
     "outlet_id": 1,
@@ -620,7 +781,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.sectionCreateTestScript@49e5f737</td></tr>
+<td>com.menumitratCommonAPITestScript.sectionCreateTestScript@10aa41f2</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.SectionViewTestScript.verifySectionViewUsingValidInputData()'><b>verifySectionViewUsingValidInputData</b><br>Test class: com.menumitratCommonAPITestScript.SectionViewTestScript<br>Parameters: sectionview, sectionview_001, positive, Verify section view, post, {
     "outlet_id":1,
@@ -636,7 +797,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.SectionViewTestScript@687e99d8</td></tr>
+<td>com.menumitratCommonAPITestScript.SectionViewTestScript@ed7f8b4</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.StaffViewTestScript.verifyStaffView()'><b>verifyStaffView</b><br>Test class: com.menumitratCommonAPITestScript.StaffViewTestScript<br>Parameters: staffview, staffview_001, positive, verify staff view using valid data, post, {
     "staff_id": 27,
@@ -664,7 +825,7 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.StaffViewTestScript@1757cd72</td></tr>
+<td>com.menumitratCommonAPITestScript.StaffViewTestScript@6aaceffd</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.TableListViewTestScript.verifyTableListView()'><b>verifyTableListView</b><br>Test class: com.menumitratCommonAPITestScript.TableListViewTestScript<br>Parameters: tablelistview, tablelistview_001, positive, verify table list view, post, {  
     
@@ -701,8 +862,8 @@ function toggleAllBoxes() {
           "payment_method": null
         }, 200</td>
 <td></td>
-<td>1</td>
-<td>com.menumitratCommonAPITestScript.TableListViewTestScript@291caca8</td></tr>
+<td>3</td>
+<td>com.menumitratCommonAPITestScript.TableListViewTestScript@1f59a598</td></tr>
 </table><p>
 </body>
 </html>
