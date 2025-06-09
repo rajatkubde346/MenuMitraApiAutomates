@@ -171,7 +171,7 @@ public class StaffUpdateTestScript extends APIBase {
         try {
             LogUtils.info("===Test environment tear down successfully===");
             ExtentReport.getTest().log(Status.PASS, "Test environment tear down successfully");
-            ActionsMethods.logout();
+            // ActionsMethods.logout();
             TokenManagers.clearTokens();
         } catch (Exception e) {
             LogUtils.exception(logger, "Error during test environment tear down", e);

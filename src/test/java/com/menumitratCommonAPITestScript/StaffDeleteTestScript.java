@@ -161,6 +161,7 @@ public class StaffDeleteTestScript extends APIBase
             staffDeleteRequest.setOutlet_id(requestBodyJson.getInt("outlet_id"));
             staffDeleteRequest.setStaff_id(String.valueOf(String.valueOf(requestBodyJson.getInt("staff_id"))));
             staffDeleteRequest.setUser_id(user_id);
+            staffDeleteRequest.setApp_source(requestBodyJson.getString("app_source"));
             
             LogUtils.info("Request Body: " + requestBodyJson.toString());
             ExtentReport.getTest().log(Status.INFO, "Request Body: " + requestBodyJson.toString());

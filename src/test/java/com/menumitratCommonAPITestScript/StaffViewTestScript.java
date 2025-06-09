@@ -203,6 +203,8 @@ public class StaffViewTestScript extends APIBase
                 requestBodyJson = new JSONObject(requestBody);
                 staffViewRequest.setStaff_id(String.valueOf(requestBodyJson.getInt("staff_id")));
                 staffViewRequest.setOutlet_id(requestBodyJson.getInt("outlet_id"));
+                staffViewRequest.setUser_id(requestBodyJson.getInt("user_id"));
+                staffViewRequest.setApp_source(requestBodyJson.getString("app_source"));
                 
                 LogUtils.info("Request Body: " + requestBodyJson.toString());
                 ExtentReport.getTest().log(Status.INFO, "Request Body: " + requestBodyJson.toString());
