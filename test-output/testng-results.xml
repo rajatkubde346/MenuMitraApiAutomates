@@ -2,26 +2,26 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-09T11:07:14Z" name="Suite" finished-at="2025-06-09T11:07:18Z" duration-ms="4449">
+  <suite started-at="2025-06-09T11:40:04Z" name="Suite" finished-at="2025-06-09T11:40:50Z" duration-ms="45542">
     <groups>
     </groups>
-    <test started-at="2025-06-09T11:07:14Z" name="Test" finished-at="2025-06-09T11:07:18Z" duration-ms="4449">
+    <test started-at="2025-06-09T11:40:04Z" name="Test" finished-at="2025-06-09T11:40:50Z" duration-ms="45542">
       <class name="com.menumitra.superclass.APIBase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@7bedc48a]" started-at="2025-06-09T16:37:14Z" name="setUp" finished-at="2025-06-09T16:37:14Z" duration-ms="50" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@7bedc48a]" started-at="2025-06-09T17:10:04Z" name="setUp" finished-at="2025-06-09T17:10:04Z" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@7bedc48a]" started-at="2025-06-09T16:37:19Z" name="tearDown" finished-at="2025-06-09T16:37:19Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@7bedc48a]" started-at="2025-06-09T17:10:50Z" name="tearDown" finished-at="2025-06-09T17:10:50Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.menumitra.superclass.APIBase -->
       <class name="com.menumitratCommonAPITestScript.WareHouseCreateTestScript">
-        <test-method is-config="true" signature="wareHouseCreateSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.WareHouseCreateTestScript@131ef10]" started-at="2025-06-09T16:37:14Z" name="wareHouseCreateSetUp" finished-at="2025-06-09T16:37:18Z" duration-ms="3974" status="PASS">
+        <test-method is-config="true" signature="wareHouseCreateSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.WareHouseCreateTestScript@131ef10]" started-at="2025-06-09T17:10:05Z" name="wareHouseCreateSetUp" finished-at="2025-06-09T17:10:49Z" duration-ms="44737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- wareHouseCreateSetUp -->
-        <test-method signature="wareHouseCreateTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.WareHouseCreateTestScript@131ef10]" started-at="2025-06-09T16:37:18Z" name="wareHouseCreateTest" data-provider="getWareHouseCreateData" finished-at="2025-06-09T16:37:18Z" duration-ms="136" status="PASS">
+        <test-method signature="wareHouseCreateTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.WareHouseCreateTestScript@131ef10]" started-at="2025-06-09T17:10:50Z" name="wareHouseCreateTest" data-provider="getWareHouseCreateData" finished-at="2025-06-09T17:10:50Z" duration-ms="211" status="PASS">
           <params>
             <param index="0">
               <value>

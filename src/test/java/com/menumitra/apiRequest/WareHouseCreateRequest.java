@@ -1,18 +1,45 @@
 package com.menumitra.apiRequest;
 
-public class WareHouseCreateRequest {
-    private Long userId;
-    private String appSource;
-    private String location;
-    private String address;
-    private String managerName;
-    private String managerMobile;
-    private String managerAlternateMobile;
-    private String warehouseType;
-    private String capacityUnit;
-    private Integer capacityValue;
-    private Integer isActive;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
+public class WareHouseCreateRequest {
+    @JsonProperty("user_id")
+    private Long userId;
+    
+    @JsonProperty("app_source")
+    private String appSource;
+    
+    @JsonProperty("location")
+    private String location;
+    
+    @JsonProperty("address")
+    private String address;
+    
+    @JsonProperty("manager_name")
+    private String managerName;
+    
+    @JsonProperty("manager_mobile")
+    private String managerMobile;
+    
+    @JsonProperty("manager_alternate_mobile")
+    private String managerAlternateMobile;
+    
+    @JsonProperty("warehouse_type")
+    private String warehouseType;
+    
+    @JsonProperty("capacity_unit")
+    private String capacityUnit;
+    
+    @JsonProperty("capacity_value")
+    private Integer capacityValue;
+    
+    @JsonProperty("is_active")
+    private Integer isActive;
+    
+    @JsonProperty("warehouse_id")
+    private Integer warehouseId;
+
+    
     public Long getUserId() {
         return userId;
     }
@@ -100,5 +127,17 @@ public class WareHouseCreateRequest {
     public void setIsActive(Integer isActive) {
         this.isActive = isActive;
     }
+
+    public Integer getWarehouseId() {
+        return warehouseId;
+    }
+
+    public void setWarehouseId(Integer warehouseId) {
+        this.warehouseId = warehouseId;
+    }
+    
+    
+
+
 }
     

@@ -33,7 +33,7 @@ import com.menumitra.utilityclass.validateResponseBody;
 import io.restassured.response.Response;
 
 @Listeners(Listener.class)
-public class WareHouseCreateTestScript extends APIBase {
+public class WareHouseUpdateTestScript extends APIBase {
     private JSONObject requestBodyJson;
     private Response response;
     private String baseURI;
@@ -43,21 +43,20 @@ public class WareHouseCreateTestScript extends APIBase {
     private JSONObject actualJsonBody;
     private int user_id;
     private JSONObject expectedResponseJson;
-    private static final String excelSheetPathForGetApis = "src/test/resources/excelsheet/apiEndpoint.xlsx";
-    Logger logger = LogUtils.getLogger(WareHouseCreateTestScript.class);
-   
+    Logger logger = LogUtils.getLogger(WareHouseUpdateTestScript.class);
+
     @BeforeClass
-    private void wareHouseCreateSetUp() throws customException {
+    private void wareHouseUpdateSetUp() throws customException {
         try {
-            LogUtils.info("WareHouse Create SetUp");
-            ExtentReport.createTest("WareHouse Create SetUp");
-            ExtentReport.getTest().log(Status.INFO, "WareHouse Create SetUp");
+            LogUtils.info("Warehouse Update SetUp");
+            ExtentReport.createTest("Warehouse Update SetUp");
+            ExtentReport.getTest().log(Status.INFO, "Warehouse Update SetUp");
 
             ActionsMethods.login();
             ActionsMethods.verifyOTP();
             baseURI = EnviromentChanges.getBaseUrl();
-            
-            Object[][] getUrl = getWareHouseCreateUrl();
+
+            Object[][] getUrl = getWareHouseUpdateUrl();
             if (getUrl.length > 0) {
                 String endpoint = getUrl[0][2].toString();
                 url = new URL(endpoint);
@@ -65,68 +64,68 @@ public class WareHouseCreateTestScript extends APIBase {
                 LogUtils.info("Constructed base URI: " + baseURI);
                 ExtentReport.getTest().log(Status.INFO, "Constructed base URI: " + baseURI);
             } else {
-                LogUtils.failure(logger, "No warehouse create URL found in test data");
-                ExtentReport.getTest().log(Status.FAIL, "No warehouse create URL found in test data");
-                throw new customException("No warehouse create URL found in test data");
+                LogUtils.failure(logger, "No warehouse update URL found in test data");
+                ExtentReport.getTest().log(Status.FAIL, "No warehouse update URL found in test data");
+                throw new customException("No warehouse update URL found in test data");
             }
-            
+
             accessToken = TokenManagers.getJwtToken();
             user_id = TokenManagers.getUserId();
-            if(accessToken.isEmpty()) {
+            if (accessToken.isEmpty()) {
                 LogUtils.failure(logger, "Failed to get access token");
                 ExtentReport.getTest().log(Status.FAIL, "Failed to get access token");
                 throw new customException("Failed to get access token");
             }
-            
+
             wareHouseCreateRequest = new WareHouseCreateRequest();
-            
+
         } catch (Exception e) {
-            LogUtils.failure(logger, "Error in warehouse create setup: " + e.getMessage());
-            ExtentReport.getTest().log(Status.FAIL, "Error in warehouse create setup: " + e.getMessage());
-            throw new customException("Error in warehouse create setup: " + e.getMessage());
+            LogUtils.failure(logger, "Error in warehouse update setup: " + e.getMessage());
+            ExtentReport.getTest().log(Status.FAIL, "Error in warehouse update setup: " + e.getMessage());
+            throw new customException("Error in warehouse update setup: " + e.getMessage());
         }
     }
-    
-    @DataProvider(name = "getWareHouseCreateUrl")
-    private Object[][] getWareHouseCreateUrl() throws customException {
+
+    @DataProvider(name = "getWareHouseUpdateUrl")
+    private Object[][] getWareHouseUpdateUrl() throws customException {
         try {
-            LogUtils.info("Reading Warehouse Create API endpoint data");
-            ExtentReport.getTest().log(Status.INFO, "Reading Warehouse Create API endpoint data");
-            
+            LogUtils.info("Reading Warehouse Update API endpoint data");
+            ExtentReport.getTest().log(Status.INFO, "Reading Warehouse Update API endpoint data");
+
             Object[][] readExcelData = DataDriven.readExcelData(excelSheetPathForGetApis, "commonAPI");
-            
+
             if (readExcelData == null || readExcelData.length == 0) {
-                String errorMsg = "No Warehouse Create API endpoint data found in Excel sheet";
+                String errorMsg = "No Warehouse Update API endpoint data found in Excel sheet";
                 LogUtils.error(errorMsg);
                 ExtentReport.getTest().log(Status.FAIL, errorMsg);
                 throw new customException(errorMsg);
             }
-            
+
             Object[][] filteredData = Arrays.stream(readExcelData)
-                    .filter(row -> "warehousecreate".equalsIgnoreCase(row[0].toString()))
+                    .filter(row -> "warehouseupdate".equalsIgnoreCase(row[0].toString()))
                     .toArray(Object[][]::new);
-            
+
             if (filteredData.length == 0) {
-                String errorMsg = "No warehouse create URL data found after filtering";
+                String errorMsg = "No warehouse update URL data found after filtering";
                 LogUtils.failure(logger, errorMsg);
                 ExtentReport.getTest().log(Status.FAIL, MarkupHelper.createLabel(errorMsg, ExtentColor.RED));
                 throw new customException(errorMsg);
             }
-            
+
             return filteredData;
         } catch (Exception e) {
-            LogUtils.failure(logger, "Error in getting warehouse create URL: " + e.getMessage());
-            ExtentReport.getTest().log(Status.FAIL, "Error in getting warehouse create URL: " + e.getMessage());
-            throw new customException("Error in getting warehouse create URL: " + e.getMessage());
+            LogUtils.failure(logger, "Error in getting warehouse update URL: " + e.getMessage());
+            ExtentReport.getTest().log(Status.FAIL, "Error in getting warehouse update URL: " + e.getMessage());
+            throw new customException("Error in getting warehouse update URL: " + e.getMessage());
         }
     }
-    
-    @DataProvider(name = "getWareHouseCreateData")
-    public Object[][] getWareHouseCreateData() throws customException {
+
+    @DataProvider(name = "getWareHouseUpdateData")
+    public Object[][] getWareHouseUpdateData() throws customException {
         try {
-            LogUtils.info("Reading warehouse create test scenario data");
-            ExtentReport.getTest().log(Status.INFO, "Reading warehouse create test scenario data");
-            
+            LogUtils.info("Reading warehouse update test scenario data");
+            ExtentReport.getTest().log(Status.INFO, "Reading warehouse update test scenario data");
+
             Object[][] readExcelData = DataDriven.readExcelData(excelSheetPathForGetApis, "CommonAPITestScenario");
             if (readExcelData == null) {
                 String errorMsg = "Error fetching data from Excel sheet - Data is null";
@@ -134,90 +133,74 @@ public class WareHouseCreateTestScript extends APIBase {
                 ExtentReport.getTest().log(Status.FAIL, MarkupHelper.createLabel(errorMsg, ExtentColor.RED));
                 throw new customException(errorMsg);
             }
-            
+
             List<Object[]> filteredData = new ArrayList<>();
-            
+
             for (int i = 0; i < readExcelData.length; i++) {
                 Object[] row = readExcelData[i];
                 if (row != null && row.length >= 3 &&
-                        "warehousecreate".equalsIgnoreCase(Objects.toString(row[0], "")) &&
+                        "warehouseupdate".equalsIgnoreCase(Objects.toString(row[0], "")) &&
                         "positive".equalsIgnoreCase(Objects.toString(row[2], ""))) {
-                    
                     filteredData.add(row);
                 }
             }
-            
+
             if (filteredData.isEmpty()) {
-                String errorMsg = "No valid warehouse create test data found after filtering";
+                String errorMsg = "No valid warehouse update test data found after filtering";
                 LogUtils.failure(logger, errorMsg);
                 ExtentReport.getTest().log(Status.FAIL, MarkupHelper.createLabel(errorMsg, ExtentColor.RED));
                 throw new customException(errorMsg);
             }
-            
+
             Object[][] result = new Object[filteredData.size()][];
             for (int i = 0; i < filteredData.size(); i++) {
                 result[i] = filteredData.get(i);
             }
-            
+
             return result;
         } catch (Exception e) {
-            LogUtils.failure(logger, "Error in getting warehouse create test data: " + e.getMessage());
-            ExtentReport.getTest().log(Status.FAIL, "Error in getting warehouse create test data: " + e.getMessage());
-            throw new customException("Error in getting warehouse create test data: " + e.getMessage());
+            LogUtils.failure(logger, "Error in getting warehouse update test data: " + e.getMessage());
+            ExtentReport.getTest().log(Status.FAIL, "Error in getting warehouse update test data: " + e.getMessage());
+            throw new customException("Error in getting warehouse update test data: " + e.getMessage());
         }
     }
-    
-    @Test(dataProvider = "getWareHouseCreateData")
-    public void wareHouseCreateTest(String apiName, String testCaseid, String testType, String description,
+
+    @Test(dataProvider = "getWareHouseUpdateData")
+    public void wareHouseUpdateTest(String apiName, String testCaseid, String testType, String description,
             String httpsmethod, String requestBody, String expectedResponseBody, String statusCode) throws customException {
         try {
-            LogUtils.info("Starting warehouse creation test case: " + testCaseid);
-            ExtentReport.createTest("WareHouse Creation Test - " + testCaseid);
+            LogUtils.info("Starting warehouse update test case: " + testCaseid);
+            ExtentReport.createTest("Warehouse Update Test - " + testCaseid);
             ExtentReport.getTest().log(Status.INFO, "Test Description: " + description);
-            
-            if (apiName.equalsIgnoreCase("warehousecreate")) {
+
+            if (apiName.equalsIgnoreCase("warehouseupdate")) {
                 requestBodyJson = new JSONObject(requestBody);
-                
-                // Validate required fields before proceeding
-                if (!requestBodyJson.has("app_source")) {
-                    requestBodyJson.put("app_source", "web"); // Set default value if not provided
-                }
-                
-                LogUtils.info("Request Body before setting fields: " + requestBodyJson.toString());
-                
-                // Set all required fields in proper order
-                wareHouseCreateRequest = new WareHouseCreateRequest(); // Reset the request object
-                wareHouseCreateRequest.setUserId(Long.valueOf(user_id));
-                // Ensure app_source is set and log it
-                String appSource = requestBodyJson.getString("app_source");
-                wareHouseCreateRequest.setAppSource(appSource);
-                LogUtils.info("Set app_source to: " + appSource);
-                
-                // Set other fields
-                wareHouseCreateRequest.setLocation(requestBodyJson.optString("location", ""));
-                wareHouseCreateRequest.setAddress(requestBodyJson.optString("address", ""));
-                wareHouseCreateRequest.setManagerName(requestBodyJson.optString("manager_name", ""));
-                wareHouseCreateRequest.setManagerMobile(requestBodyJson.optString("manager_mobile", ""));
-                wareHouseCreateRequest.setManagerAlternateMobile(requestBodyJson.optString("manager_alternate_mobile", ""));
-                wareHouseCreateRequest.setCapacityUnit(requestBodyJson.optString("capacity_unit", ""));
-                wareHouseCreateRequest.setCapacityValue(requestBodyJson.optInt("capacity_value", 0));
-                wareHouseCreateRequest.setIsActive(requestBodyJson.optInt("is_active", 1));
-                wareHouseCreateRequest.setWarehouseType(requestBodyJson.optString("warehouse_type", ""));
-                
-                // Log the complete request for debugging
-                LogUtils.info("Complete Request Object: " + wareHouseCreateRequest.toString());
-                ExtentReport.getTest().log(Status.INFO, "Complete Request Object: " + wareHouseCreateRequest.toString());
-                
-                LogUtils.info("Final Request Body: " + requestBodyJson.toString());
-                ExtentReport.getTest().log(Status.INFO, "Final Request Body: " + requestBodyJson.toString());
-                
+
+                  // Set all required fields in proper order
+                  wareHouseCreateRequest.setUserId(Long.valueOf(user_id));
+                  // Set app_source first as it's required
+                  wareHouseCreateRequest.setAppSource(requestBodyJson.optString("app_source", "web"));
+                  wareHouseCreateRequest.setLocation(requestBodyJson.optString("location", ""));
+                  wareHouseCreateRequest.setAddress(requestBodyJson.optString("address", ""));
+                  wareHouseCreateRequest.setManagerName(requestBodyJson.optString("manager_name", ""));
+                  wareHouseCreateRequest.setManagerMobile(requestBodyJson.optString("manager_mobile", ""));
+                  wareHouseCreateRequest.setManagerAlternateMobile(requestBodyJson.optString("manager_alternate_mobile", ""));
+                  wareHouseCreateRequest.setCapacityUnit(requestBodyJson.optString("capacity_unit", ""));
+                  wareHouseCreateRequest.setCapacityValue(requestBodyJson.optInt("capacity_value", 0));
+                  wareHouseCreateRequest.setIsActive(requestBodyJson.optInt("is_active", 1));
+                  wareHouseCreateRequest.setWarehouseType(requestBodyJson.optString("warehouse_type", ""));
+
+               
+                LogUtils.info("Request Body: " + requestBodyJson.toString());
+                ExtentReport.getTest().log(Status.INFO, "Request Body: " + requestBodyJson.toString());
+
                 response = ResponseUtil.getResponseWithAuth(baseURI, wareHouseCreateRequest, httpsmethod, accessToken);
-                
+
                 LogUtils.info("Response Status Code: " + response.getStatusCode());
                 LogUtils.info("Response Body: " + response.asString());
                 ExtentReport.getTest().log(Status.INFO, "Response Status Code: " + response.getStatusCode());
                 ExtentReport.getTest().log(Status.INFO, "Response Body: " + response.asString());
-                
+
                 // Validate status code
                 if (response.getStatusCode() != Integer.parseInt(statusCode)) {
                     String errorMsg = "Status code mismatch - Expected: " + statusCode + ", Actual: " + response.getStatusCode();
@@ -225,18 +208,18 @@ public class WareHouseCreateTestScript extends APIBase {
                     ExtentReport.getTest().log(Status.FAIL, MarkupHelper.createLabel(errorMsg, ExtentColor.RED));
                     throw new customException(errorMsg);
                 }
-                
+
                 // Only show response without validation
                 actualJsonBody = new JSONObject(response.asString());
-                LogUtils.info("Warehouse create response received successfully");
-                ExtentReport.getTest().log(Status.PASS, "Warehouse create response received successfully");
+                LogUtils.info("Warehouse update response received successfully");
+                ExtentReport.getTest().log(Status.PASS, "Warehouse update response received successfully");
                 ExtentReport.getTest().log(Status.PASS, "Response: " + response.asPrettyString());
-                
-                LogUtils.success(logger, "Warehouse create test completed successfully");
-                ExtentReport.getTest().log(Status.PASS, MarkupHelper.createLabel("Warehouse create test completed successfully", ExtentColor.GREEN));
+
+                LogUtils.success(logger, "Warehouse update test completed successfully");
+                ExtentReport.getTest().log(Status.PASS, MarkupHelper.createLabel("Warehouse update test completed successfully", ExtentColor.GREEN));
             }
         } catch (Exception e) {
-            String errorMsg = "Error in warehouse create test: " + e.getMessage();
+            String errorMsg = "Error in warehouse update test: " + e.getMessage();
             LogUtils.exception(logger, errorMsg, e);
             ExtentReport.getTest().log(Status.FAIL, MarkupHelper.createLabel(errorMsg, ExtentColor.RED));
             if (response != null) {

@@ -4,7 +4,7 @@
   <test name="Test">
     <classes>
       <class name="com.menumitra.superclass.APIBase"/>
-      <class name="com.menumitratCommonAPITestScript.TableListViewTestScript"/>
+<!--      <class name="com.menumitratCommonAPITestScript.TableListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefViewTestScript"/>
@@ -31,9 +31,14 @@
        <class name="com.menumitratCommonAPITestScript.sectionListViewTestScript"/>
        <class name="com.menumitratCommonAPITestScript.SectionViewTestScript"/>
        <class name="com.menumitratCommonAPITestScript.SectionDeleteTestScript"/>
-       
+       -->
        
        <class name="com.menumitratCommonAPITestScript.WareHouseCreateTestScript"/>
+       
+  
+       
+     
+     
        
       
       
