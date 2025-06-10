@@ -1,17 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">6,648</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.WaiterCreateTestScript</td><td><a href="#m0">verifyWaiterCreate</a></td><td rowspan="1">1749540659149</td><td rowspan="1">220</td></tr></tbody></table><h2>Test</h2><h3 id="m0">com.menumitratCommonAPITestScript.WaiterCreateTestScript#verifyWaiterCreate</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>waitercreate</td><td>waitercreate_001</td><td>positive</td><td>verify Waiter create</td><td>post</td><td>{
- 
- &quot;user_id&quot;:2,
- &quot;outlet_id&quot;:1,
- &quot;name&quot;:&quot;waitvaibhav&quot;,
- &quot;mobile&quot;:&quot;8237090371&quot;,
- &quot;address&quot;:&quot;satara&quot;,
- &quot;aadhar_number&quot;:&quot;343332322321&quot;,
- &quot;dob&quot;:&quot;12 Jan 2023&quot;,
- &quot;email&quot;:&quot;h@gmail.com&quot;,
- &quot;app_source&quot;:&quot;waiter_app&quot;,
- &quot;functionality_ids&quot;:[1,2,3,4,7]
-
-}</td><td>{
-    &quot;detail&quot;: &quot;Waiter created successfully&quot;
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">5,873</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.menumitratCommonAPITestScript.WaiterListViewTestScript</td><td><a href="#m0">waiterListViewTest</a></td><td rowspan="1">1749541992127</td><td rowspan="1">194</td></tr></tbody></table><h2>Test</h2><h3 id="m0">com.menumitratCommonAPITestScript.WaiterListViewTestScript#waiterListViewTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th></tr><tr class="param stripe"><td>waiterlistview</td><td>waiterlistview_001</td><td>positive</td><td>verify waiter list view</td><td>post</td><td>{
+&quot;user_id&quot;:2,
+ &quot;outlet_id&quot;:1 ,
+ &quot;app_source&quot;:&quot;waiter_app&quot;
+   }</td><td>{
+  &quot;detail&quot;: &quot;Successfully retrieved waiters&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;outlet_id&quot;: 1,
+      &quot;user_id&quot;: 124,
+      &quot;name&quot;: &quot;waitvaibhav&quot;,
+      &quot;mobile&quot;: &quot;8237090371&quot;,
+      &quot;dob&quot;: &quot;12 Jan 2023&quot;,
+      &quot;email&quot;: &quot;h@gmail.com&quot;,
+      &quot;is_active&quot;: 1
+    }
+  ]
 }</td><td>200</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

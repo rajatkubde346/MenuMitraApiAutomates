@@ -2,25 +2,25 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-10T07:30:52Z" name="Suite" finished-at="2025-06-10T07:30:59Z" duration-ms="6648">
+  <suite started-at="2025-06-10T07:53:06Z" name="Suite" finished-at="2025-06-10T07:53:12Z" duration-ms="5873">
     <groups>
     </groups>
-    <test started-at="2025-06-10T07:30:52Z" name="Test" finished-at="2025-06-10T07:30:59Z" duration-ms="6648">
-      <class name="com.menumitratCommonAPITestScript.WaiterCreateTestScript">
-        <test-method is-config="true" signature="waiterCreateSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.WaiterCreateTestScript@77f1baf5]" started-at="2025-06-10T13:00:52Z" name="waiterCreateSetUp" finished-at="2025-06-10T13:00:58Z" duration-ms="5737" status="PASS">
+    <test started-at="2025-06-10T07:53:06Z" name="Test" finished-at="2025-06-10T07:53:12Z" duration-ms="5873">
+      <class name="com.menumitratCommonAPITestScript.WaiterListViewTestScript">
+        <test-method is-config="true" signature="waiterListViewSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.WaiterListViewTestScript@71687585]" started-at="2025-06-10T13:23:06Z" name="waiterListViewSetUp" finished-at="2025-06-10T13:23:11Z" duration-ms="5011" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- waiterCreateSetUp -->
-        <test-method signature="verifyWaiterCreate(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.WaiterCreateTestScript@77f1baf5]" started-at="2025-06-10T13:00:59Z" name="verifyWaiterCreate" data-provider="getWaiterCreateData" finished-at="2025-06-10T13:00:59Z" duration-ms="220" status="PASS">
+        </test-method> <!-- waiterListViewSetUp -->
+        <test-method signature="waiterListViewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.WaiterListViewTestScript@71687585]" started-at="2025-06-10T13:23:12Z" name="waiterListViewTest" data-provider="getWaiterListViewData" finished-at="2025-06-10T13:23:12Z" duration-ms="194" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[waitercreate]]>
+                <![CDATA[waiterlistview]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[waitercreate_001]]>
+                <![CDATA[waiterlistview_001]]>
               </value>
             </param>
             <param index="2">
@@ -30,7 +30,7 @@
             </param>
             <param index="3">
               <value>
-                <![CDATA[verify Waiter create]]>
+                <![CDATA[verify waiter list view]]>
               </value>
             </param>
             <param index="4">
@@ -41,25 +41,27 @@
             <param index="5">
               <value>
                 <![CDATA[{
- 
- "user_id":2,
- "outlet_id":1,
- "name":"waitvaibhav",
- "mobile":"8237090371",
- "address":"satara",
- "aadhar_number":"343332322321",
- "dob":"12 Jan 2023",
- "email":"h@gmail.com",
- "app_source":"waiter_app",
- "functionality_ids":[1,2,3,4,7]
-
-}]]>
+"user_id":2,
+ "outlet_id":1 ,
+ "app_source":"waiter_app"
+   }]]>
               </value>
             </param>
             <param index="6">
               <value>
                 <![CDATA[{
-    "detail": "Waiter created successfully"
+  "detail": "Successfully retrieved waiters",
+  "data": [
+    {
+      "outlet_id": 1,
+      "user_id": 124,
+      "name": "waitvaibhav",
+      "mobile": "8237090371",
+      "dob": "12 Jan 2023",
+      "email": "h@gmail.com",
+      "is_active": 1
+    }
+  ]
 }]]>
               </value>
             </param>
@@ -71,14 +73,14 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyWaiterCreate -->
-      </class> <!-- com.menumitratCommonAPITestScript.WaiterCreateTestScript -->
+        </test-method> <!-- waiterListViewTest -->
+      </class> <!-- com.menumitratCommonAPITestScript.WaiterListViewTestScript -->
       <class name="com.menumitra.superclass.APIBase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@7d20d0b]" started-at="2025-06-10T13:00:52Z" name="setUp" finished-at="2025-06-10T13:00:52Z" duration-ms="40" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@5276d6ee]" started-at="2025-06-10T13:23:06Z" name="setUp" finished-at="2025-06-10T13:23:06Z" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@7d20d0b]" started-at="2025-06-10T13:00:59Z" name="tearDown" finished-at="2025-06-10T13:00:59Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@5276d6ee]" started-at="2025-06-10T13:23:12Z" name="tearDown" finished-at="2025-06-10T13:23:12Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

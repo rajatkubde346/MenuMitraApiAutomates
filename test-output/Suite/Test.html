@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 10 13:00:52 IST 2025</td>
+<td>Started on:</td><td>Tue Jun 10 13:23:06 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6648 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5873 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,25 +75,27 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.menumitratCommonAPITestScript.WaiterCreateTestScript.verifyWaiterCreate()'><b>verifyWaiterCreate</b><br>Test class: com.menumitratCommonAPITestScript.WaiterCreateTestScript<br>Parameters: waitercreate, waitercreate_001, positive, verify Waiter create, post, {
- 
- "user_id":2,
- "outlet_id":1,
- "name":"waitvaibhav",
- "mobile":"8237090371",
- "address":"satara",
- "aadhar_number":"343332322321",
- "dob":"12 Jan 2023",
- "email":"h@gmail.com",
- "app_source":"waiter_app",
- "functionality_ids":[1,2,3,4,7]
-
-}, {
-    "detail": "Waiter created successfully"
+<td title='com.menumitratCommonAPITestScript.WaiterListViewTestScript.waiterListViewTest()'><b>waiterListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.WaiterListViewTestScript<br>Parameters: waiterlistview, waiterlistview_001, positive, verify waiter list view, post, {
+"user_id":2,
+ "outlet_id":1 ,
+ "app_source":"waiter_app"
+   }, {
+  "detail": "Successfully retrieved waiters",
+  "data": [
+    {
+      "outlet_id": 1,
+      "user_id": 124,
+      "name": "waitvaibhav",
+      "mobile": "8237090371",
+      "dob": "12 Jan 2023",
+      "email": "h@gmail.com",
+      "is_active": 1
+    }
+  ]
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.WaiterCreateTestScript@77f1baf5</td></tr>
+<td>com.menumitratCommonAPITestScript.WaiterListViewTestScript@71687585</td></tr>
 </table><p>
 </body>
 </html>
