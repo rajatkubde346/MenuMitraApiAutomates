@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/7/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 10 15:15:56 IST 2025</td>
+<td>Started on:</td><td>Tue Jun 10 15:40:00 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4156 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25226 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,308 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest()'><b>captainCreateTest</b><br>Test class: com.menumitratCommonAPITestScript.CaptainCreateTestScript<br>Parameters: captaincreate, captaincreate_001, positive, verify captain create, post, {
+ 
+ "user_id":2,
+ "outlet_id":"1",
+ "name":"ramucaptain",
+ "mobile":"8945678989",
+ "address":"satara",
+ "aadhar_number":"343332322321",
+ "dob":"12 Jan 2023",
+ "email":"h@gmail.com",
+ "app_source":"captain_app",
+ "functionality_ids":[1,2,3,4]
+
+}, {
+  "detail": "Captain created successfully"
+}, 200</td>
+<td><div><pre>com.menumitra.utilityclass.customException: Error in captain create test: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:238)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace294008652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace294008652'><pre>com.menumitra.utilityclass.customException: Error in captain create test: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.CaptainCreateTestScript.captainCreateTest(CaptainCreateTestScript.java:238)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.CaptainCreateTestScript@3af9c5b7</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.StaffCreateTestScript.createStaff()'><b>createStaff</b><br>Test class: com.menumitratCommonAPITestScript.StaffCreateTestScript<br>Parameters: staffcreate, staffcreate_001, positive, Valid staff creation with all correct fields, post, {
+   "user_id":"2",
+    "name":"Ravan", "mobile":"9797454589",
+    "dob":"06 Dec 2014",
+    "address":"Katraj Pune",
+    "role":"cleaner",
+    "aadhar_number": "523456789091",
+    "outlet_id":"1",                                                                                                                                                                                                                                                                                                                                                                          "image": "C:\Users\hp\Downloads\menus\medu vada.jpg"
+} , {
+    "staff_id": 9
+}, 200</td>
+<td><div><pre>com.menumitra.utilityclass.customException: Error during staff creation test execution: JSONObject[&quot;app_source&quot;] not found.
+	at com.menumitratCommonAPITestScript.StaffCreateTestScript.createStaff(StaffCreateTestScript.java:259)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1314088099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1314088099'><pre>com.menumitra.utilityclass.customException: Error during staff creation test execution: JSONObject[&quot;app_source&quot;] not found.
+	at com.menumitratCommonAPITestScript.StaffCreateTestScript.createStaff(StaffCreateTestScript.java:259)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.StaffCreateTestScript@37883b97</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.CaptainDeleteTestScript.deleteCaptain()'><b>deleteCaptain</b><br>Test class: com.menumitratCommonAPITestScript.CaptainDeleteTestScript<br>Parameters: captaindelete, captaindelete_001, positive, verify captain delete, delete, {
+ "update_user_id":2,
+ "user_id":103,
+ "outlet_id":1,
+ "app_source":"captain_app"
+
+}, {
+  "detail": "Captain deleted successfully"
+}, 200</td>
+<td><div><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+	at com.menumitratCommonAPITestScript.CaptainDeleteTestScript.deleteCaptain(CaptainDeleteTestScript.java:235)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1532711878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1532711878'><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+	at com.menumitratCommonAPITestScript.CaptainDeleteTestScript.deleteCaptain(CaptainDeleteTestScript.java:235)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.CaptainDeleteTestScript@38102d01</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef()'><b>deleteChef</b><br>Test class: com.menumitratCommonAPITestScript.ChefDeleteTestScript<br>Parameters: chefdelete, chefdelete_001, positive, verify chef delete, delete, {
+ "update_user_id":2,
+ "user_id":14,
+ "outlet_id":1,
+ "app_source":"owner_app"
+
+}, {
+  "detail": "Chef deleted successfully"
+}, 200</td>
+<td><div><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+	at com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef(ChefDeleteTestScript.java:236)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace586914348", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace586914348'><pre>com.menumitra.utilityclass.customException: Test execution failed: Status code validation failed - Expected: 200, Actual: 404
+	at com.menumitratCommonAPITestScript.ChefDeleteTestScript.deleteChef(ChefDeleteTestScript.java:236)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.ChefDeleteTestScript@10aa41f2</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.StaffDeleteTestScript.testStaffDelete()'><b>testStaffDelete</b><br>Test class: com.menumitratCommonAPITestScript.StaffDeleteTestScript<br>Parameters: staffdelete, staffdelete_001, positive, verify staff delete, delete, {
+    "staff_id": 31,
+    "outlet_id": 1,
+    "user_id":2,
+    "app_source":"owner_app"
+}, {
+    "detail": "Staff deleted successfully"
+}, 200</td>
+<td><div><pre>com.menumitra.utilityclass.customException: Error during staff deletion test execution: Status code mismatch - Expected: 200, Actual: 404
+	at com.menumitratCommonAPITestScript.StaffDeleteTestScript.testStaffDelete(StaffDeleteTestScript.java:215)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1475269729", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1475269729'><pre>com.menumitra.utilityclass.customException: Error during staff deletion test execution: Status code mismatch - Expected: 200, Actual: 404
+	at com.menumitratCommonAPITestScript.StaffDeleteTestScript.testStaffDelete(StaffDeleteTestScript.java:215)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.StaffDeleteTestScript@1dac5ef</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.SectionDeleteTestScript.verifySectionDeleteUsingValidInputData()'><b>verifySectionDeleteUsingValidInputData</b><br>Test class: com.menumitratCommonAPITestScript.SectionDeleteTestScript<br>Parameters: sectiondelete, sectiondelete_001, positive, Valid user_id, outlet_id, and section_id, delete, {
+    "user_id":2,
+    "outlet_id": 1,
+    "section_id":69,
+  "app_source":"owner_app"
+}, {
+  "detail": "Outlet Section and associated tables deleted successfully"
+}, 200</td>
+<td><div><pre>com.menumitra.utilityclass.customException: Error during section delete verification
+	at com.menumitratCommonAPITestScript.SectionDeleteTestScript.verifySectionDeleteUsingValidInputData(SectionDeleteTestScript.java:181)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace505973878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace505973878'><pre>com.menumitra.utilityclass.customException: Error during section delete verification
+	at com.menumitratCommonAPITestScript.SectionDeleteTestScript.verifySectionDeleteUsingValidInputData(SectionDeleteTestScript.java:181)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.SectionDeleteTestScript@63070bab</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.WaiterCreateTestScript.verifyWaiterCreate()'><b>verifyWaiterCreate</b><br>Test class: com.menumitratCommonAPITestScript.WaiterCreateTestScript<br>Parameters: waitercreate, waitercreate_001, positive, verify Waiter create, post, {
+ 
+ "user_id":2,
+ "outlet_id":1,
+ "name":"waitvaibhav",
+ "mobile":"8237090371",
+ "address":"satara",
+ "aadhar_number":"343332322321",
+ "dob":"12 Jan 2023",
+ "email":"h@gmail.com",
+ "app_source":"waiter_app",
+ "functionality_ids":[1,2,3,4,7]
+
+}, {
+    "detail": "Waiter created successfully"
+}, 200</td>
+<td><div><pre>com.menumitra.utilityclass.customException: Error in waiter create test: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.WaiterCreateTestScript.verifyWaiterCreate(WaiterCreateTestScript.java:272)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace526655415", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace526655415'><pre>com.menumitra.utilityclass.customException: Error in waiter create test: Status code mismatch - Expected: 200, Actual: 400
+	at com.menumitratCommonAPITestScript.WaiterCreateTestScript.verifyWaiterCreate(WaiterCreateTestScript.java:272)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.WaiterCreateTestScript@291b4bf5</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -74,6 +376,216 @@ function toggleAllBoxes() {
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.ActivityLogTestScript.activityLogTest()'><b>activityLogTest</b><br>Test class: com.menumitratCommonAPITestScript.ActivityLogTestScript<br>Parameters: activitylog, activitylog_001, positive, Verfiy Activity log, post, {
+    "user_id": 2
+}, {
+  "detail": "Activity logs retrieved successfully",
+  "data": {
+    "activity_logs": [
+      {
+        "activity_log_id": 67387,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:30 PM"
+      },
+      {
+        "activity_log_id": 67386,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:30 PM"
+      },
+      {
+        "activity_log_id": 67385,
+        "role": "owner",
+        "module": "Authentication",
+        "sub_module": "OTP Verification",
+        "title": "Heenann logged in successfully",
+        "outlet_id": 0,
+        "created_on": "08 Jun 2025 07:29 PM"
+      },, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.ActivityLogTestScript@687e99d8</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.CaptainListViewTestScript.captainListViewTest()'><b>captainListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.CaptainListViewTestScript<br>Parameters: captainlistview, captainlistview_001, positive, verify captain list view, post, {
+    "user_id":2,
+ "outlet_id":1,
+ "app_source":"captain_app"
+}
+
+, {
+  "detail": "Successfully retrieved captains",
+  "data": [
+    {
+      "outlet_id": 1,
+      "user_id": 106,
+      "name": "ramucaptain",
+      "mobile": "8945678989",
+      "dob": "12 Jan 2023",
+      "email": "h@gmail.com",
+      "is_active": 1
+    }
+  ]
+}, </td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.CaptainListViewTestScript@ed7f8b4</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.CaptainUpdateTestScript.captainUpdateTest()'><b>captainUpdateTest</b><br>Test class: com.menumitratCommonAPITestScript.CaptainUpdateTestScript<br>Parameters: captainupdate, captainupdate_001, positive, verify captain update, patch, {
+ "update_user_id":2,
+ "user_id":20,
+ "outlet_id":"1",
+ "name":"ramucaptain",
+ "mobile":"8898989898",
+ "address":"satara",
+ "aadhar_number":"343332322321",
+ "dob":"12 Jan 2023",
+ "email":"h@gmail.com",
+ "app_source":"captain_app",
+ "functionality_ids":[1,2,3,4,7]
+
+}, {
+  "detail": "Captain updated successfully"
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.CaptainUpdateTestScript@37271612</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.CaptainViewTestScript.captainViewTest()'><b>captainViewTest</b><br>Test class: com.menumitratCommonAPITestScript.CaptainViewTestScript<br>Parameters: captainview, captainview_001, positive, verify captain view, post, {
+  "update_user_id":2,
+ "user_id":20,
+ "outlet_id":1,
+ "app_source":"captain_app"
+}
+, {
+  "detail": "Successfully retrieved captain details",
+  "data": {
+    "outlet_id": 1,
+    "user_id": 20,
+    "name": "ramucaptain",
+    "mobile": "8898989898",
+    "aadhar_number": "343332322321",
+    "address": "satara",
+    "dob": "12 Jan 2023",
+    "email": "h@gmail.com",
+    "is_active": 1,
+    "created_by": "owner",
+    "updated_by": "owner",
+    "created_on": "05 May 2025 12:21:02 PM",
+    "updated_on": "09 Jun 2025 01:30:06 AM",
+    "functionalities": [
+      {
+        "functionality_id": 1,
+        "functionality_name": "manage_menu"
+      },
+      {
+        "functionality_id": 2,
+        "functionality_name": "manage_menu_category"
+      },
+      {
+        "functionality_id": 3,
+        "functionality_name": "manage_section"
+      },
+      {
+        "functionality_id": 4,
+        "functionality_name": "manage_table"
+      },
+      {
+        "functionality_id": 7,
+        "functionality_name": "manage_staff"
+      }
+    ]
+  }
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.CaptainViewTestScript@4c309d4d</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.ChefListViewTestScript.chefListViewTest()'><b>chefListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.ChefListViewTestScript<br>Parameters: cheflistview, cheflistview_001, positive, verify chef listview, post, {
+    "user_id":2,
+    "outlet_id": "1",
+    "app_source":"owner_app"
+}, {
+  "detail": [
+    {
+      "outlet_id": 1,
+      "user_id": 68,
+      "name": "etreeyeyty",
+      "mobile": "8435794357",
+      "dob": null,
+      "email": null,
+      "is_active": 1
+    }
+  ]
+}
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.ChefListViewTestScript@e4487af</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.ChefViewTestScript.chefViewTest()'><b>chefViewTest</b><br>Test class: com.menumitratCommonAPITestScript.ChefViewTestScript<br>Parameters: chefview, chefview_001, positive, verify chef view , post, {
+    "update_user_id":2,
+    "user_id":68,
+    "outlet_id": 1,
+    "app_source":"owner_app"
+}, {
+  "detail": {
+    "outlet_id": 1,
+    "user_id": 68,
+    "name": "etreeyeyty",
+    "mobile": "8435794357",
+    "aadhar_number": "435435987495",
+    "address": null,
+    "dob": null,
+    "email": null,
+    "is_active": 1,
+    "created_by": "owner",
+    "created_on": "29 May 2025 12:28:31 PM",
+    "updated_by": null,
+    "updated_on": null,
+    "functionalities": [
+      {
+        "functionality_id": 4,
+        "functionality_name": "manage_table"
+      }
+    ]
+  }
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.ChefViewTestScript@6aaceffd</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.StaffListViewTestScript.staffListViewTest()'><b>staffListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.StaffListViewTestScript<br>Parameters: stafflistview, stafflistview_001, positive, verify staff list view using valid input, post, {
+   
+    "outlet_id": 1,
+    "user_id":2,
+    "app_source":"owner_app"
+}, {
+  "total_count": 5,
+  "lists": [
+    {
+      "staff_id": 27,
+      "name": "Gggf",
+      "mobile": "8886868686",
+      "address": "null",
+      "role": "receptionist",
+      "dob": "04 May 2025",
+      "aadhar_number": "677777555555",
+      "outlet_id": 1,
+      "photo": null
+    }
+  ]
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.StaffListViewTestScript@4e3958e7</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript.ubacCreateTest()'><b>ubacCreateTest</b><br>Test class: com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript<br>Parameters: ubaccreate, ubaccreate_001, positive, Verify, post, {
     "functionality_id":2,
@@ -83,7 +595,264 @@ function toggleAllBoxes() {
 }, 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript@41a2befb</td></tr>
+<td>com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript@31f9b85e</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.UbacFuctionalityListViewTestScript.ubacListViewTest()'><b>ubacListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.UbacFuctionalityListViewTestScript<br>Parameters: ubaclistview, ubaclistview_001, positive, Verify, post, {
+    "functionality_name":"manage_menu"
+}, {
+    "functionality_name": "manage_menu",
+    "assigned_users": [
+        {
+            "user_id": 2,
+            "name": "Heenann",
+            "role": "owner"
+        }
+    ]
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.UbacFuctionalityListViewTestScript@424e1977</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.ChefUpdateTestScript.updateChef()'><b>updateChef</b><br>Test class: com.menumitratCommonAPITestScript.ChefUpdateTestScript<br>Parameters: chefupdate, chefupdate_001, positive, verify chef update, patch, {  
+    "update_user_id":"2",
+    "user_id":27,
+    "outlet_id": "1",
+    "name": "new test ",
+    "mobile":"9689075610",
+    "address" : "lean",
+    "aadhar_number": "123456789012",
+    "dob":"12 Jan 2023",
+    "app_source":"owner_app",
+    "email":"h4@gmail.com"  ,
+    "functionality_ids": [1,2,3,4]
+    
+}, {
+  "detail": "Chef updated successfully"
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.ChefUpdateTestScript@c86b9e3</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.StaffUpdateTestScript.updateStaff()'><b>updateStaff</b><br>Test class: com.menumitratCommonAPITestScript.StaffUpdateTestScript<br>Parameters: staffupdate, staffupdate_001, positive, verify update staff using valid input, post, {
+         "user_id":2,
+         "staff_id": 1,
+        "outlet_id": 1,
+        "name": "stafff one",
+        "mobile":"7918232897",
+        "address": "dfddd",
+        "role": "receptionist",
+        "dob": "2 Jul 2003",
+        "aadhar_number": "321291198274",
+        "photo": "C:\Users\hp\Downloads\menus\coca.jpg"
+}             , {
+    "detail": "Staff updated successfully"
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.StaffUpdateTestScript@6ab778a</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.GetMenuList.verifyMenuList()'><b>verifyMenuList</b><br>Test class: com.menumitratCommonAPITestScript.GetMenuList<br>Parameters: getmenulist, getmenu_list_001, positive, verify Get Menu List, post, {
+  
+  "outlet_id": 1,
+ "app_source":"owner_app"
+
+}, {
+  "menu_list": {
+    "Lemon Ricee": 14,
+    "Fried Rice": 12,
+    "Jeera Rice": 386,
+    "Chicken biryani": 17,
+    "testing menu": 51,
+    "Chicken tandoor": 380,
+    "CCVC": 105,
+    "online ": 113,
+    "chiken testing": 128,
+    "testing": 333,
+    "bgff": 341,
+    "Test vtwo": 373,
+    "White Sauce past with extra cheese": 381,
+    "vfffdf": 383,
+    "Momos": 390,
+    "Pulav": 391,
+    "Gddh": 392,
+    "Pizza": 393
+  }
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.GetMenuList@68e5eea7</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.sectionListViewTestScript.verifySectionListViewUsingValidInputData()'><b>verifySectionListViewUsingValidInputData</b><br>Test class: com.menumitratCommonAPITestScript.sectionListViewTestScript<br>Parameters: sectionlistview, section_001, positive, Valid section list view, post, {
+    "outlet_id":1,
+    "user_id":1,
+  "app_source":"owner_app"
+}, {
+  "data": [
+    {
+      "section_id": 17,
+      "section_n+G39ame": "Top",
+      "table_count": 19,
+      "occupied_table_count": 2,
+      "remaining_table_count": 17
+    }
+  ]
+}, 200</td>
+<td></td>
+<td>1</td>
+<td>com.menumitratCommonAPITestScript.sectionListViewTestScript@6f45df59</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.sectionUpdateTestScript.verifySectionUpdateUsingValidInputData()'><b>verifySectionUpdateUsingValidInputData</b><br>Test class: com.menumitratCommonAPITestScript.sectionUpdateTestScript<br>Parameters: sectionupdate, sectionupdate_001, positive, Valid section update, patch, {
+    "outlet_id": 1,
+    "section_id":17,
+    "user_id":2,
+    "section_name": "Family",
+  "app_source":"owner_app"
+}, {
+  "detail": "Outlet Section updated successfully"
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.sectionUpdateTestScript@58ea606c</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.sectionCreateTestScript.verifySectionUsingValidInputData()'><b>verifySectionUsingValidInputData</b><br>Test class: com.menumitratCommonAPITestScript.sectionCreateTestScript<br>Parameters: sectioncreate, section_001, positive, verify section create, post, {
+    "outlet_id": 1,
+    "user_id":2,
+    "section_name": "Family",
+  "app_source":"owner_app"
+}, {
+  "detail": "Outlet Section and 5 tables created successfully"
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.sectionCreateTestScript@5c90e579</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.SectionViewTestScript.verifySectionViewUsingValidInputData()'><b>verifySectionViewUsingValidInputData</b><br>Test class: com.menumitratCommonAPITestScript.SectionViewTestScript<br>Parameters: sectionview, sectionview_001, positive, Verify section view, post, {
+    "outlet_id":1,
+    "user_id":2,
+    "section_id":17,
+  "app_source":"owner_app"
+}, {
+  "data": {
+    "section_id": 17,
+    "section_name": "Family",
+    "outlet_id": 1
+  }
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.SectionViewTestScript@38e79ae3</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.StaffViewTestScript.verifyStaffView()'><b>verifyStaffView</b><br>Test class: com.menumitratCommonAPITestScript.StaffViewTestScript<br>Parameters: staffview, staffview_001, positive, verify staff view using valid data, post, {
+    "staff_id": 27,
+    "outlet_id": 1,
+    "user_id":2,
+"app_source":"owner_app"                     
+  
+}, {
+  "detail": "Staff details retrieved successfully",
+  "data": {
+    "staff_id": 27,
+    "outlet_id": 1,
+    "name": "gggf",
+    "mobile": "8886868686",
+    "address": "null",
+    "role": "receptionist",
+    "dob": "04 May 2025",
+    "aadhar_number": "677777555555",
+    "photo": null,
+    "created_by": "owner",
+    "created_on": "21 May 2025 07:36:29 PM",
+    "updated_by": null,
+    "updated_on": null
+  }
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.StaffViewTestScript@77f80c04</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.TableListViewTestScript.verifyTableListView()'><b>verifyTableListView</b><br>Test class: com.menumitratCommonAPITestScript.TableListViewTestScript<br>Parameters: tablelistview, tablelistview_001, positive, verify table list view, post, {  
+    
+    "outlet_id": 1,
+    "user_id":2,
+ "app_source":"owner_app"
+}, {
+  "detail": [
+    {
+      "section_name": "Igig",
+      "section_id": 292,
+      "tables": [
+        {
+          "table_ids": [
+            211,
+            212
+          ],
+          "table_numbers": [
+            205,
+            206
+          ],
+          "outlet_id": 1,
+          "is_reserved": false,
+          "is_joined": true,
+          "total_capacity": 8,
+          "is_split": false,
+          "is_occupied": 1,
+          "occupied_time": "07 Jun 2025 01:36:56 PM",
+          "grand_total": 285.63,
+          "order_id": 3547,
+          "order_number": "3089",
+          "action": "has_save",
+          "order_payment_settle_type": "null",
+          "payment_method": null
+        }, 200</td>
+<td></td>
+<td>2</td>
+<td>com.menumitratCommonAPITestScript.TableListViewTestScript@757277dc</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.WaiterUpdateTestScript.verifyWaiterUpdate()'><b>verifyWaiterUpdate</b><br>Test class: com.menumitratCommonAPITestScript.WaiterUpdateTestScript<br>Parameters: waiterupdate, waiterupdate_001, positive, verify waiter update, patch, {
+ "update_user_id":2,
+ "user_id":124,
+ "outlet_id":1,
+ "name":"waitvaibhav",
+ "mobile":"6746240984",
+ "address":"satara",
+ "aadhar_number":"343332322321",
+ "dob":"12 Jan 2023",
+ "email":"h@gmail.com",
+ "functionality_ids":[1,2,3,4],
+ "app_source":"waiter_app"
+
+}, {
+    "detail": "Waiter updated successfully",
+    "data": {
+        "user_id": 10,
+        "name": "waitvaibhav"
+    }
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.WaiterUpdateTestScript@2d2ffcb7</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.WaiterListViewTestScript.waiterListViewTest()'><b>waiterListViewTest</b><br>Test class: com.menumitratCommonAPITestScript.WaiterListViewTestScript<br>Parameters: waiterlistview, waiterlistview_001, positive, verify waiter list view, post, {
+"user_id":2,
+ "outlet_id":1 ,
+ "app_source":"waiter_app"
+   }, {
+  "detail": "Successfully retrieved waiters",
+  "data": [
+    {
+      "outlet_id": 1,
+      "user_id": 124,
+      "name": "waitvaibhav",
+      "mobile": "8237090371",
+      "dob": "12 Jan 2023",
+      "email": "h@gmail.com",
+      "is_active": 1
+    }
+  ]
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.WaiterListViewTestScript@762ef0ea</td></tr>
 </table><p>
 </body>
 </html>
