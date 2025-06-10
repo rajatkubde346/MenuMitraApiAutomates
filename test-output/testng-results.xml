@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-10T12:35:02Z" name="Suite" finished-at="2025-06-10T12:35:06Z" duration-ms="4075">
+  <suite started-at="2025-06-10T12:37:48Z" name="Suite" finished-at="2025-06-10T12:37:58Z" duration-ms="10724">
     <groups>
     </groups>
-    <test started-at="2025-06-10T12:35:02Z" name="Test" finished-at="2025-06-10T12:35:06Z" duration-ms="4075">
+    <test started-at="2025-06-10T12:37:48Z" name="Test" finished-at="2025-06-10T12:37:58Z" duration-ms="10724">
       <class name="com.menumitratCommonAPITestScript.UbacFunctionalityGetListTesScript">
-        <test-method is-config="true" signature="ubacGetListSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.UbacFunctionalityGetListTesScript@41a2befb]" started-at="2025-06-10T18:05:02Z" name="ubacGetListSetUp" finished-at="2025-06-10T18:05:06Z" duration-ms="3597" status="PASS">
+        <test-method is-config="true" signature="ubacGetListSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.UbacFunctionalityGetListTesScript@20d525]" started-at="2025-06-10T18:07:58Z" name="ubacGetListSetUp" finished-at="2025-06-10T18:07:58Z" duration-ms="277" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ubacGetListSetUp -->
-        <test-method signature="ubacGetListTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.UbacFunctionalityGetListTesScript@41a2befb]" started-at="2025-06-10T18:05:06Z" name="ubacGetListTest" data-provider="getUbacGetListData" finished-at="2025-06-10T18:05:06Z" duration-ms="100" status="PASS">
+        <test-method signature="ubacGetListTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.UbacFunctionalityGetListTesScript@20d525]" started-at="2025-06-10T18:07:58Z" name="ubacGetListTest" data-provider="getUbacGetListData" finished-at="2025-06-10T18:07:58Z" duration-ms="82" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -266,15 +266,135 @@
         </test-method> <!-- ubacGetListTest -->
       </class> <!-- com.menumitratCommonAPITestScript.UbacFunctionalityGetListTesScript -->
       <class name="com.menumitra.superclass.APIBase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@77f1baf5]" started-at="2025-06-10T18:05:02Z" name="setUp" finished-at="2025-06-10T18:05:02Z" duration-ms="55" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.menumitra.superclass.APIBase@70325e14]" started-at="2025-06-10T18:07:48Z" name="setUp" finished-at="2025-06-10T18:07:48Z" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@77f1baf5]" started-at="2025-06-10T18:05:07Z" name="tearDown" finished-at="2025-06-10T18:05:07Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.menumitra.superclass.APIBase@70325e14]" started-at="2025-06-10T18:07:59Z" name="tearDown" finished-at="2025-06-10T18:07:59Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.menumitra.superclass.APIBase -->
+      <class name="com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript">
+        <test-method is-config="true" signature="ubacCreateSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript@37ceb1df]" started-at="2025-06-10T18:07:48Z" name="ubacCreateSetUp" finished-at="2025-06-10T18:07:57Z" duration-ms="9373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ubacCreateSetUp -->
+        <test-method signature="ubacCreateTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript@37ceb1df]" started-at="2025-06-10T18:07:57Z" name="ubacCreateTest" data-provider="getUbacCreateData" finished-at="2025-06-10T18:07:57Z" duration-ms="107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ubaccreate]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ubaccreate_001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[positive]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Verify]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[post]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[{
+    "functionality_id":2,
+    "user_id":2
+}]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[{
+    "detail": "User functionality created successfully"
+}]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ubacCreateTest -->
+      </class> <!-- com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript">
+        <test-method is-config="true" signature="ubacViewSetUp()[pri:0, instance:com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript@7c9d8e2]" started-at="2025-06-10T18:07:57Z" name="ubacViewSetUp" finished-at="2025-06-10T18:07:58Z" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ubacViewSetUp -->
+        <test-method signature="ubacViewTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript@7c9d8e2]" started-at="2025-06-10T18:07:58Z" name="ubacViewTest" data-provider="getUbacViewData" finished-at="2025-06-10T18:07:58Z" duration-ms="85" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ubacview]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ubacview]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[positive]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Verify]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[post]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[{
+    "functionality_name":"manage_menu"
+}]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[{
+    "functionality_name": "manage_menu",
+    "assigned_users": [
+        {
+            "user_id": 2,
+            "name": "Heenann",
+            "role": "owner"
+        }
+    ]
+}]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ubacViewTest -->
+      </class> <!-- com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

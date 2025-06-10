@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 10 18:05:02 IST 2025</td>
+<td>Started on:</td><td>Tue Jun 10 18:07:48 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4075 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10724 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -74,6 +74,16 @@ function toggleAllBoxes() {
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript.ubacCreateTest()'><b>ubacCreateTest</b><br>Test class: com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript<br>Parameters: ubaccreate, ubaccreate_001, positive, Verify, post, {
+    "functionality_id":2,
+    "user_id":2
+}, {
+    "detail": "User functionality created successfully"
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript@37ceb1df</td></tr>
 <tr>
 <td title='com.menumitratCommonAPITestScript.UbacFunctionalityGetListTesScript.ubacGetListTest()'><b>ubacGetListTest</b><br>Test class: com.menumitratCommonAPITestScript.UbacFunctionalityGetListTesScript<br>Parameters: ubacgetlist, ubacgetlist_001, positive, Verfiy, get, {
     "role_name":"manager"
@@ -285,7 +295,23 @@ function toggleAllBoxes() {
 ], 200</td>
 <td></td>
 <td>0</td>
-<td>com.menumitratCommonAPITestScript.UbacFunctionalityGetListTesScript@41a2befb</td></tr>
+<td>com.menumitratCommonAPITestScript.UbacFunctionalityGetListTesScript@20d525</td></tr>
+<tr>
+<td title='com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript.ubacViewTest()'><b>ubacViewTest</b><br>Test class: com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript<br>Parameters: ubacview, ubacview, positive, Verify, post, {
+    "functionality_name":"manage_menu"
+}, {
+    "functionality_name": "manage_menu",
+    "assigned_users": [
+        {
+            "user_id": 2,
+            "name": "Heenann",
+            "role": "owner"
+        }
+    ]
+}, 200</td>
+<td></td>
+<td>0</td>
+<td>com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript@7c9d8e2</td></tr>
 </table><p>
 </body>
 </html>

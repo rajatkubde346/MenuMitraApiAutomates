@@ -34,10 +34,6 @@
        <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
        <class name="com.menumitratCommonAPITestScript.GetMenuList"/>
        
-       
-       
-       
-       
        <class name="com.menumitratCommonAPITestScript.WaiterCreateTestScript"/>
        <class name="com.menumitratCommonAPITestScript.WaiterUpdateTestScript"/>
        <class name="com.menumitratCommonAPITestScript.WaiterListViewTestScript"/>
