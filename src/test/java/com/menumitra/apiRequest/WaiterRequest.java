@@ -10,6 +10,8 @@ public class WaiterRequest {
     private String dob;
     private String email;
     private String update_user_id; // Used for update/view/delete operations
+    private String app_source;
+    private int[] functionality_ids;
     
     public String getUser_id() {
         return user_id;
@@ -81,5 +83,21 @@ public class WaiterRequest {
     
     public void setupdate_user_id(String update_user_id) {
         this.update_user_id = update_user_id;
+    }
+    
+    public String getApp_source() {
+        return app_source;
+    }
+    
+    public void setApp_source(String app_source) {
+        this.app_source = app_source;
+    }
+    
+    public int[] getFunctionality_ids() {
+        return functionality_ids;
+    }
+    
+    public void setFunctionality_ids(int[] functionality_ids) {
+        this.functionality_ids = functionality_ids;
     }
 }
