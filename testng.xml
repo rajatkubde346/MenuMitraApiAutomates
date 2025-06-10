@@ -41,7 +41,7 @@
        <class name="com.menumitratCommonAPITestScript.WaiterListViewTestScript"/>
        
        <class name="com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript"/>
-       <class name="com.menumitratCommonAPITestScript.UbacFuctionalityListViewTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript"/>
        
        
        
