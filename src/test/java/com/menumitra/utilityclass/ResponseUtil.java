@@ -5,6 +5,7 @@ import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import com.menumitra.apiRequest.UbacFuctionalityRequest;
 
 public class ResponseUtil 
 {
@@ -136,30 +137,40 @@ public class ResponseUtil
         try {
             LogUtils.info("Making " + method.toUpperCase() + " request to: " + url);
             
-           
             switch (method.toLowerCase()) {
                 case "post":
-                	 try
-                     {
-                  	   LogUtils.info("Executing POST request");
-                         response = RestAssured.given()
-     	                    	    .contentType(ContentType.JSON)
-     	                    	    .header("Authorization","Bearer "+jwttoken)
-     	                    	    .body(requestBody)
-     	                    	    .when()
-     	                    	    .post(url)
-     	                    	    .then()
-     	                    	    .log().all()
-     	                    	    .extract()
-     	                    	    .response();
-                         LogUtils.info("POST request completed successfully");
-                         return response;
-                     }
-                     catch (Exception e)
-                     {
-                  	   LogUtils.error("Error: Get response..");
-                         throw new customException("Error: Get response");
-                     }
+                    try {
+                        LogUtils.info("Executing POST request");
+                        response = RestAssured.given()
+                            .contentType(ContentType.JSON)
+                            .header("Authorization","Bearer "+jwttoken)
+                            .body(requestBody)
+                            .when()
+                            .post(url)
+                            .then()
+                            .log().all()
+                            .extract()
+                            .response();
+                        LogUtils.info("POST request completed successfully");
+                        return response;
+                    } catch (Exception e) {
+                        LogUtils.error("Error: Get response..");
+                        throw new customException("Error: Get response");
+                    }
+                    
+                case "get":
+                    try {
+                        response = RestAssured.given()
+                            .header("Authorization","Bearer "+jwttoken)
+                            .when()
+                            .get(url);
+                        
+                        LogUtils.info("successfully get response..");
+                        return response;
+                    } catch(Exception e) {
+                        LogUtils.error("Error: Get response..");
+                        throw new customException("Error: Get response");
+                    }
                     
                 case "put":
                     try
@@ -184,23 +195,6 @@ public class ResponseUtil
                         throw new customException("Error: Get response");
                     }
 
-                case "get":
-                            try{
-                                response =RestAssured.given()
-                            .header("Authorization","Bearer ",jwttoken)
-                            .when()
-                            .get(url);
-                                
-                                LogUtils.info("successfully get response..");
-                                return response;
-                            }
-                            catch(Exception e)
-                            {
-                                LogUtils.error("Error: Get response..");
-                                throw new customException("Error: Get response");
-                              
-                            }
-                    
                 case "delete":
                                 try {
                                     

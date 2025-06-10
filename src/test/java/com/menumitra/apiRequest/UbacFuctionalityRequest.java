@@ -5,6 +5,8 @@ public class UbacFuctionalityRequest {
     private int user_id;
     private String functionality_name;
     
+    
+    
 
     public int[] getFunctionality_id() {
         return functionality_id;
@@ -29,4 +31,6 @@ public class UbacFuctionalityRequest {
     public void setFunctionality_name(String functionality_name) {
         this.functionality_name = functionality_name;
     }
+
+    
 }
