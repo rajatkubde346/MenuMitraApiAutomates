@@ -4,7 +4,7 @@
   <test name="Test">
     <classes>
       <class name="com.menumitra.superclass.APIBase"/>
-      <class name="com.menumitratCommonAPITestScript.TableListViewTestScript"/>
+   <class name="com.menumitratCommonAPITestScript.TableListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefViewTestScript"/>
@@ -43,7 +43,9 @@
        <class name="com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript"/>
        <class name="com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript"/>
        
-       <class name="com.menumitratCommonAPITestScript.UdhariLedgerTestScript"/>
+       
+		<class name="com.menumitratCommonAPITestScript.UdhariLedgerTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.UdhariLedgerUpdateTestScript"/>
     </classes>
   </test>
 </suite>

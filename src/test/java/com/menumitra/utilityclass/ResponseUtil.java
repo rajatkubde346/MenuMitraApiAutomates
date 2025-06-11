@@ -245,10 +245,14 @@ public class ResponseUtil
                 case "patch":
                                 try {
                                     LogUtils.info("Executing PATCH request");
+                                    String jsonBody = objectMapper.writeValueAsString(requestBody);
+                                    LogUtils.info("Request body object type: " + requestBody.getClass().getName());
+                                    LogUtils.info("Request body content: " + jsonBody);
+                                    
                                     response = RestAssured.given()
-                                        .contentType(ContentType.JSON)  // Add content type
-                                        .header("Authorization", "Bearer " + jwttoken)  // Fix the header format
-                                        .body(requestBody)
+                                        .contentType(ContentType.JSON)
+                                        .header("Authorization", "Bearer " + jwttoken)
+                                        .body(jsonBody)
                                         .when()
                                         .patch(url)
                                         .then()
