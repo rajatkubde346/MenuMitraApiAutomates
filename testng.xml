@@ -3,7 +3,47 @@
 <suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="com.menumitratCommonAPITestScript.UdhariLedgerTestScript"/>
+      <class name="com.menumitra.superclass.APIBase"/>
+      <class name="com.menumitratCommonAPITestScript.TableListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ChefViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ChefUpdateTestScript"/>
+
+      <class name="com.menumitratCommonAPITestScript.ChefDeleteTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainUpdateTestScript"/>
+
+      <class name="com.menumitratCommonAPITestScript.CaptainListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainDeleteTestScript"/>
+
+      <class name="com.menumitratCommonAPITestScript.StaffCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffViewTestScript"/>
+
+
+      <class name="com.menumitratCommonAPITestScript.StaffDeleteTestScript"/>
+
+       <class name="com.menumitratCommonAPITestScript.sectionCreateTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.sectionUpdateTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.sectionListViewTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.SectionViewTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.SectionDeleteTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.GetMenuList"/>
+
+
+
+       <class name="com.menumitratCommonAPITestScript.WaiterCreateTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.WaiterUpdateTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.WaiterListViewTestScript"/>
+
+       <class name="com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript"/>
+       
+       <class name="com.menumitratCommonAPITestScript.UdhariLedgerTestScript"/>
     </classes>
   </test>
 </suite>
