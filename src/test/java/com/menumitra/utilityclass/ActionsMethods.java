@@ -34,30 +34,38 @@ public class ActionsMethods
 
 	        loginRequest login = new loginRequest();
 	        login.setMobile(APIBase.property.getProperty("mobile"));
-	        LogUtils.info("Login payload prepared with mobile");
+	        LogUtils.info("Login payload prepared with mobile: " + login.getMobile());
 	        ExtentReport.getTest().log(Status.INFO, "Login payload prepared with mobile: " + login.getMobile());
 
 	        response = ResponseUtil.getResponse(baseURI, login, APIBase.property.getProperty("httpmethod"));
 	        LogUtils.info("POST request executed for login API");
 	        ExtentReport.getTest().log(Status.INFO, "POST request executed for login API");
-
-	        if (response.getStatusCode() == 200) 
-	        {
-	            LogUtils.success(logger, "Login API responded with status code 200");
-	            ExtentReport.getTest().log(Status.PASS, "Login API responded with status code 200");
-	           ExtentReport.getTest().log(Status.INFO, "Base URI: " + baseURI);
-	        } 
-	        else 
-	        {
-	            LogUtils.failure(logger, "Login API failed. Status code: " + response.getStatusCode());
-	            ExtentReport.getTest().log(Status.FAIL, "Login API failed. Status code: " + response.getStatusCode());
-	            ExtentReport.getTest().log(Status.INFO, "Base URI: " + baseURI);
+	        
+	        if (response == null) {
+	            String errorMsg = "Login API response is null";
+	            LogUtils.failure(logger, errorMsg);
+	            ExtentReport.getTest().log(Status.FAIL, errorMsg);
+	            throw new customException(errorMsg);
 	        }
-
+	        
+	        LogUtils.info("Login API Response Code: " + response.getStatusCode());
+	        LogUtils.info("Login API Response Body: " + response.asString());
+	        
+	        if (response.getStatusCode() != 200) {
+	            String errorMsg = "Login API failed with status code: " + response.getStatusCode();
+	            LogUtils.failure(logger, errorMsg);
+	            ExtentReport.getTest().log(Status.FAIL, errorMsg);
+	            throw new customException(errorMsg);
+	        }
+	        
+	        LogUtils.success(logger, "Login API executed successfully");
+	        ExtentReport.getTest().log(Status.PASS, "Login API executed successfully");
+	        
 	    } catch (Exception e) {
-	        LogUtils.exception(logger, "Error while executing login API:", e);
-	        ExtentReport.getTest().log(Status.FAIL, "Error while executing login API: " + e.getMessage());
-	        throw new customException("[EXCEPTION] Error during login API execution: " + e.getMessage());
+	        String errorMsg = "Error during login API execution: " + e.getMessage();
+	        LogUtils.exception(logger, errorMsg, e);
+	        ExtentReport.getTest().log(Status.FAIL, errorMsg);
+	        throw new customException(errorMsg);
 	    }
 	}
 
@@ -81,8 +89,8 @@ public class ActionsMethods
     		verifyotp.setFcm_token(APIBase.property.getProperty("fcm_token"));
     		verifyotp.setDevice_id(APIBase.property.getProperty("device_id"));
     		verifyotp.setDevice_model(APIBase.property.getProperty("device_model"));
-    		LogUtils.info("Verify OTP payload prepared with mobile: ");
-    		ExtentReport.getTest().log(Status.INFO, "Verify OTP payload prepared");
+    		LogUtils.info("Verify OTP payload prepared with mobile: " + verifyotp.getMobile());
+    		ExtentReport.getTest().log(Status.INFO, "Verify OTP payload prepared with mobile: " + verifyotp.getMobile());
     		
     		response=ResponseUtil.getResponse(baseURI,verifyotp,APIBase.property.getProperty("httpmethod"));
     		LogUtils.info("POST request executed for Verify OTP API");
