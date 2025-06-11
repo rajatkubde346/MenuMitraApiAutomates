@@ -34,6 +34,7 @@
       <class name="com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.UdhariLedgerTestScript"/>
       <class name="com.menumitratCommonAPITestScript.UdhariLedgerUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerListTestScript"/>
     </classes>
   </test> <!-- Test -->
   <test name="Test(failed)">
@@ -86,6 +87,11 @@
           <include name="sectionViewSetup"/>
         </methods>
       </class> <!-- com.menumitratCommonAPITestScript.SectionViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerListTestScript">
+        <methods>
+          <include name="udhariLedgerListSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.UdhariLedgerListTestScript -->
       <class name="com.menumitratCommonAPITestScript.StaffUpdateTestScript">
         <methods>
           <include name="tearDown"/>
@@ -180,7 +186,6 @@
       <class name="com.menumitratCommonAPITestScript.CaptainListViewTestScript">
         <methods>
           <include name="captainListViewSetUp"/>
-          <include name="captainListViewTest"/>
         </methods>
       </class> <!-- com.menumitratCommonAPITestScript.CaptainListViewTestScript -->
       <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript">
