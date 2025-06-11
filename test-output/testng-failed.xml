@@ -35,6 +35,7 @@
       <class name="com.menumitratCommonAPITestScript.UdhariLedgerTestScript"/>
       <class name="com.menumitratCommonAPITestScript.UdhariLedgerUpdateTestScript"/>
       <class name="com.menumitratCommonAPITestScript.UdhariLedgerListTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerViewTestScript"/>
     </classes>
   </test> <!-- Test -->
   <test name="Test(failed)">
@@ -105,6 +106,11 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.menumitratCommonAPITestScript.StaffCreateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerViewTestScript">
+        <methods>
+          <include name="udhariLedgerViewSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.UdhariLedgerViewTestScript -->
       <class name="com.menumitratCommonAPITestScript.StaffDeleteTestScript">
         <methods>
           <include name="testStaffDelete" invocation-numbers="0"/>

@@ -47,6 +47,8 @@
 		<class name="com.menumitratCommonAPITestScript.UdhariLedgerTestScript"/>
        <class name="com.menumitratCommonAPITestScript.UdhariLedgerUpdateTestScript"/>
        <class name="com.menumitratCommonAPITestScript.UdhariLedgerListTestScript"/>
+       <class name="com.menumitratCommonAPITestScript.UdhariLedgerViewTestScript"/>
+       
        
     </classes>
   </test>
