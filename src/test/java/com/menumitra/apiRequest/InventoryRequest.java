@@ -16,6 +16,8 @@ public class InventoryRequest
     private String taxType;
     private double taxRate;
     private String expiryDate;
+    private String appSource;
+    private int itemId;
 
     public int getUserId() {
         return userId;
@@ -127,5 +129,21 @@ public class InventoryRequest
 
     public void setExpiryDate(String expiryDate) {
         this.expiryDate = expiryDate;
+    }
+
+    public String getAppSource() {
+        return appSource;
+    }
+
+    public void setAppSource(String appSource) {
+        this.appSource = appSource;
+    }
+
+    public int getItemId() {
+        return itemId;
+    }
+
+    public void setItemId(int itemId) {
+        this.itemId = itemId;
     }
 }

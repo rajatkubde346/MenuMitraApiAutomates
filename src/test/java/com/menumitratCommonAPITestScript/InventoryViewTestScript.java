@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import com.menumitra.apiRequest.InventoryViewRequest;
+import com.menumitra.apiRequest.InventoryRequest;
 import com.menumitra.superclass.APIBase;
 import com.menumitra.utilityclass.ActionsMethods;
 import com.menumitra.utilityclass.DataDriven;
@@ -39,7 +39,7 @@ public class InventoryViewTestScript extends APIBase
     private Response response;
     private String baseURI;
     private String accessToken;
-    private InventoryViewRequest inventoryViewRequest;
+    private InventoryRequest inventoryViewRequest;
     private URL url;
     private JSONObject expectedJsonBody;
     private JSONObject actualJsonBody;
@@ -163,7 +163,7 @@ public class InventoryViewTestScript extends APIBase
                 throw new customException(errorMsg);
             }
 
-            inventoryViewRequest = new InventoryViewRequest();
+            inventoryViewRequest = new InventoryRequest();
             LogUtils.info("Inventory view test setup completed successfully");
             ExtentReport.getTest().log(Status.PASS, MarkupHelper.createLabel("Inventory view test setup completed successfully", ExtentColor.GREEN));
         } catch (Exception e) {
@@ -184,8 +184,9 @@ public class InventoryViewTestScript extends APIBase
 
             if (apiName.equalsIgnoreCase("inventoryview")) {
                 requestBodyJson = new JSONObject(requestBody);
-                inventoryViewRequest.setInventory_id(String.valueOf(requestBodyJson.getString("inventory_id")));
-                inventoryViewRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
+                inventoryViewRequest.setUserId(requestBodyJson.getInt("user_id"));
+                inventoryViewRequest.setAppSource(requestBodyJson.getString("app_source"));
+                inventoryViewRequest.setItemId(requestBodyJson.getInt("item_id"));
 
                 LogUtils.info("Request Body: " + requestBodyJson.toString());
                 ExtentReport.getTest().log(Status.INFO, "Request Body: " + requestBodyJson.toString());
@@ -210,10 +211,13 @@ public class InventoryViewTestScript extends APIBase
                 if(expectedResponseBody != null && !expectedResponseBody.isEmpty()) {
                     expectedJsonBody = new JSONObject(expectedResponseBody);
                     
-                    // Log response information to report without validation
-                    LogUtils.info("Response received successfully");
-                    ExtentReport.getTest().log(Status.PASS, "Response received successfully");
-                    ExtentReport.getTest().log(Status.INFO, "Expected response structure available in test data");
+                    // Validate response body against expected structure
+                    validateResponseBody.handleResponseBody(response, expectedJsonBody);
+                    LogUtils.info("Response body validation successful");
+                    ExtentReport.getTest().log(Status.PASS, "Response body validation successful");
+                } else {
+                    LogUtils.info("No expected response structure provided for validation");
+                    ExtentReport.getTest().log(Status.INFO, "No expected response structure provided for validation");
                 }
 
                 LogUtils.success(logger, "Inventory view test completed successfully");
