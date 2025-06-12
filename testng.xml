@@ -6,6 +6,8 @@
       <class name="com.menumitra.superclass.APIBase"/>
       <class name="com.menumitratCommonAPITestScript.TableCreateTestScript"/>
       <class name="com.menumitratCommonAPITestScript.TableListViewTestScript"/>
+      
+      
       <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.ChefViewTestScript"/>
@@ -53,7 +55,8 @@
        <class name="com.menumitratCommonAPITestScript.InventoryCreateTestScript"/>
        <class name="com.menumitratCommonAPITestScript.InventoryViewTestScript"/>
        <class name="com.menumitratCommonAPITestScript.InventoryListViewTestScript"/>
-       
+      
+       <class name="com.menumitratCommonAPITestScript.WareHouseCreateTestScript"/>
     </classes>
   </test>
 </suite>

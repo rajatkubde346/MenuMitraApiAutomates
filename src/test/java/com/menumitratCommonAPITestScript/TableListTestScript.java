@@ -191,7 +191,7 @@ public class TableListTestScript extends APIBase
             {
                 requestBodyJson = new JSONObject(requestBodyPayload);
                 tableListRequest.setOutlet_id(requestBodyJson.getInt("outlet_id"));
-                tableListRequest.setSection_id(requestBodyJson.getString("section_id"));
+                tableListRequest.setSection_id(requestBodyJson.getInt("section_id"));
 
                 LogUtils.info("Request Body: " + requestBodyJson.toString(2));
                 ExtentReport.getTest().log(Status.INFO, "Request Body: " + requestBodyJson.toString(2));
