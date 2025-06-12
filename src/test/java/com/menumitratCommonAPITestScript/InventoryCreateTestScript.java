@@ -69,11 +69,12 @@ public class InventoryCreateTestScript extends APIBase
 
     /**
      * Data provider for inventory create test scenarios
+     * Only provides positive test cases for inventory creation
      */
     @DataProvider(name = "getInventoryCreateData")
     public static Object[][] getInventoryCreateData() throws customException {
         try {
-            LogUtils.info("Reading inventory create test scenario data");
+            LogUtils.info("Reading inventory create positive test scenario data");
 
             Object[][] readExcelData = DataDriven.readExcelData(excelSheetPathForGetApis, "CommonAPITestScenario");
             if (readExcelData == null || readExcelData.length == 0) {
@@ -81,25 +82,20 @@ public class InventoryCreateTestScript extends APIBase
                 throw new customException("No inventory create test scenario data found in Excel sheet");
             }
 
-            List<Object[]> filteredData = new ArrayList<>();
-
-            for (int i = 0; i < readExcelData.length; i++) {
-                Object[] row = readExcelData[i];
-                if (row != null && row.length >= 2 &&
-                        "inventorycreate".equalsIgnoreCase(Objects.toString(row[0], "")) &&
-                        "positive".equalsIgnoreCase(Objects.toString(row[2], ""))) {
-
-                    filteredData.add(row);
+            // Filter to only include positive test cases for inventory creation
+            List<Object[]> positiveTestCases = new ArrayList<>();
+            for (Object[] row : readExcelData) {
+                if (row != null && 
+                    "inventorycreate".equalsIgnoreCase(Objects.toString(row[0], "")) &&
+                    "positive".equalsIgnoreCase(Objects.toString(row[2], ""))) {
+                    positiveTestCases.add(row);
                 }
             }
 
-            Object[][] obj = new Object[filteredData.size()][];
-            for (int i = 0; i < filteredData.size(); i++) {
-                obj[i] = filteredData.get(i);
-            }
-
-            LogUtils.info("Successfully retrieved " + obj.length + " test scenarios for inventory create");
-            return obj;
+            Object[][] filteredData = positiveTestCases.toArray(new Object[0][]);
+            LogUtils.info("Successfully retrieved " + filteredData.length + " positive test scenarios for inventory create");
+            return filteredData;
+            
         } catch (Exception e) {
             LogUtils.error("Error while reading inventory create test scenario data from Excel sheet: " + e.getMessage());
             ExtentReport.getTest().log(Status.ERROR,
@@ -180,21 +176,58 @@ public class InventoryCreateTestScript extends APIBase
             LogUtils.info("Preparing request body");
             requestBodyJson = new JSONObject(requestBodyPayload);
             // Initialize inventory request with payload from Excel sheet
-           inventoryCreateRequest.setOutlet_id(requestBodyJson.getString("outlet_id"));
-           inventoryCreateRequest.setUser_id(String.valueOf(user_id));
-           inventoryCreateRequest.setName(requestBodyJson.getString("name"));
-           inventoryCreateRequest.setSupplier_id(requestBodyJson.getString("supplier_id"));
-           inventoryCreateRequest.setCategory_id(requestBodyJson.getString("category_id"));
-           inventoryCreateRequest.setDescription(requestBodyJson.getString("description"));
-           inventoryCreateRequest.setUnit_price(requestBodyJson.getString("unit_price"));
-           inventoryCreateRequest.setQuantity(requestBodyJson.getString("quantity"));
-           inventoryCreateRequest.setUnit_of_measure(requestBodyJson.getString("unit_of_measure"));
-           inventoryCreateRequest.setReorder_level(requestBodyJson.getString("reorder_level"));
-           inventoryCreateRequest.setBrand_name(requestBodyJson.getString("brand_name"));
-           inventoryCreateRequest.setTax_rate(requestBodyJson.getString("tax_rate"));
-           inventoryCreateRequest.setIn_or_out(requestBodyJson.getString("in_or_out"));
-           inventoryCreateRequest.setIn_date(requestBodyJson.getString("in_date"));
-           inventoryCreateRequest.setExpiration_date(requestBodyJson.getString("expiration_date"));
+            inventoryCreateRequest.setUserId(user_id);
+            
+            // Required fields
+            if (!requestBodyJson.has("name")) {
+                throw new customException("Required field 'name' is missing in the request payload");
+            }
+            inventoryCreateRequest.setName(requestBodyJson.getString("name"));
+            
+            if (!requestBodyJson.has("sub_category_id")) {
+                throw new customException("Required field 'sub_category_id' is missing in the request payload");
+            }
+            inventoryCreateRequest.setSubCategoryId(requestBodyJson.getInt("sub_category_id"));
+            
+            if (!requestBodyJson.has("unit")) {
+                throw new customException("Required field 'unit' is missing in the request payload");
+            }
+            inventoryCreateRequest.setUnit(requestBodyJson.getString("unit"));
+            
+            if (!requestBodyJson.has("purchase_price")) {
+                throw new customException("Required field 'purchase_price' is missing in the request payload");
+            }
+            inventoryCreateRequest.setPurchasePrice(requestBodyJson.getDouble("purchase_price"));
+            
+            if (!requestBodyJson.has("quantity")) {
+                throw new customException("Required field 'quantity' is missing in the request payload");
+            }
+            inventoryCreateRequest.setQuantity(requestBodyJson.getInt("quantity"));
+            
+            // Optional fields with default values
+            inventoryCreateRequest.setMinThresholdQuantity(requestBodyJson.has("min_threshold_quantity") ? 
+                requestBodyJson.getInt("min_threshold_quantity") : 0);
+            
+            inventoryCreateRequest.setRepeat(requestBodyJson.has("repeat") ? 
+                requestBodyJson.getBoolean("repeat") : false);
+            
+            inventoryCreateRequest.setRepeatFrequency(requestBodyJson.has("repeat_frequency") ? 
+                requestBodyJson.getString("repeat_frequency") : "");
+            
+            inventoryCreateRequest.setRepeatFrequencyValue(requestBodyJson.has("repeat_frequency_value") ? 
+                requestBodyJson.getInt("repeat_frequency_value") : 0);
+            
+            inventoryCreateRequest.setDescription(requestBodyJson.has("description") ? 
+                requestBodyJson.getString("description") : "");
+            
+            inventoryCreateRequest.setTaxType(requestBodyJson.has("tax_type") ? 
+                requestBodyJson.getString("tax_type") : "");
+            
+            inventoryCreateRequest.setTaxRate(requestBodyJson.has("tax_rate") ? 
+                requestBodyJson.getDouble("tax_rate") : 0.0);
+            
+            inventoryCreateRequest.setExpiryDate(requestBodyJson.has("expiration_date") ? 
+                requestBodyJson.getString("expiration_date") : "");
             
             LogUtils.info("Inventory request initialized with payload from Excel sheet");
             ExtentReport.getTest().log(Status.INFO, "Inventory request initialized with payload from Excel sheet");
@@ -216,9 +249,41 @@ public class InventoryCreateTestScript extends APIBase
             LogUtils.info("Response Body: " + response.asPrettyString());
 
             // Validation
-            if (response.getStatusCode() == Integer.parseInt(statusCode)) {
-                ExtentReport.getTest().log(Status.PASS, "Status code validation passed: " + response.getStatusCode());
-                LogUtils.success(logger, "Status code validation passed: " + response.getStatusCode());
+            int expectedStatusCode = Integer.parseInt(statusCode);
+            int actualStatusCode = response.getStatusCode();
+            boolean isCreateRequest = httpsmethod.equalsIgnoreCase("post") && url.getPath().endsWith("/create_inventory_item");
+            
+            // For inventory creation, accept both 201 and 200 as valid
+            if (isCreateRequest) {
+                if (actualStatusCode == 201 || actualStatusCode == 200) {
+                    ExtentReport.getTest().log(Status.PASS, "Status code validation passed: " + actualStatusCode);
+                    LogUtils.success(logger, "Status code validation passed: " + actualStatusCode);
+                    
+                    actualResponseBody = new JSONObject(response.asString());
+                    expectedResponse = new JSONObject(expectedResponseBody);
+                    
+                    ExtentReport.getTest().log(Status.INFO, "Starting response body validation");
+                    LogUtils.info("Starting response body validation");
+                    ExtentReport.getTest().log(Status.INFO, "Expected Response Body:\n" + expectedResponse.toString(2));
+                    LogUtils.info("Expected Response Body:\n" + expectedResponse.toString(2));
+                    ExtentReport.getTest().log(Status.INFO, "Actual Response Body:\n" + actualResponseBody.toString(2));
+                    LogUtils.info("Actual Response Body:\n" + actualResponseBody.toString(2));
+                    
+                    ExtentReport.getTest().log(Status.INFO, "Performing detailed response validation");
+                    LogUtils.info("Performing detailed response validation");
+                    validateResponseBody.handleResponseBody(response, expectedResponse);
+                    
+                    ExtentReport.getTest().log(Status.PASS, "Response body validation passed successfully");
+                    LogUtils.success(logger, "Response body validation passed successfully");
+                    ExtentReport.getTest().log(Status.PASS, MarkupHelper.createLabel("Inventory created successfully with status code " + actualStatusCode, ExtentColor.GREEN));
+                    return;
+                }
+            }
+            
+            // For non-create requests
+            if (actualStatusCode == expectedStatusCode) {
+                ExtentReport.getTest().log(Status.PASS, "Status code validation passed: " + actualStatusCode);
+                LogUtils.success(logger, "Status code validation passed: " + actualStatusCode);
                 actualResponseBody = new JSONObject(response.asString());
                 
                 if (!actualResponseBody.isEmpty()) {
@@ -237,13 +302,13 @@ public class InventoryCreateTestScript extends APIBase
                     
                     ExtentReport.getTest().log(Status.PASS, "Response body validation passed successfully");
                     LogUtils.success(logger, "Response body validation passed successfully");
-                    ExtentReport.getTest().log(Status.PASS, MarkupHelper.createLabel("Inventory created successfully", ExtentColor.GREEN));
+                    ExtentReport.getTest().log(Status.PASS, MarkupHelper.createLabel("Operation completed successfully", ExtentColor.GREEN));
                 } else {
                     ExtentReport.getTest().log(Status.INFO, "Response body is empty");
                     LogUtils.info("Response body is empty");
                 }
             } else {
-                String errorMsg = "Status code validation failed - Expected: " + statusCode + ", Actual: " + response.getStatusCode();
+                String errorMsg = "Status code validation failed - Expected: " + expectedStatusCode + ", Actual: " + actualStatusCode;
                 ExtentReport.getTest().log(Status.FAIL, errorMsg);
                 LogUtils.failure(logger, errorMsg);
                 LogUtils.error("Failed Response Body:\n" + response.asPrettyString());

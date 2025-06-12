@@ -164,16 +164,31 @@ public class ResponseUtil
                         LogUtils.info("Request body object type: " + requestBody.getClass().getName());
                         LogUtils.info("Request body content: " + jsonBody);
                         
-                        response = RestAssured.given()
-                            .contentType(ContentType.JSON)
-                            .header("Authorization","Bearer "+jwttoken)
-                            .body(jsonBody)
-                            .when()
-                            .post(url)
-                            .then()
-                            .log().all()
-                            .extract()
-                            .response();
+                        // For inventory creation endpoint, don't validate status code in RestAssured
+                        if (url.endsWith("/create_inventory_item")) {
+                            response = RestAssured.given()
+                                .contentType(ContentType.JSON)
+                                .header("Authorization","Bearer "+jwttoken)
+                                .body(jsonBody)
+                                .when()
+                                .post(url)
+                                .then()
+                                .log().all()
+                                .extract()
+                                .response();
+                        } else {
+                            response = RestAssured.given()
+                                .contentType(ContentType.JSON)
+                                .header("Authorization","Bearer "+jwttoken)
+                                .body(jsonBody)
+                                .when()
+                                .post(url)
+                                .then()
+                                .log().all()
+                                .extract()
+                                .response();
+                        }
+                            
                         LogUtils.info("POST request completed successfully");
                         return response;
                     } catch (Exception e) {
