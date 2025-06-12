@@ -100,9 +100,9 @@ public class TableListViewTestScript extends APIBase
                 throw new customException(errorMsg);
             }
 
+            // Filter for positive test cases only
             List<Object[]> filteredData = new ArrayList<>();
-            for (int i = 0; i < testData.length; i++) {
-                Object[] row = testData[i];
+            for (Object[] row : testData) {
                 if (row != null && row.length >= 3 &&
                         "tablelistview".equalsIgnoreCase(Objects.toString(row[0], "")) &&
                         "positive".equalsIgnoreCase(Objects.toString(row[2], ""))) {
@@ -110,16 +110,18 @@ public class TableListViewTestScript extends APIBase
                 }
             }
 
-            Object[][] obj = new Object[filteredData.size()][];
-            for (int i = 0; i < filteredData.size(); i++) {
-                obj[i] = filteredData.get(i);
+            if (filteredData.isEmpty()) {
+                String errorMsg = "No positive test scenarios found for table list view";
+                LogUtils.error(errorMsg);
+                throw new customException(errorMsg);
             }
 
-            LogUtils.info("Successfully filtered " + obj.length + " test scenarios for table list view");
+            Object[][] obj = filteredData.toArray(new Object[0][]);
+            LogUtils.info("Successfully filtered " + obj.length + " positive test scenarios for table list view");
             return obj;
 
         } catch (Exception e) {
-            String errorMsg = "Error while reading table list view test scenario data from Excel sheet: " + e.getMessage();
+            String errorMsg = "Error while reading table list view test scenario data: " + e.getMessage();
             LogUtils.error(errorMsg);
             throw new customException(errorMsg);
         }
