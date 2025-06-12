@@ -528,7 +528,7 @@ public class SupplierCreateTestScript extends APIBase
             ExtentReport.createTest("Supplier Create Test Teardown");
             
             LogUtils.info("Logging out user");
-            ActionsMethods.logout();
+            //ActionsMethods.logout();
             
             LogUtils.info("Clearing tokens");
             TokenManagers.clearTokens();

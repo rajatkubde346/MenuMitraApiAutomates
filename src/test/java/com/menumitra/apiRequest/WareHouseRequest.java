@@ -12,6 +12,7 @@ public class WareHouseRequest {
     private String capacityUnit;
     private int capacityValue;
     private int isActive;
+    private int warehouseId;
 
     public int getUserId() {
         return userId;
@@ -99,5 +100,13 @@ public class WareHouseRequest {
 
     public void setIsActive(int isActive) {
         this.isActive = isActive;
+    }
+
+    public int getWarehouseId() {
+        return warehouseId;
+    }
+
+    public void setWarehouseId(int warehouseId) {
+        this.warehouseId = warehouseId;
     }
 }

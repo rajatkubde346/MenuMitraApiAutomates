@@ -336,7 +336,7 @@ public class InventoryCreateTestScript extends APIBase
             ExtentReport.createTest("Inventory Create Test Teardown");
             
             LogUtils.info("Logging out user");
-            ActionsMethods.logout();
+            //ActionsMethods.logout();
             
             LogUtils.info("Clearing tokens");
             TokenManagers.clearTokens();

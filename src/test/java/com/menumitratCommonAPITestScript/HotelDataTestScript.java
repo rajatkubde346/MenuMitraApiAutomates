@@ -375,7 +375,7 @@ public class HotelDataTestScript extends APIBase {
             ExtentReport.createTest("Hotel Data Test Teardown");
             
             LogUtils.info("Logging out user");
-            ActionsMethods.logout();
+            //ActionsMethods.logout();
             
             LogUtils.info("Clearing tokens");
             TokenManagers.clearTokens();

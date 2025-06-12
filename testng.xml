@@ -4,7 +4,8 @@
   <test name="Test">
     <classes>
       <class name="com.menumitra.superclass.APIBase"/>
-      <class name="com.menumitratCommonAPITestScript.TableCreateTestScript"/>
+     
+	  <class name="com.menumitratCommonAPITestScript.TableCreateTestScript"/>
       <class name="com.menumitratCommonAPITestScript.TableListViewTestScript"/>
       
       
@@ -47,7 +48,8 @@
        <class name="com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript"/>
        
        
-		<class name="com.menumitratCommonAPITestScript.UdhariLedgerTestScript"/>
+		
+			<class name="com.menumitratCommonAPITestScript.UdhariLedgerTestScript"/>
        <class name="com.menumitratCommonAPITestScript.UdhariLedgerUpdateTestScript"/>
        <class name="com.menumitratCommonAPITestScript.UdhariLedgerListTestScript"/>
        <class name="com.menumitratCommonAPITestScript.UdhariLedgerViewTestScript"/>
@@ -56,9 +58,14 @@
        <class name="com.menumitratCommonAPITestScript.InventoryViewTestScript"/>
        <class name="com.menumitratCommonAPITestScript.InventoryListViewTestScript"/>
       
-       <class name="com.menumitratCommonAPITestScript.WareHouseCreateTestScript"/>
+      <!-- <class name="com.menumitratCommonAPITestScript.WareHouseCreateTestScript"/>
+      
+		 <class name="com.menumitratCommonAPITestScript.WareHouseUpdateTestScript"/>-->
+		 <class name="com.menumitratCommonAPITestScript.WareHouseDeleteTestScript"/>
     </classes>
   </test>
 </suite>
+
+
 
 

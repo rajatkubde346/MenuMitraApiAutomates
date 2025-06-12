@@ -353,14 +353,13 @@ public class EbillUrlTestScript extends APIBase {
         }
     }
 
-   // @AfterClass
     private void tearDown() {
         try {
             LogUtils.info("===Test environment tear down started===");
             ExtentReport.createTest("Ebill URL Test Teardown");
 
             LogUtils.info("Logging out user");
-            ActionsMethods.logout();
+            //ActionsMethods.logout();
 
             LogUtils.info("Clearing tokens");
             TokenManagers.clearTokens();

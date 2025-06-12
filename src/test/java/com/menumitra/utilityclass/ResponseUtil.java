@@ -164,36 +164,23 @@ public class ResponseUtil
                         LogUtils.info("Request body object type: " + requestBody.getClass().getName());
                         LogUtils.info("Request body content: " + jsonBody);
                         
-                        // For inventory creation endpoint, don't validate status code in RestAssured
-                        if (url.endsWith("/create_inventory_item")) {
-                            response = RestAssured.given()
-                                .contentType(ContentType.JSON)
-                                .header("Authorization","Bearer "+jwttoken)
-                                .body(jsonBody)
-                                .when()
-                                .post(url)
-                                .then()
-                                .log().all()
-                                .extract()
-                                .response();
-                        } else {
-                            response = RestAssured.given()
-                                .contentType(ContentType.JSON)
-                                .header("Authorization","Bearer "+jwttoken)
-                                .body(jsonBody)
-                                .when()
-                                .post(url)
-                                .then()
-                                .log().all()
-                                .extract()
-                                .response();
-                        }
+                        response = RestAssured.given()
+                            .contentType(ContentType.JSON)
+                            .header("Authorization", "Bearer " + jwttoken)
+                            .body(jsonBody)
+                            .when()
+                            .post(url)
+                            .then()
+                            .log().all()
+                            .extract()
+                            .response();
                             
-                        LogUtils.info("POST request completed successfully");
+                        LogUtils.info("POST request completed. Status code: " + response.getStatusCode());
+                        LogUtils.info("Response body: " + response.asString());
                         return response;
                     } catch (Exception e) {
-                        LogUtils.error("Error: Get response..");
-                        throw new customException("Error: Get response");
+                        LogUtils.error("Error executing POST request: " + e.getMessage());
+                        throw new customException("Error executing POST request: " + e.getMessage());
                     }
                     
                 case "get":

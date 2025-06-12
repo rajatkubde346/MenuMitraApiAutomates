@@ -1,13 +1,261 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.menumitra.utilityclass.Listener"/>
-  </listeners>
   <test name="Test">
     <classes>
       <class name="com.menumitra.superclass.APIBase"/>
+      <class name="com.menumitratCommonAPITestScript.TableCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.TableListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ChefViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ChefUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ChefDeleteTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.CaptainDeleteTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.StaffDeleteTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.sectionCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.sectionUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.sectionListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.SectionViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.SectionDeleteTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.GetMenuList"/>
+      <class name="com.menumitratCommonAPITestScript.WaiterCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.WaiterUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.WaiterListViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerUpdateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerListTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.InventoryCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.InventoryViewTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.InventoryListViewTestScript"/>
       <class name="com.menumitratCommonAPITestScript.WareHouseCreateTestScript"/>
+      <class name="com.menumitratCommonAPITestScript.WareHouseUpdateTestScript"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript">
+        <methods>
+          <include name="ubacCreateSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.UbacFuctionalityCreateTestScript -->
+      <class name="com.menumitra.superclass.APIBase">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.menumitra.superclass.APIBase -->
+      <class name="com.menumitratCommonAPITestScript.InventoryListViewTestScript">
+        <methods>
+          <include name="inventoryListSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.InventoryListViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.TableListViewTestScript">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.TableListViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerViewTestScript">
+        <methods>
+          <include name="udhariLedgerViewSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.UdhariLedgerViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.ChefDeleteTestScript">
+        <methods>
+          <include name="setup"/>
+          <include name="deleteChef" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.ChefDeleteTestScript -->
+      <class name="com.menumitratCommonAPITestScript.ChefListViewTestScript">
+        <methods>
+          <include name="chefListViewSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.ChefListViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.TableCreateTestScript">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.TableCreateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.StaffListViewTestScript">
+        <methods>
+          <include name="staffListViewSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.StaffListViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.WareHouseCreateTestScript">
+        <methods>
+          <include name="wareHouseCreateSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.WareHouseCreateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.GetMenuList">
+        <methods>
+          <include name="menuListSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.GetMenuList -->
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerUpdateTestScript">
+        <methods>
+          <include name="udhariLedgerUpdateSetUp"/>
+          <include name="udhariLedgerUpdateTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.UdhariLedgerUpdateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.sectionListViewTestScript">
+        <methods>
+          <include name="sectionListViewSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.sectionListViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.StaffCreateTestScript">
+        <methods>
+          <include name="createStaff" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.StaffCreateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.CaptainDeleteTestScript">
+        <methods>
+          <include name="deleteCaptain" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.CaptainDeleteTestScript -->
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerListTestScript">
+        <methods>
+          <include name="udhariLedgerListSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.UdhariLedgerListTestScript -->
+      <class name="com.menumitratCommonAPITestScript.StaffViewTestScript">
+        <methods>
+          <include name="verifyStaffView" invocation-numbers="0"/>
+          <include name="staffviewsetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.StaffViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.StaffUpdateTestScript">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.StaffUpdateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.WareHouseUpdateTestScript">
+        <methods>
+          <include name="wareHouseUpdateSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.WareHouseUpdateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.CaptainViewTestScript">
+        <methods>
+          <include name="captainViewSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.CaptainViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript">
+        <methods>
+          <include name="ubacViewSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.UbacFuctionalityViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.ChefUpdateTestScript">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.ChefUpdateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.ChefViewTestScript">
+        <methods>
+          <include name="chefViewSetUp"/>
+          <include name="chefViewTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.ChefViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.WaiterUpdateTestScript">
+        <methods>
+          <include name="verifyWaiterUpdate" invocation-numbers="0"/>
+          <include name="waiterUpdateSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.WaiterUpdateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.sectionUpdateTestScript">
+        <methods>
+          <include name="verifySectionUpdateUsingValidInputData" invocation-numbers="0"/>
+          <include name="sectionUpdateSetup"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.sectionUpdateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.WaiterCreateTestScript">
+        <methods>
+          <include name="verifyWaiterCreate" invocation-numbers="0"/>
+          <include name="waiterCreateSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.WaiterCreateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.CaptainListViewTestScript">
+        <methods>
+          <include name="captainListViewSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.CaptainListViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.SectionViewTestScript">
+        <methods>
+          <include name="sectionViewSetup"/>
+          <include name="verifySectionViewUsingValidInputData" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.SectionViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.sectionCreateTestScript">
+        <methods>
+          <include name="tearDown"/>
+          <include name="sectionCreateSetup"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.sectionCreateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.InventoryCreateTestScript">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.InventoryCreateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.WaiterListViewTestScript">
+        <methods>
+          <include name="waiterListViewSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.WaiterListViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.StaffDeleteTestScript">
+        <methods>
+          <include name="testStaffDelete" invocation-numbers="0"/>
+          <include name="staffDeleteSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.StaffDeleteTestScript -->
+      <class name="com.menumitratCommonAPITestScript.InventoryViewTestScript">
+        <methods>
+          <include name="inventoryViewSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.InventoryViewTestScript -->
+      <class name="com.menumitratCommonAPITestScript.CaptainUpdateTestScript">
+        <methods>
+          <include name="captainUpdateSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.CaptainUpdateTestScript -->
+      <class name="com.menumitratCommonAPITestScript.ActivityLogTestScript">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.ActivityLogTestScript -->
+      <class name="com.menumitratCommonAPITestScript.SectionDeleteTestScript">
+        <methods>
+          <include name="sectionDeleteSetup"/>
+          <include name="verifySectionDeleteUsingValidInputData" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.SectionDeleteTestScript -->
+      <class name="com.menumitratCommonAPITestScript.UdhariLedgerTestScript">
+        <methods>
+          <include name="udhariLedgerTest" invocation-numbers="0"/>
+          <include name="udhariLedgerSetUp"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.UdhariLedgerTestScript -->
+      <class name="com.menumitratCommonAPITestScript.CaptainCreateTestScript">
+        <methods>
+          <include name="captainCreateSetUp"/>
+          <include name="captainCreateTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.menumitratCommonAPITestScript.CaptainCreateTestScript -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

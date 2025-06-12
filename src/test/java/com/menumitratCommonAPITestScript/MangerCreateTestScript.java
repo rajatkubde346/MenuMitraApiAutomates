@@ -279,7 +279,7 @@ public class MangerCreateTestScript extends APIBase {
         try {
             LogUtils.info("===Test environment tear down started===");
             ExtentReport.createTest("Manger Create Test Teardown");
-            ActionsMethods.logout();
+            //ActionsMethods.logout();
             TokenManagers.clearTokens();
             LogUtils.info("===Test environment tear down completed successfully===");
             ExtentReport.getTest().log(Status.PASS, MarkupHelper.createLabel("Test environment tear down successfully", ExtentColor.GREEN));
